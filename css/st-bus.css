@@ -1,0 +1,435 @@
+/* screen - st-bus */
+
+.st-bus {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2170px;
+  overflow: hidden;
+  width: 1400px;
+}
+
+.st-bus .flex-row {
+  height: 228px;
+  margin-right: 27.0px;
+  margin-top: 19px;
+  min-width: 1177px;
+}
+
+.st-bus .flex-col {
+  flex-direction: column;
+  min-height: 228px;
+  width: 319px;
+}
+
+.st-bus .smart-trips_logo {
+  height: 62px;
+  object-fit: cover;
+  width: 136px;
+}
+
+.st-bus .title {
+  letter-spacing: 0;
+  line-height: 44px;
+  margin-bottom: -1px;
+  margin-top: 72px;
+  min-height: 43px;
+  white-space: nowrap;
+}
+
+.st-bus .how-to-ride-the-bus-container {
+  height: 34px;
+  margin-left: 2px;
+  margin-top: 17px;
+  position: relative;
+  width: 274px;
+}
+
+.st-bus .how-to-ride-the-bus {
+  height: 34px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 274px;
+}
+
+.st-bus .overlap-group6 {
+  align-self: center;
+  height: 184px;
+  margin-bottom: 14.0px;
+  margin-left: 201px;
+  position: relative;
+  width: 183px;
+}
+
+.st-bus .perks {
+  display: flex;
+  height: 184px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 106px;
+}
+
+.st-bus .bike-classes {
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 14px;
+  opacity: 0.0;
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.st-bus .overlap-group8 {
+  height: 119px;
+  margin-top: 15px;
+  position: relative;
+  width: 175px;
+}
+
+.st-bus .rideshare {
+  display: flex;
+  height: 81px;
+  left: 74px;
+  position: absolute;
+  top: 0;
+  width: 101px;
+}
+
+.st-bus .rideshare-1 {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 9px;
+  margin-top: 1px;
+  white-space: nowrap;
+  width: 72px;
+}
+
+.st-bus .overlap-group8-item {
+  display: flex;
+  height: 119px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 91px;
+}
+
+.st-bus .events-container {
+  height: 60px;
+  margin-left: 13px;
+  margin-top: 15px;
+  position: relative;
+  width: 80px;
+}
+
+.st-bus .events {
+  display: flex;
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.st-bus .button-1 {
+  align-items: flex-end;
+  background-color: var(--green-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 33px;
+  justify-content: flex-end;
+  margin-left: 12px;
+  margin-top: 5px;
+  min-width: 84px;
+  padding: 6px 18px;
+}
+
+.st-bus .button-1-1 {
+  align-items: flex-end;
+  background-color: var(--green-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 33px;
+  justify-content: flex-end;
+  margin-left: 26px;
+  margin-top: 5px;
+  min-width: 84px;
+  padding: 6px 15px;
+}
+
+.st-bus .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  gap: 106px;
+  height: 1462px;
+  margin-right: 7.0px;
+  margin-top: 7px;
+  min-width: 1207px;
+}
+
+.st-bus .flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 1462px;
+  width: 633px;
+}
+
+.st-bus .overlap-group3 {
+  height: 180px;
+  margin-left: 5px;
+  position: relative;
+  width: 589px;
+}
+
+.st-bus .component-15-4 {
+  display: flex;
+  height: 150px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 587px;
+}
+
+.st-bus .riding-the-bus-in-wh {
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-bottom: -2px;
+  margin-right: -2px;
+  overflow: hidden;
+  width: 587px;
+}
+
+.st-bus .want-to-give-it-a-try {
+  height: 34px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 146px;
+  white-space: nowrap;
+  width: 478px;
+}
+
+.st-bus .wta-fare-informati {
+  height: 136px;
+  line-height: 24px;
+  margin-top: 11px;
+  overflow: hidden;
+  width: 557px;
+}
+
+.st-bus .wta-fare-information {
+  height: 34px;
+  line-height: 44px;
+  margin-bottom: -10px;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+.st-bus .general-fare-for-fix {
+  align-self: flex-end;
+  color: var(--citrus);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 114px;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-top: 7px;
+  width: 626px;
+}
+
+.st-bus .flex-col-item {
+  height: 34px;
+  letter-spacing: 0;
+  line-height: 44px;
+  margin-bottom: -10px;
+  margin-left: 7px;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.st-bus .overlap-group2 {
+  align-self: flex-end;
+  height: 152px;
+  margin-top: 7px;
+  position: relative;
+  width: 626px;
+}
+
+.st-bus .path-205 {
+  left: 33px;
+  width: 7px;
+}
+
+.st-bus .path-206 {
+  left: 0;
+  width: 14px;
+}
+
+.st-bus .once-youre-on-a-wta {
+  height: 152px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  width: 626px;
+}
+
+.st-bus .we-have-maps-for-mak {
+  align-self: flex-end;
+  height: 152px;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-top: 7px;
+  overflow: hidden;
+  width: 626px;
+}
+
+.st-bus .overlap-group7 {
+  height: 459px;
+  margin-top: 7px;
+  position: relative;
+  width: 633px;
+}
+
+.st-bus .bus-video {
+  height: 351px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 108px;
+  width: 625px;
+}
+
+.st-bus .sometimes-you-dont {
+  height: 152px;
+  left: 7px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  width: 626px;
+}
+
+.st-bus .tips-for-first-time-riders {
+  height: 34px;
+  letter-spacing: 0;
+  line-height: 44px;
+  margin-bottom: -10px;
+  margin-left: 7px;
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+.st-bus .images-evantide-_-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+  margin-top: 3px;
+  min-height: 1076px;
+  width: 468px;
+}
+
+.st-bus .images-evantide-2023_030 {
+  height: 704px;
+  object-fit: cover;
+  width: 467px;
+}
+
+.st-bus .images-evantide-2023_077 {
+  height: 311px;
+  object-fit: cover;
+  width: 468px;
+}
+
+.st-bus .overlap-group5 {
+  height: 389px;
+  margin-right: 1.0px;
+  margin-top: 23px;
+  position: relative;
+  width: 1401px;
+}
+
+.st-bus .path-206-1 {
+  left: 102px;
+  top: 206px;
+}
+
+.st-bus .arrive-at-your-bus-s {
+  height: 314px;
+  left: 101px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 0;
+  width: 592px;
+}
+
+.st-bus .base-1 {
+  background-color: var(--ship-gray);
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 309px;
+  width: 1401px;
+}
+
+.st-bus .fa-qs-contact-u {
+  left: 166px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 340px;
+  white-space: nowrap;
+}
+
+.st-bus .path-205-1 {
+  height: 14px;
+  left: 134px;
+  object-fit: cover;
+  position: absolute;
+  top: 343px;
+  width: 7px;
+}
+
+.st-bus .path-206-2 {
+  left: 101px;
+  top: 343px;
+}
+
+.st-bus .base-2 {
+  background-color: var(--citrus);
+  height: 22px;
+  margin-right: 2.0px;
+  width: 1400px;
+}
+
+.st-bus .path {
+  height: 14px;
+  object-fit: cover;
+  position: absolute;
+  top: 78px;
+}
+
+.st-bus .path-206-3 {
+  height: 14px;
+  object-fit: cover;
+  position: absolute;
+  width: 14px;
+}
+
+.st-bus .wta-fare {
+  letter-spacing: 0;
+  margin-left: 7px;
+}
