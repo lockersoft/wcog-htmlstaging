@@ -1,5 +1,6 @@
 :root { 
   --citrus: #a1c11e;
+  --dove-gray: #707070;
   --finn: #69165e;
   --green-blue: #1a6db5;
   --sail: #bce0fd;
@@ -8,28 +9,29 @@
  
   --font-size-l: 15px;
   --font-size-m: 14px;
-  --font-size-s: 12px;
+  --font-size-s: 13.5px;
   --font-size-xl: 16px;
+  --font-size-xs: 12px;
   --font-size-xxl: 20px;
-  --font-size-xxxl: 32px;
-  --font-size-xxxxl: 34px;
+  --font-size-xxs: 9px;
  
   --font-family-arial-bold: "Arial-Bold", Helvetica;
   --font-family-arial-regular: "Arial-Regular", Helvetica;
+  --font-family-helveticaneue-regular: "HelveticaNeue-Regular", Helvetica;
   --font-family-lato: "Lato", Helvetica;
 }
-.lato-normal-ship-gray-14px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
+.arial-regular-normal-green-blue-12px {
+  color: var(--green-blue);
+  font-family: var(--font-family-arial-regular);
+  font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 400;
 }
 
-.arial-regular-normal-green-blue-12px {
-  color: var(--green-blue);
-  font-family: var(--font-family-arial-regular);
-  font-size: var(--font-size-s);
+.lato-normal-ship-gray-14px {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
 }
@@ -45,7 +47,7 @@
 .arial-regular-normal-white-12px {
   color: var(--white);
   font-family: var(--font-family-arial-regular);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 400;
 }
@@ -61,7 +63,7 @@
 .arial-bold-white-12px {
   color: var(--white);
   font-family: var(--font-family-arial-bold);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 700;
 }
@@ -74,18 +76,42 @@
   font-weight: 400;
 }
 
+.lato-bold-green-blue-14px {
+  color: var(--green-blue);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
 .lato-normal-ship-gray-14px-2 {
   color: var(--ship-gray);
   font-family: var(--font-family-lato);
   font-size: var(--font-size-m);
 }
 
-.lato-normal-citrus-14px {
-  color: var(--citrus);
+.lato-bold-ship-gray-13-5px {
+  color: var(--ship-gray);
   font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.lato-normal-ship-gray-13-5px {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-s);
   font-style: normal;
   font-weight: 400;
+}
+
+.lato-bold-green-blue-34px {
+  color: var(--green-blue);
+  font-family: var(--font-family-lato);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .lato-bold-green-blue-16px {
@@ -96,20 +122,34 @@
   font-weight: 700;
 }
 
-.lato-bold-green-blue-34px {
-  color: var(--green-blue);
+.lato-normal-citrus-14px {
+  color: var(--citrus);
   font-family: var(--font-family-lato);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-m);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .arial-bold-finn-12px {
   color: var(--finn);
   font-family: var(--font-family-arial-bold);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 700;
+}
+
+.lato-normal-ship-gray-16px {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.lato-normal-green-blue-14px-2 {
+  color: var(--green-blue);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
 }
 
 .lato-bold-ship-gray-20px {
@@ -120,16 +160,10 @@
   font-weight: 700;
 }
 
-.lato-bold-green-blue-14px {
-  color: var(--green-blue);
+.lato-bold-ship-gray-18px {
+  color: var(--ship-gray);
   font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-}
-
-.lato-normal-green-blue-14px-2 {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
 }

@@ -12,7 +12,7 @@
 
 .st-home-clean .flex-row {
   gap: 60px;
-  height: 510px;
+  height: 513px;
   margin-right: 32px;
   margin-top: 24px;
   min-width: 1269px;
@@ -21,7 +21,8 @@
 .st-home-clean .flex-col {
   align-self: flex-end;
   flex-direction: column;
-  min-height: 502px;
+  gap: 17px;
+  min-height: 505px;
   width: 342px;
 }
 
@@ -31,14 +32,21 @@
   width: 205px;
 }
 
+.st-home-clean .group-12 {
+  flex-direction: column;
+  gap: 16px;
+  min-height: 395px;
+  width: 342px;
+}
+
 .st-home-clean .walk-bike-share-a {
   color: var(--green-blue);
   font-family: var(--font-family-lato);
-  font-size: var(--font-size-xxxl);
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 42px;
-  margin-top: 12px;
+  margin-top: -5px;
   min-height: 167px;
   width: 321px;
 }
@@ -51,7 +59,6 @@
   height: 214px;
   letter-spacing: 0;
   line-height: 24px;
-  margin-top: 16px;
   width: 342px;
 }
 
@@ -64,17 +71,9 @@
   color: var(--ship-gray);
 }
 
-.st-home-clean .overlap-group4 {
+.st-home-clean .overlap-group6 {
   height: 484px;
   position: relative;
-  width: 867px;
-}
-
-.st-home-clean .overlap-group3 {
-  height: 474px;
-  left: 0;
-  position: absolute;
-  top: 10px;
   width: 867px;
 }
 
@@ -83,54 +82,32 @@
   left: 0;
   object-fit: cover;
   position: absolute;
-  top: 33px;
+  top: 43px;
   width: 867px;
+}
+
+.st-home-clean .group-10 {
+  height: 194px;
+  left: 117px;
+  min-width: 657px;
+  position: absolute;
+  top: 0;
+}
+
+.st-home-clean .overlap-group2 {
+  align-self: flex-end;
+  height: 184px;
+  position: relative;
+  width: 183px;
 }
 
 .st-home-clean .perks {
   display: flex;
   height: 184px;
-  left: 117px;
+  left: 0;
   position: absolute;
   top: 0;
   width: 106px;
-}
-
-.st-home-clean .rideshare {
-  display: flex;
-  height: 81px;
-  left: 374px;
-  position: absolute;
-  top: 0;
-  width: 101px;
-}
-
-.st-home-clean .rideshare-1 {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 9px;
-  margin-top: 1px;
-  white-space: nowrap;
-  width: 72px;
-}
-
-.st-home-clean .events {
-  display: flex;
-  height: 60px;
-  left: 488px;
-  position: absolute;
-  top: 0;
-  width: 80px;
-}
-
-.st-home-clean .overlap-group3-item {
-  display: flex;
-  height: 119px;
-  left: 300px;
-  position: absolute;
-  top: 0;
-  width: 91px;
 }
 
 .st-home-clean .component-14 {
@@ -138,8 +115,18 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  left: 211px;
+  left: 94px;
   min-height: 125px;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
+.st-home-clean .rectangle-401 {
+  background-color: var(--white);
+  height: 93px;
+  left: 0;
+  opacity: 0.0;
   position: absolute;
   top: 0;
   width: 89px;
@@ -155,6 +142,40 @@
   white-space: nowrap;
 }
 
+.st-home-clean .overlap-group4 {
+  height: 119px;
+  margin-top: 10px;
+  position: relative;
+  width: 175px;
+}
+
+.st-home-clean .rideshare {
+  display: flex;
+  height: 81px;
+  left: 74px;
+  position: absolute;
+  top: 0;
+  width: 101px;
+}
+
+.st-home-clean .rideshare-1 {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 9px;
+  margin-top: 1px;
+  white-space: nowrap;
+  width: 72px;
+}
+
+.st-home-clean .events-container {
+  height: 60px;
+  margin-left: 13px;
+  margin-top: 10px;
+  position: relative;
+  width: 80px;
+}
+
 .st-home-clean .button-1 {
   align-items: flex-end;
   background-color: var(--green-blue);
@@ -162,11 +183,9 @@
   display: flex;
   height: 33px;
   justify-content: flex-end;
-  left: 580px;
+  margin-left: 12px;
   min-width: 84px;
   padding: 6px 18px;
-  position: absolute;
-  top: 0;
 }
 
 .st-home-clean .button-1-1 {
@@ -176,23 +195,21 @@
   display: flex;
   height: 33px;
   justify-content: flex-end;
-  left: 690px;
+  margin-left: 26px;
   min-width: 84px;
   padding: 6px 15px;
-  position: absolute;
-  top: 0;
 }
 
 .st-home-clean .flex-col-1 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-top: 8px;
+  margin-top: 5px;
   min-height: 393px;
   width: 1401px;
 }
 
-.st-home-clean .overlap-group2 {
+.st-home-clean .overlap-group5 {
   height: 371px;
   position: relative;
   width: 1401px;
@@ -205,13 +222,14 @@
   width: 1400px;
 }
 
-.st-home-clean .hand_holding_iphone_1 {
-  height: 262px;
-  left: 252px;
-  object-fit: cover;
+.st-home-clean .the-amazing-impact-o {
+  height: 39px;
+  left: 599px;
+  letter-spacing: 0;
+  line-height: 20px;
   position: absolute;
-  top: 48px;
-  width: 314px;
+  top: 29px;
+  width: 677px;
 }
 
 .st-home-clean .base-1 {
@@ -241,43 +259,7 @@
   width: 194px;
 }
 
-.st-home-clean .download-the-smart-t {
-  color: var(--white);
-  flex: 1;
-  font-family: var(--font-family-arial-regular);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 14px;
-  margin-bottom: -4px;
-  margin-right: -2px;
-  margin-top: 2px;
-  text-align: right;
-  white-space: nowrap;
-  width: 194px;
-}
-
-.st-home-clean .log-your-smart-trips {
-  height: 126px;
-  left: 101px;
-  letter-spacing: 0;
-  line-height: 18px;
-  position: absolute;
-  top: 64px;
-  width: 209px;
-}
-
-.st-home-clean .number-of-smart-trip {
-  height: 37px;
-  left: 671px;
-  letter-spacing: 0;
-  line-height: 18px;
-  position: absolute;
-  top: 64px;
-  width: 380px;
-}
-
-.st-home-clean .text-1 {
+.st-home-clean .text-3 {
   color: var(--finn);
   font-family: var(--font-family-lato);
   font-size: 36px;
@@ -288,6 +270,114 @@
   position: absolute;
   top: 108px;
   white-space: nowrap;
+}
+
+.st-home-clean .path-200 {
+  height: 33px;
+  left: 988px;
+  top: 111px;
+  width: 17px;
+}
+
+.st-home-clean .app-store {
+  height: 52px;
+  left: 1144px;
+  object-fit: cover;
+  position: absolute;
+  top: 306px;
+  width: 206px;
+}
+
+.st-home-clean .line-2 {
+  height: 237px;
+  left: 550px;
+  object-fit: cover;
+  position: absolute;
+  top: 30px;
+  width: 1px;
+}
+
+.st-home-clean .overlap-group-1 {
+  height: 281px;
+  left: 100px;
+  position: absolute;
+  top: 29px;
+  width: 466px;
+}
+
+.st-home-clean .hand_holding_iphone_1 {
+  height: 262px;
+  left: 152px;
+  object-fit: cover;
+  position: absolute;
+  top: 19px;
+  width: 314px;
+}
+
+.st-home-clean .log-your-smart-trips {
+  height: 126px;
+  left: 1px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 35px;
+  width: 209px;
+}
+
+.st-home-clean .log-your-trips-in-yo {
+  height: 39px;
+  left: 1px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  width: 442px;
+}
+
+.st-home-clean .see-recent-winners {
+  height: 37px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  text-decoration: underline;
+  top: 179px;
+  width: 162px;
+}
+
+.st-home-clean .log-my-trips {
+  height: 31px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  text-decoration: underline;
+  top: 146px;
+  width: 144px;
+}
+
+.st-home-clean .path-205 {
+  height: 14px;
+  left: 134px;
+  top: 325px;
+  width: 7px;
+}
+
+.st-home-clean .path-206 {
+  height: 14px;
+  left: 101px;
+  top: 325px;
+  width: 14px;
+}
+
+.st-home-clean .number-of-smart-trip {
+  height: 37px;
+  left: 671px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 64px;
+  width: 380px;
 }
 
 .st-home-clean .pagination {
@@ -315,32 +405,6 @@
   width: 6px;
 }
 
-.st-home-clean .path-200 {
-  height: 33px;
-  left: 988px;
-  top: 111px;
-  width: 17px;
-}
-
-.st-home-clean .app-store {
-  height: 52px;
-  left: 1144px;
-  object-fit: cover;
-  position: absolute;
-  top: 306px;
-  width: 206px;
-}
-
-.st-home-clean .log-your-trips-in-yo {
-  height: 39px;
-  left: 101px;
-  letter-spacing: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 29px;
-  width: 442px;
-}
-
 .st-home-clean .noun-bicycle-100339 {
   height: 147px;
   left: 1100px;
@@ -348,16 +412,6 @@
   position: absolute;
   top: 38px;
   width: 223px;
-}
-
-.st-home-clean .the-amazing-impact-of-smart-trips {
-  height: 39px;
-  left: 599px;
-  letter-spacing: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 29px;
-  width: 380px;
 }
 
 .st-home-clean .show-me-the-impressi {
@@ -369,61 +423,6 @@
   text-decoration: underline;
   top: 209px;
   width: 287px;
-}
-
-.st-home-clean .see-recent-winners {
-  height: 37px;
-  left: 100px;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  text-decoration: underline;
-  top: 208px;
-  width: 162px;
-}
-
-.st-home-clean .line-2 {
-  height: 237px;
-  left: 550px;
-  object-fit: cover;
-  position: absolute;
-  top: 30px;
-  width: 1px;
-}
-
-.st-home-clean .log-my-trips {
-  height: 31px;
-  left: 100px;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  text-decoration: underline;
-  top: 175px;
-  width: 144px;
-}
-
-.st-home-clean .the-amazing-impact-o {
-  height: 39px;
-  left: 599px;
-  letter-spacing: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 29px;
-  width: 677px;
-}
-
-.st-home-clean .path-205 {
-  height: 14px;
-  left: 134px;
-  top: 325px;
-  width: 7px;
-}
-
-.st-home-clean .path-206 {
-  height: 14px;
-  left: 101px;
-  top: 325px;
-  width: 14px;
 }
 
 .st-home-clean .path-207 {
@@ -438,6 +437,11 @@
   height: 22px;
   margin-left: 1px;
   width: 1400px;
+}
+
+.st-home-clean .group {
+  align-items: flex-start;
+  display: flex;
 }
 
 .st-home-clean .path {

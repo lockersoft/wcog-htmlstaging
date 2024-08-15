@@ -1,0 +1,493 @@
+/* screen - st-trip-diary */
+
+.st-trip-diary {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 952px;
+  overflow: hidden;
+  width: 1400px;
+}
+
+.st-trip-diary .overlap-group8 {
+  height: 815px;
+  margin-right: -37px;
+  margin-top: 19px;
+  position: relative;
+  width: 1339px;
+}
+
+.st-trip-diary .overlap-group11 {
+  height: 758px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1177px;
+}
+
+.st-trip-diary .button-1 {
+  align-items: flex-end;
+  background-color: var(--green-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 33px;
+  justify-content: flex-end;
+  left: 1061px;
+  min-width: 116px;
+  padding: 6px 16px;
+  position: absolute;
+  top: 5px;
+}
+
+.st-trip-diary .my-account {
+  letter-spacing: 0;
+  line-height: 12px;
+  min-height: 16px;
+  min-width: 82px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.st-trip-diary .overlap-group9 {
+  height: 222px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1093px;
+}
+
+.st-trip-diary .overlap-group7 {
+  height: 184px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  width: 878px;
+}
+
+.st-trip-diary .title {
+  left: 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 113px;
+  white-space: nowrap;
+  width: 803px;
+}
+
+.st-trip-diary .perks {
+  display: flex;
+  height: 184px;
+  left: 520px;
+  position: absolute;
+  top: 0;
+  width: 106px;
+}
+
+.st-trip-diary .rideshare {
+  display: flex;
+  height: 81px;
+  left: 777px;
+  position: absolute;
+  top: 0;
+  width: 101px;
+}
+
+.st-trip-diary .rideshare-1 {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 9px;
+  margin-top: 1px;
+  white-space: nowrap;
+  width: 72px;
+}
+
+.st-trip-diary .overlap-group7-item {
+  display: flex;
+  height: 119px;
+  left: 703px;
+  position: absolute;
+  top: 0;
+  width: 91px;
+}
+
+.st-trip-diary .component-14 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  left: 614px;
+  min-height: 125px;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
+.st-trip-diary .rectangle-401 {
+  background-color: var(--white);
+  height: 93px;
+  left: 0;
+  opacity: 0.0;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
+.st-trip-diary .bike-classes {
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 14px;
+  opacity: 0.0;
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.st-trip-diary .smart-trips_logo {
+  height: 62px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 136px;
+}
+
+.st-trip-diary .your-next-milestone-reward {
+  height: 34px;
+  left: 819px;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 188px;
+  white-space: nowrap;
+  width: 274px;
+}
+
+.st-trip-diary .overlap-group2 {
+  height: 551px;
+  left: 0;
+  position: absolute;
+  top: 207px;
+  width: 749px;
+}
+
+.st-trip-diary .april-calendar {
+  height: 502px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 49px;
+  width: 749px;
+}
+
+.st-trip-diary .rectangle-1447 {
+  background-color: var(--finn);
+  height: 49px;
+  left: 3px;
+  position: absolute;
+  top: 1px;
+  width: 741px;
+}
+
+.st-trip-diary .name {
+  color: var(--white);
+  font-family: var(--font-family-lato);
+  font-size: 24px;
+  font-weight: 700;
+  height: 34px;
+  left: 37px;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 274px;
+}
+
+.st-trip-diary .rectangle-1448 {
+  background-color: var(--citrus);
+  height: 85px;
+  left: 109px;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  position: absolute;
+  top: 77px;
+  width: 107px;
+}
+
+.st-trip-diary .trip-field {
+  height: 386px;
+  left: 179px;
+  object-fit: cover;
+  position: absolute;
+  top: 116px;
+  width: 400px;
+}
+
+.st-trip-diary .rectangle-1449 {
+  background-color: var(--white);
+  height: 33px;
+  left: 204px;
+  position: absolute;
+  top: 134px;
+  width: 123px;
+}
+
+.st-trip-diary .monday-april-01 {
+  left: 209px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 141px;
+  white-space: nowrap;
+}
+
+.st-trip-diary .events-container {
+  height: 60px;
+  left: 891px;
+  position: absolute;
+  top: 15px;
+  width: 80px;
+}
+
+.st-trip-diary .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 819px;
+  min-height: 583px;
+  position: absolute;
+  top: 232px;
+  width: 520px;
+}
+
+.st-trip-diary .image-1 {
+  height: 60px;
+  object-fit: cover;
+  width: 394px;
+}
+
+.st-trip-diary .youve-logged-947-tr {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-top: 10px;
+  min-height: 65px;
+  width: 373px;
+}
+
+.st-trip-diary .very-nicely-done {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-top: 3px;
+  min-height: 113px;
+  width: 385px;
+}
+
+.st-trip-diary .overlap-group-container {
+  height: 314px;
+  margin-top: 18px;
+  position: relative;
+  width: 520px;
+}
+
+.st-trip-diary .overlap-group3 {
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 98px;
+}
+
+.st-trip-diary .dollars-saved {
+  height: 34px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  width: 98px;
+}
+
+.st-trip-diary .price {
+  height: 34px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 25px;
+  width: 98px;
+}
+
+.st-trip-diary .overlap-group4 {
+  height: 314px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 520px;
+}
+
+.st-trip-diary .view-all-of-your-ind {
+  color: var(--green-blue);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  height: 114px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 69px;
+  width: 337px;
+}
+
+.st-trip-diary .calories-burned {
+  height: 34px;
+  left: 145px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  width: 124px;
+}
+
+.st-trip-diary .text-1 {
+  left: 146px;
+  width: 124px;
+}
+
+.st-trip-diary .name-1 {
+  height: 34px;
+  left: 287px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  width: 98px;
+}
+
+.st-trip-diary .text-2 {
+  left: 288px;
+  width: 98px;
+}
+
+.st-trip-diary .calories-are-calcul {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xxs);
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 13px;
+  position: absolute;
+  top: 250px;
+  width: 312px;
+}
+
+.st-trip-diary .hand_holding_iphone_1 {
+  height: 262px;
+  left: 206px;
+  object-fit: cover;
+  position: absolute;
+  top: 52px;
+  width: 314px;
+}
+
+.st-trip-diary .overlap-group6 {
+  height: 80px;
+  position: relative;
+  width: 1401px;
+}
+
+.st-trip-diary .path-205 {
+  left: 134px;
+  width: 7px;
+}
+
+.st-trip-diary .path-206 {
+  left: 101px;
+  width: 14px;
+}
+
+.st-trip-diary .base-1 {
+  background-color: var(--ship-gray);
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1401px;
+}
+
+.st-trip-diary .fa-qs-contact-u {
+  left: 166px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 31px;
+  white-space: nowrap;
+}
+
+.st-trip-diary .subscribe {
+  display: flex;
+  height: 32px;
+  left: 933px;
+  position: absolute;
+  top: 23px;
+  width: 194px;
+}
+
+.st-trip-diary .app-store {
+  height: 52px;
+  left: 1144px;
+  object-fit: cover;
+  position: absolute;
+  top: 15px;
+  width: 206px;
+}
+
+.st-trip-diary .path-205-1 {
+  height: 14px;
+  left: 134px;
+  object-fit: cover;
+  position: absolute;
+  top: 34px;
+  width: 7px;
+}
+
+.st-trip-diary .path-206-1 {
+  height: 14px;
+  left: 101px;
+  object-fit: cover;
+  position: absolute;
+  top: 34px;
+  width: 14px;
+}
+
+.st-trip-diary .base-2 {
+  background-color: var(--citrus);
+  height: 22px;
+  width: 1400px;
+}
+
+.st-trip-diary .path {
+  height: 14px;
+  object-fit: cover;
+  position: absolute;
+  top: 33px;
+}
+
+.st-trip-diary .text {
+  height: 34px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 25px;
+}

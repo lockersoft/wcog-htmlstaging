@@ -1,0 +1,480 @@
+/* screen - st-perks */
+
+.st-perks {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  overflow: hidden;
+  width: 1400px;
+}
+
+.st-perks .flex-row {
+  height: 868px;
+  margin-right: -15.15px;
+  margin-top: 19px;
+  min-width: 1317px;
+}
+
+.st-perks .flex-col {
+  flex-direction: column;
+  min-height: 861px;
+  width: 703px;
+}
+
+.st-perks .overlap-group11 {
+  height: 449px;
+  position: relative;
+  width: 703px;
+}
+
+.st-perks .overlap-group-container {
+  height: 435px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 703px;
+}
+
+.st-perks .overlap-group3 {
+  height: 406px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 703px;
+}
+
+.st-perks .overlap-group2 {
+  height: 255px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  width: 703px;
+}
+
+.st-perks .name {
+  height: 34px;
+  left: 224px;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 221px;
+  white-space: nowrap;
+  width: 133px;
+}
+
+.st-perks .record-your-smart-tr {
+  color: #030303;
+  font-family: var(--font-family-lato);
+  font-size: 18px;
+  font-weight: 700;
+  height: 60px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 166px;
+  width: 575px;
+}
+
+.st-perks .perks {
+  display: flex;
+  height: 184px;
+  left: 520px;
+  position: absolute;
+  top: 0;
+  width: 106px;
+}
+
+.st-perks .component-14-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  left: 614px;
+  min-height: 125px;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
+.st-perks .rectangle-401 {
+  background-color: var(--white);
+  height: 93px;
+  left: 0;
+  opacity: 0.0;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
+.st-perks .bike-classes {
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 14px;
+  opacity: 0.0;
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.st-perks .title {
+  left: 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 128px;
+  white-space: nowrap;
+  width: 319px;
+}
+
+.st-perks .navkiran-gill {
+  height: 154px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 252px;
+  width: 204px;
+}
+
+.st-perks .smart-trips_logo {
+  height: 62px;
+  left: 2px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 136px;
+}
+
+.st-perks .overlap-group9 {
+  height: 154px;
+  left: 224px;
+  position: absolute;
+  top: 281px;
+  width: 365px;
+}
+
+.st-perks .component-15-2 {
+  display: flex;
+  height: 107px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 356px;
+}
+
+.st-perks .make-at-least-five-s {
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-bottom: -2px;
+  margin-right: -2px;
+  overflow: hidden;
+  width: 356px;
+}
+
+.st-perks .name-1 {
+  color: var(--dove-gray);
+  font-family: var(--font-family-helveticaneue-regular);
+  font-size: 10px;
+  font-weight: 400;
+  height: 52px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 10px;
+  position: absolute;
+  top: 102px;
+  width: 365px;
+}
+
+.st-perks .milestones {
+  height: 34px;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 415px;
+  white-space: nowrap;
+  width: 133px;
+}
+
+.st-perks .overlap-group7 {
+  height: 67px;
+  margin-top: 4px;
+  position: relative;
+  width: 604px;
+}
+
+.st-perks .discounts {
+  height: 34px;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 33px;
+  white-space: nowrap;
+  width: 133px;
+}
+
+.st-perks .each-time-you-make-1 {
+  height: 41px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  width: 604px;
+}
+
+.st-perks .overlap-group8 {
+  height: 115px;
+  margin-left: 2px;
+  margin-top: 3px;
+  position: relative;
+  width: 587px;
+}
+
+.st-perks .local-businesses-thr {
+  height: 89px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  width: 587px;
+}
+
+.st-perks .span1 {
+  color: var(--dove-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+}
+
+.st-perks .leaders {
+  height: 34px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 81px;
+  white-space: nowrap;
+  width: 133px;
+}
+
+.st-perks .overlap-group10 {
+  height: 83px;
+  margin-top: 3px;
+  position: relative;
+  width: 575px;
+}
+
+.st-perks .emergency-ride-home {
+  height: 34px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 49px;
+  white-space: nowrap;
+  width: 297px;
+}
+
+.st-perks .making-200-smart-tri {
+  height: 81px;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  width: 573px;
+}
+
+.st-perks .take-a-free-taxi-rid {
+  height: 134px;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-top: 3px;
+  width: 575px;
+}
+
+.st-perks .flex-col-1 {
+  align-self: flex-end;
+  gap: 50px;
+  min-height: 863px;
+  width: 614px;
+}
+
+.st-perks .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 129px;
+  min-width: 474px;
+}
+
+.st-perks .overlap-group5 {
+  align-self: flex-end;
+  height: 119px;
+  position: relative;
+  width: 175px;
+}
+
+.st-perks .rideshare {
+  display: flex;
+  height: 81px;
+  left: 74px;
+  position: absolute;
+  top: 0;
+  width: 101px;
+}
+
+.st-perks .rideshare-1 {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 9px;
+  margin-top: 1px;
+  white-space: nowrap;
+  width: 72px;
+}
+
+.st-perks .overlap-group5-item {
+  display: flex;
+  height: 119px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 91px;
+}
+
+.st-perks .events-container {
+  height: 60px;
+  margin-left: 13px;
+  margin-top: 10px;
+  position: relative;
+  width: 80px;
+}
+
+.st-perks .button-1 {
+  align-items: flex-end;
+  background-color: var(--green-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 33px;
+  justify-content: flex-end;
+  margin-left: 12px;
+  min-width: 84px;
+  padding: 6px 18px;
+}
+
+.st-perks .button-1-1 {
+  align-items: flex-end;
+  background-color: var(--green-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 33px;
+  justify-content: flex-end;
+  margin-left: 26px;
+  min-width: 84px;
+  padding: 6px 15px;
+}
+
+.st-perks .overlap-group6 {
+  height: 684px;
+  margin-left: 1px;
+  position: relative;
+  width: 613px;
+}
+
+.st-perks .path-209 {
+  height: 630px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 613px;
+}
+
+.st-perks .walkers {
+  height: 509px;
+  left: 266px;
+  object-fit: cover;
+  position: absolute;
+  top: 64px;
+  width: 298px;
+}
+
+.st-perks .more-reasons-to-make-smart-trips {
+  color: var(--green-blue);
+  font-family: var(--font-family-lato);
+  font-size: 24px;
+  font-weight: 700;
+  height: 88px;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 2px;
+  width: 372px;
+}
+
+.st-perks .save-money-on-gas-c {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  height: 627px;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 57px;
+  width: 206px;
+}
+
+.st-perks .flex-col-2 {
+  margin-top: 16px;
+  min-height: 102px;
+  width: 1401px;
+}
+
+.st-perks .overlap-group3-1 {
+  align-items: flex-end;
+  background-color: var(--ship-gray);
+  display: flex;
+  height: 80px;
+  min-width: 1401px;
+  padding: 31px 101px;
+}
+
+.st-perks .path-206 {
+  height: 14px;
+  margin-bottom: 0.52px;
+  object-fit: cover;
+  width: 14px;
+}
+
+.st-perks .path-205 {
+  height: 14px;
+  margin-bottom: 1px;
+  margin-left: 19px;
+  object-fit: cover;
+  width: 7px;
+}
+
+.st-perks .fa-qs-contact-u {
+  align-self: flex-start;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: 25px;
+  min-height: 16px;
+  white-space: nowrap;
+}
+
+.st-perks .base-1 {
+  background-color: var(--citrus);
+  height: 22px;
+  margin-left: 1px;
+  width: 1400px;
+}

@@ -89,6 +89,16 @@
   width: 89px;
 }
 
+.st-bike .rectangle-401 {
+  background-color: var(--white);
+  height: 93px;
+  left: 0;
+  opacity: 0.0;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
 .st-bike .bike-classes {
   left: 10px;
   line-height: 14px;
@@ -282,15 +292,6 @@
   margin-left: 13px;
   margin-top: 10px;
   position: relative;
-  width: 80px;
-}
-
-.st-bike .events {
-  display: flex;
-  height: 60px;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 80px;
 }
 

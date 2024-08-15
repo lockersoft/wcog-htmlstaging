@@ -160,6 +160,16 @@
   width: 89px;
 }
 
+.st-rideshare .rectangle-401 {
+  background-color: var(--white);
+  height: 93px;
+  left: 0;
+  opacity: 0.0;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
 .st-rideshare .bike-classes {
   left: 10px;
   letter-spacing: 0;
@@ -200,15 +210,6 @@
   width: 72px;
 }
 
-.st-rideshare .overlap-group3-item {
-  display: flex;
-  height: 119px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 91px;
-}
-
 .st-rideshare .rideshare-2 {
   width: 73px;
 }
@@ -218,15 +219,6 @@
   left: 891px;
   position: absolute;
   top: 10px;
-  width: 80px;
-}
-
-.st-rideshare .events {
-  display: flex;
-  height: 60px;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 80px;
 }
 

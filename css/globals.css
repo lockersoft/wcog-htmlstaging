@@ -10,6 +10,12 @@
   src: url("../fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "HelveticaNeue-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/HelveticaNeue Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Arial-Regular";
   font-style: normal;
   font-weight: 400;
@@ -46,10 +52,6 @@
   width: 1400px;
 }
 
-.span-1 {
-  text-decoration: underline;
-}
-
 .perks-1 {
   height: 16px;
   letter-spacing: 0;
@@ -58,26 +60,6 @@
   margin-top: 1px;
   white-space: nowrap;
   width: 43px;
-}
-
-.events-1 {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 11px;
-  margin-top: 1px;
-  white-space: nowrap;
-  width: 50px;
-}
-
-.bus {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 8px;
-  margin-top: 1px;
-  white-space: nowrap;
-  width: 27px;
 }
 
 .bike {
@@ -93,16 +75,6 @@
 .overlap-group {
   height: 93px;
   position: relative;
-  width: 89px;
-}
-
-.rectangle-401 {
-  background-color: var(--white);
-  height: 93px;
-  left: 0;
-  opacity: 0.0;
-  position: absolute;
-  top: 0;
   width: 89px;
 }
 
@@ -126,6 +98,25 @@
   white-space: nowrap;
 }
 
+.overlap-group3-item {
+  display: flex;
+  height: 119px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 91px;
+}
+
+.bus {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 8px;
+  margin-top: 1px;
+  white-space: nowrap;
+  width: 27px;
+}
+
 .bus-1 {
   height: 16px;
   letter-spacing: 0;
@@ -134,6 +125,25 @@
   margin-top: 1px;
   white-space: nowrap;
   width: 27px;
+}
+
+.events {
+  display: flex;
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.events-1 {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 11px;
+  margin-top: 1px;
+  white-space: nowrap;
+  width: 50px;
 }
 
 .sign-in {
@@ -157,16 +167,24 @@
   white-space: nowrap;
 }
 
-.component-14-1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  left: 94px;
-  min-height: 125px;
-  position: absolute;
-  top: 0;
-  width: 89px;
+.span-1 {
+  text-decoration: underline;
+}
+
+.download-the-smart-t {
+  color: var(--white);
+  flex: 1;
+  font-family: var(--font-family-arial-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-bottom: -4px;
+  margin-right: -2px;
+  margin-top: 2px;
+  text-align: right;
+  white-space: nowrap;
+  width: 194px;
 }
 
 .bike-1 {
@@ -189,4 +207,10 @@
 .bike-2 {
   letter-spacing: 0;
   white-space: nowrap;
+}
+
+.flex-col-3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 }

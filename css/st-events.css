@@ -1,0 +1,359 @@
+/* screen - st-events */
+
+.st-events {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1094px;
+  overflow: hidden;
+  width: 1400px;
+}
+
+.st-events .flex-row {
+  height: 199px;
+  margin-right: 27.0px;
+  margin-top: 19px;
+  min-width: 1177px;
+}
+
+.st-events .flex-col {
+  flex-direction: column;
+  gap: 72px;
+  min-height: 177px;
+  width: 319px;
+}
+
+.st-events .smart-trips_logo {
+  height: 62px;
+  object-fit: cover;
+  width: 136px;
+}
+
+.st-events .title {
+  letter-spacing: 0;
+  line-height: 44px;
+  margin-bottom: -1px;
+  min-height: 43px;
+  white-space: nowrap;
+}
+
+.st-events .overlap-group4 {
+  align-self: flex-end;
+  height: 184px;
+  margin-left: 201px;
+  position: relative;
+  width: 183px;
+}
+
+.st-events .perks {
+  display: flex;
+  height: 184px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 106px;
+}
+
+.st-events .component-14-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  left: 94px;
+  min-height: 125px;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
+.st-events .rectangle-401 {
+  background-color: var(--white);
+  height: 93px;
+  left: 0;
+  opacity: 0.0;
+  width: 89px;
+}
+
+.st-events .bike-classes {
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 14px;
+  opacity: 0.0;
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+}
+
+.st-events .overlap-group3 {
+  height: 119px;
+  margin-top: 15px;
+  position: relative;
+  width: 175px;
+}
+
+.st-events .rideshare {
+  display: flex;
+  height: 81px;
+  left: 74px;
+  position: absolute;
+  top: 0;
+  width: 101px;
+}
+
+.st-events .rideshare-1 {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 9px;
+  margin-top: 1px;
+  white-space: nowrap;
+  width: 72px;
+}
+
+.st-events .events-container {
+  height: 60px;
+  margin-left: 13px;
+  margin-top: 15px;
+  position: relative;
+  width: 80px;
+}
+
+.st-events .button-1 {
+  align-items: flex-end;
+  background-color: var(--green-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 33px;
+  justify-content: flex-end;
+  margin-left: 12px;
+  margin-top: 5px;
+  min-width: 84px;
+  padding: 6px 18px;
+}
+
+.st-events .button-1-1 {
+  margin-left: 26px;
+  margin-top: 5px;
+  min-width: 84px;
+  padding: 6px 15px;
+}
+
+.st-events .flex-col-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.0px;
+  margin-top: 6px;
+  min-height: 850px;
+  width: 1401px;
+}
+
+.st-events .overlap-group2 {
+  height: 659px;
+  margin-right: 31.0px;
+  position: relative;
+  width: 1170px;
+}
+
+.st-events .path-205 {
+  height: 14px;
+  left: 33px;
+  object-fit: cover;
+  position: absolute;
+  top: 643px;
+  width: 7px;
+}
+
+.st-events .path-206 {
+  height: 14px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 643px;
+  width: 14px;
+}
+
+.st-events .climate-action-group-ride-3 {
+  height: 659px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1170px;
+}
+
+.st-events .rectangle-1450 {
+  background-color: var(--white);
+  height: 422px;
+  left: 776px;
+  opacity: 0.85;
+  width: 265px;
+}
+
+.st-events .if-you-never-learned {
+  color: var(--ship-gray);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  height: 201px;
+  left: 809px;
+  letter-spacing: 0;
+  line-height: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 134px;
+  width: 192px;
+}
+
+.st-events .free-bike-class {
+  height: 34px;
+  left: 809px;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: absolute;
+  top: 88px;
+  white-space: nowrap;
+  width: 274px;
+}
+
+.st-events .rectangle-1451 {
+  background-color: var(--citrus);
+  height: 81px;
+  left: 775px;
+  width: 266px;
+}
+
+.st-events .date {
+  color: var(--white);
+  font-family: var(--font-family-lato);
+  font-size: 32px;
+  font-weight: 700;
+  height: 34px;
+  left: 805px;
+  letter-spacing: 0;
+  line-height: 44px;
+  overflow: hidden;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+  width: 274px;
+}
+
+.st-events .button-1-2 {
+  left: 805px;
+  min-width: 136px;
+  padding: 6px 14px;
+  position: absolute;
+  top: 353px;
+}
+
+.st-events .register-here {
+  letter-spacing: 0;
+  line-height: 12px;
+  min-height: 16px;
+  min-width: 100px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.st-events .arrow-right {
+  background-image: url(../img/path-10@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 49px;
+  left: 1091px;
+  position: absolute;
+  top: 304px;
+  width: 49px;
+}
+
+.st-events .arrow-right-1 {
+  display: flex;
+  height: 49px;
+  left: 37px;
+  position: absolute;
+  top: 304px;
+  transform: rotate(180deg);
+  width: 49px;
+}
+
+.st-events .path-10 {
+  flex: 1;
+  object-fit: cover;
+  transform: rotate(-180deg);
+  width: 49px;
+}
+
+.st-events .dots {
+  align-items: flex-start;
+  display: flex;
+  gap: 25px;
+  height: 6px;
+  left: 558px;
+  min-width: 99px;
+  position: absolute;
+  top: 629px;
+}
+
+.st-events .ellipse {
+  background-color: var(--white);
+  border-radius: 3px;
+  height: 6px;
+  width: 6px;
+}
+
+.st-events .overlap-group5 {
+  align-items: flex-end;
+  background-color: var(--ship-gray);
+  display: flex;
+  height: 80px;
+  margin-top: 89px;
+  min-width: 1401px;
+  padding: 31px 101px;
+}
+
+.st-events .path-212 {
+  height: 14px;
+  margin-bottom: 0.52px;
+  object-fit: cover;
+  width: 14px;
+}
+
+.st-events .path-205-1 {
+  height: 14px;
+  margin-bottom: 1px;
+  margin-left: 19px;
+  object-fit: cover;
+  width: 7px;
+}
+
+.st-events .fa-qs-contact-u {
+  align-self: flex-start;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: 25px;
+  min-height: 16px;
+  white-space: nowrap;
+}
+
+.st-events .base-1 {
+  background-color: var(--citrus);
+  height: 22px;
+  margin-right: 1.0px;
+  width: 1400px;
+}
+
+.st-events .button-1-3 {
+  align-items: flex-end;
+  background-color: var(--green-blue);
+  border-radius: 4px;
+  display: flex;
+  height: 33px;
+  justify-content: flex-end;
+}
+
+.st-events .rectangle {
+  position: absolute;
+  top: 0;
+}
