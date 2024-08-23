@@ -1,32 +1,38 @@
-name: Deploy to production
+name: Deploy to DreamHost via sshpass
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up SSH key
-        run: |
-          env
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p 22 whatcomhtml.lockersoft.dev >> ~/.ssh/known_hosts
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - uses: actions/checkout@v2
-      - uses: contention/rsync-deployments@v2.0.0
-        with:
-          FLAGS: -avzr --delete
-          EXCLUDES: --exclude .htaccess --exclude /uploads/
-          USER: dh_qp73ft
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Add SSH Key to known_hosts
+        env:
+          KNOWN_HOSTS_ENTRY: ${{ secrets.KNOWN_HOSTS_ENTRY }}
           HOST: whatcomhtml.lockersoft.dev
-          LOCALPATH: /dist/
-          REMOTEPATH: ~/dh_qp73ft/whatcomhtml.lockersoft.dev/
-          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$KNOWN_HOSTS_ENTRY" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Deploy via rsync and sshpass
+        env:
+          USERNAME: dh_qp73ft
+          PASSWORD: 3687wcog
+          HOST: whatcomhtml.lockersoft.dev
+          DEPLOY_PATH: whatcomhtml.lockersoft.dev/ # Change this to your project path
+        run: |
+          sshpass -p "$PASSWORD" rsync -avz --delete --exclude .git/ ./ $USERNAME@$HOST:$DEPLOY_PATH
+
 
 
 #name: remote ssh command
