@@ -18,7 +18,7 @@ jobs:
       - name: Add SSH Key to known_hosts
         env:
           KNOWN_HOSTS_ENTRY: ${{ secrets.KNOWN_HOSTS_ENTRY }}
-          HOST: whatcomhtml.lockersoft.dev
+          HOST: ${{ secrets.HOST }}
         run: |
           mkdir -p ~/.ssh
           echo "$KNOWN_HOSTS_ENTRY" >> ~/.ssh/known_hosts
@@ -26,13 +26,12 @@ jobs:
 
       - name: Deploy via rsync and sshpass
         env:
-          USERNAME: dh_qp73ft
-          PASSWORD: 3687wcog
-          HOST: whatcomhtml.lockersoft.dev
-          DEPLOY_PATH: whatcomhtml.lockersoft.dev/ # Change this to your project path
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          HOST: ${{ secrets.HOST }}
+          DEPLOY_PATH: whatcomhtml.lockersoft.dev/test/ # Change this to your project path
         run: |
           sshpass -p "$PASSWORD" rsync -avz --delete --exclude .git/ ./ $USERNAME@$HOST:$DEPLOY_PATH
-
 
 
 #name: remote ssh command
