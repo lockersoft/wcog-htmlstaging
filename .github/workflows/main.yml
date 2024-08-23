@@ -31,7 +31,7 @@ jobs:
           HOST: ${{ secrets.HOST }}
           DEPLOY_PATH: whatcomhtml.lockersoft.dev/test/ # Change this to your project path
         run: |
-          sshpass -p "$PASSWORD" rsync -avz --delete --exclude .git/ ./ $USERNAME@$HOST:$DEPLOY_PATH
+          sshpass -p "$PASSWORD" rsync -avz -e "ssh -o StrictHostKeyChecking=no" --delete --exclude .git/ ./ $USERNAME@$HOST:$DEPLOY_PATH
 
 
 #name: remote ssh command
