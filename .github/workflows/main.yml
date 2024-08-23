@@ -9,6 +9,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up SSH key
+        run: |
+          env
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 22 whatcomhtml.lockersoft.dev >> ~/.ssh/known_hosts
+
       - uses: actions/checkout@v2
       - uses: contention/rsync-deployments@v2.0.0
         with:
