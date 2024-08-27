@@ -49,4 +49,5 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         key: ${{ secrets.WCOG_HTML_SECRET }}
         port: 22
-        script: whoami
+        script: |
+          whoami
