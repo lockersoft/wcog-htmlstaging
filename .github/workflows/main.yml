@@ -46,7 +46,7 @@ jobs:
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: whatcomhtml.lockersoft.dev
-        USERNAME: ${{ secrets.USERNAME }}
+        username: ${{ secrets.USERNAME }}
         key: ${{ secrets.WCOG_HTML_SECRET }}
         port: 22
         script: |
