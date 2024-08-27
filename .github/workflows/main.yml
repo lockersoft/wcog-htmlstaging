@@ -1,52 +1,52 @@
-name: Deploy to DreamHost via sshpass
+#name: Deploy to DreamHost via sshpass
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#
+#jobs:
+#  deploy:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#
+#      - name: Install sshpass
+#        run: sudo apt-get install -y sshpass
+#
+#      - name: Add SSH Key to known_hosts
+#        env:
+#          KNOWN_HOSTS_ENTRY: ${{ secrets.KNOWN_HOSTS_ENTRY }}
+#          HOST: ${{ secrets.HOST }}
+#        run: |
+#          mkdir -p ~/.ssh
+#          echo "$KNOWN_HOSTS_ENTRY" >> ~/.ssh/known_hosts
+#          chmod 644 ~/.ssh/known_hosts
+#
+#      - name: Deploy via rsync and sshpass
+#        env:
+#          USERNAME: ${{ secrets.USERNAME }}
+#          PASSWORD: ${{ secrets.PASSWORD }}
+#          HOST: ${{ secrets.HOST }}
+#          DEPLOY_PATH: whatcomhtml.lockersoft.dev/ # Change this to your project path
+#        run: |
+#          sshpass -p "$PASSWORD" rsync -avz -e "ssh -o StrictHostKeyChecking=no" --delete --exclude .git/ ./ $USERNAME@$HOST:$DEPLOY_PATH
 
-on:
-  push:
-    branches:
-      - main
 
+name: remote ssh command
+on: [push]
 jobs:
-  deploy:
+
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install sshpass
-        run: sudo apt-get install -y sshpass
-
-      - name: Add SSH Key to known_hosts
-        env:
-          KNOWN_HOSTS_ENTRY: ${{ secrets.KNOWN_HOSTS_ENTRY }}
-          HOST: ${{ secrets.HOST }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$KNOWN_HOSTS_ENTRY" >> ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts
-
-      - name: Deploy via rsync and sshpass
-        env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          HOST: ${{ secrets.HOST }}
-          DEPLOY_PATH: whatcomhtml.lockersoft.dev/ # Change this to your project path
-        run: |
-          sshpass -p "$PASSWORD" rsync -avz -e "ssh -o StrictHostKeyChecking=no" --delete --exclude .git/ ./ $USERNAME@$HOST:$DEPLOY_PATH
-
-
-#name: remote ssh command
-##on: [push]
-#jobs:
-
-#  build:
-#    name: Build
- #   runs-on: ubuntu-latest
-  #  steps:
-   # - name: executing remote ssh commands using password
-    #  uses: appleboy/ssh-action@v1.0.3
-     # with:
-      #  host: whatcomhtml.lockersoft.dev
-       # username: dh_qp73ft
-        #password: ${{ secrets.SSH_KEY }}
-    #    port: 22
-     #   script: whoami
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: whatcomhtml.lockersoft.dev
+        username: dh_qp73ft
+        password: ${{ secrets.WCOG_HTML_SECRET}}
+        port: 22
+        script: whoami
