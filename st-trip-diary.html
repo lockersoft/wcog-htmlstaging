@@ -1,139 +1,126 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8"/>
     <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
     <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
-    <meta name="viewport" content="width=1400, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="css/st-trip-diary.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="css/globals.css"/>
+    <!--PAGE SPECIFIC CSS-->
+    <link rel="stylesheet" type="text/css" href="css/st-trip-diary.css"/>
+    <!--NAV/FOOTER CSS-->
+    <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <title></title>
-  </head>
-  <body style="margin: 0; background: #ffffff">
-    <input type="hidden" id="anPageName" name="page" value="st-trip-diary" />
-    <div class="container-center-horizontal">
-      <div class="st-trip-diary screen">
-        <div class="base"></div>
-        <div class="overlap-group8">
-          <div class="overlap-group11">
-            <div class="button-1"><div class="my-account arial-bold-white-12px">MY ACCOUNT</div></div>
-            <div class="overlap-group9">
-              <div class="overlap-group7">
-                <h1 class="title lato-bold-green-blue-34px">Welcome to your Trip Diary, Julie</h1>
-                <div class="perks"><div class="perks-1 arial-regular-normal-white-12px">PERKS</div></div>
-                <div class="rideshare"><div class="rideshare-1 arial-regular-normal-white-12px">RIDESHARE</div></div>
-                <div class="overlap-group7-item"><div class="bus arial-regular-normal-white-12px">BUS</div></div>
-                <div class="component-14">
-                  <div class="bike arial-regular-normal-white-12px">BIKE</div>
-                  <div class="overlap-group arial-regular-normal-green-blue-12px">
-                    <div class="rectangle-401"></div>
-                    <div class="riding-tips">riding tips</div>
-                    <div class="bike-classes">bike classes</div>
-                    <div class="self-guidedrides">self-guided<br />rides</div>
-                  </div>
+</head>
+<body>
+<div class="base"></div>
+<!--OUTER WRAPPER-->
+<div class="outer">
+    <!--CONTENT WRAPPER-->
+    <div class="wrapper">
+        <!--HEADER-->
+        <header class="header">
+            <!--LOGO-->
+            <a href="index.html"><img class="smart-trips_logo" src="img/smarttrips-logo-1@1x.png" alt="SmartTrips_logo"/></a>
+            <!--MOBILE MENU ICON-->
+            <input id="menu-btn" class="menu-btn" type="checkbox">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--NAV-->
+            <nav>
+                <ul class="menu">
+                    <li><a href="st-perks.html">PERKS</a></li>
+                    <li><a href="st-bike.html">BIKE</a></li>
+                    <li><a href="st-bus.html">BUS</a></li>
+                    <li><a href="st-rideshare.html">RIDESHARE</a></li>
+                    <li><a href="st-events.html">EVENTS</a></li>
+                    <!--SIGN IN / SIGN UP will not display as long as st-events.css is the only stylesheet used on this page-->
+                    <!--The same this can be achieved by removing the remove-through-css class from all other pages-->
+                    <li><a class="remove-through-css button_blue" href="#">SIGN IN</a></li>
+                    <li><a class="remove-through-css button_blue" href="#">SIGN UP</a></li>
+                    <li><a class="button_blue" href="#">MY ACCOUNT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="two-col-span"><!-- ALL CONTENT GOES BELOW THIS-->
+            <!--MAIN CONTENT-->
+            <div>
+                <h1 class="page-title">Welcome to your Trip Diary, Julie</h1>
+                <div class="grid trip-diary-grid-two-column trip-diary">
+
+                    <div class="calendar-overlay grid">
+                        <div class="grid calendar-banner">
+                            <span>APRIL 2024</span>
+                        </div>
+                        <img class="calendar" src="img/april-calendar@1x.png" alt="Calendar">
+                        <img class="calendar-details" src="img/trip-field@1x.png" alt="Trip tracking form">
+                    </div>
+
+                    <h2>Your next milestone reward</h2>
+                    <img src="img/image-1@1x.png" alt="Number of Trip miles earned">
+                    <p class="font-size-xlm">You've logged <span>947</span> trips since you joined SmartTrips on
+                        <span>July 03, 2006</span></p>
+                    <h3>Very nicely done.</h3>
+                    <p class="trip-diary-stat-info">Each and every Smart Trip makes a difference&mdash;to your wallet,
+                        to your
+                        health, to your environment. Look below to get an idea of how much gas money
+                        you've saved, calories you've burned, and total miles you've logged!</p>
+
+                    <ul class="grid trip-diary-savings">
+                        <li class="text-green-blue">Dollars saved:</li>
+                        <li>$1,025.1</li>
+                        <li class="text-green-blue">Calories burned:</li>
+                        <li>183,000</li>
+                        <li class="text-green-blue">Miles logged:</li>
+                        <li>5,909</li>
+                    </ul>
+
+                    <div class="grid trip-diary-app">
+                        <a class="trip-diary-individual-stats" href="#"><b>View all of your individual stats.</b></a>
+                        <a class="trip-diary-program-stats" href="#"><b>View stats for the whole program.</b></a>
+                        <img class="image-trip-diary-iphone" src="img/hand-holding-iphone-1-1@1x.png"
+                             alt="Hand holding iPhone">
+                        <p class="text-green-blue trip-diary-app-info"><b>Want to log your trips on your phone instead?
+                            Download the app for <a href="#">iPhone</a> or <a href="#">Android.</a></b></p>
+                        <small>*Calories are calculated assuming a speed of 3.5 mph for walking, and 10
+                            mph for biking. The calorie total can be calculated for a 160 or 200 lb person
+                            (national average weights for women and men.)</small>
+                    </div>
                 </div>
-                <div class="perks"><div class="perks-1 arial-regular-normal-green-blue-12px">PERKS</div></div>
-                <div class="rideshare">
-                  <div class="rideshare-1 arial-regular-normal-green-blue-12px">RIDESHARE</div>
-                </div>
-                <div class="overlap-group7-item"><div class="bus-1 arial-regular-normal-green-blue-12px">BUS</div></div>
-                <div class="component-14 arial-regular-normal-green-blue-12px">
-                  <div class="bike">BIKE</div>
-                  <div class="overlap-group">
-                    <div class="rectangle-401"></div>
-                    <div class="riding-tips">riding tips</div>
-                    <div class="bike-classes">bike classes</div>
-                    <div class="self-guidedrides">self-guided<br />rides</div>
-                  </div>
-                </div>
-              </div>
-              <img class="smart-trips_logo" src="img/smarttrips-logo-2@1x.png" alt="SmartTrips_logo" />
-              <div class="your-next-milestone-reward lato-bold-green-blue-20px">Your next milestone reward</div>
             </div>
-            <div class="overlap-group2">
-              <img class="april-calendar" src="img/april-calendar@1x.png" alt="April calendar" />
-              <div class="rectangle-1447"></div>
-              <div class="name">APRIL 2024</div>
-              <div class="rectangle-1448"></div>
-              <img class="trip-field" src="img/trip-field@1x.png" alt="trip field" />
-              <div class="rectangle-1449"></div>
-              <div class="monday-april-01 lato-bold-green-blue-20px">Monday, April 01</div>
-            </div>
-            <div class="events-container">
-              <div class="events"><div class="events-1 arial-regular-normal-white-12px">EVENTS</div></div>
-              <div class="events"><div class="events-1 arial-regular-normal-green-blue-12px">EVENTS</div></div>
-            </div>
-          </div>
-          <div class="flex-col">
-            <img class="image-1" src="img/image-1@1x.png" alt="Image 1" />
-            <p class="youve-logged-947-tr">
-              <span class="lato-normal-ship-gray-16px">You’ve logged </span
-              ><span class="lato-bold-green-blue-16px">947</span
-              ><span class="lato-normal-ship-gray-16px"> trips since you joined SmartTrips on </span
-              ><span class="lato-bold-green-blue-16px">July 03, 2006</span
-              ><span class="lato-normal-ship-gray-16px">.</span>
-            </p>
-            <p class="very-nicely-done">
-              <span class="lato-bold-green-blue-20px">Very nicely done. </span><span> <br /></span
-              ><span class="lato-normal-ship-gray-14px"
-                >Each and every Smart Trip makes a difference—to your wallet, to your health, to your environment. Look
-                below to get an idea of how much gas money you’ve saved, calories you’ve burned, and total miles you’ve
-                logged!</span
-              >
-            </p>
-            <div class="overlap-group-container">
-              <div class="overlap-group3">
-                <div class="dollars-saved lato-bold-green-blue-14px">Dollars saved:</div>
-                <div class="price lato-bold-ship-gray-18px">$1,025.01</div>
-              </div>
-              <div class="overlap-group4">
-                <p class="view-all-of-your-ind">
-                  <span class="span-1 lato-bold-green-blue-14px"
-                    >View all of your individual stats. <br />View stats for the whole program.<br /></span
-                  ><span class="lato-bold-green-blue-14px"
-                    ><br />Want to log your trips on your phone instead?<br />Download the app for </span
-                  ><span class="span-1 lato-bold-green-blue-14px">iPhone</span
-                  ><span class="lato-bold-green-blue-14px"> or </span
-                  ><span class="span-1 lato-bold-green-blue-14px">Android.</span>
-                </p>
-                <div class="calories-burned lato-bold-green-blue-14px">Calories burned:</div>
-                <div class="text-1 text lato-bold-ship-gray-18px">183,000</div>
-                <div class="name-1 lato-bold-green-blue-14px">Miles logged:</div>
-                <div class="text-2 text lato-bold-ship-gray-18px">5,909</div>
-                <p class="calories-are-calcul">
-                  *Calories are calculated assuming a speed of 3.5 mph for walking, and 10 mph for biking. The calorie
-                  total can be calculated for a 160 or 200 lb person (national average weights for women and men.)
-                </p>
-                <img
-                  class="hand_holding_iphone_1"
-                  src="img/hand-holding-iphone-1-1@1x.png"
-                  alt="hand_holding_iphone_1"
-                />
-              </div>
-            </div>
-          </div>
+        </section><!-- ALL CONTENT GOES ABOVE THIS-->
+    </div><!--END CONTENT WRAPPER-->
+</div><!--END OUTER-->
+
+<footer class="grid">
+    <div class="grid grid-three-column footer-layout">
+        <div class="grid grid-two-column social-info">
+            <ul class="social-media-icons">
+                <li><a class="footer-instagram-icon" href="#"><img class="path-206 path" src="img/path-206-10@1x.png" alt="Path 206"/></a></li>
+                <li><a class="footer-facebook-icon" href="#"><img class="path-205 path" src="img/path-205-10@1x.png" alt="Path 205"/></a></li>
+            </ul>
+            <ul class="footer-info-links">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">EMPLOYERS</a></li>
+                <li><a href="#">YOUTH EDUCATION</a></li>
+            </ul>
         </div>
-        <div class="overlap-group6">
-          <img class="path-205 path" src="img/path-205-10@1x.png" alt="Path 205" />
-          <img class="path-206 path" src="img/path-206-10@1x.png" alt="Path 206" />
-          <div class="base-1"></div>
-          <p class="fa-qs-contact-u arial-bold-white-12px">
-            FAQs&nbsp;&nbsp; |&nbsp;&nbsp; CONTACT US&nbsp;&nbsp; |&nbsp;&nbsp; EMPLOYERS&nbsp;&nbsp; |&nbsp;&nbsp;
-            YOUTH EDUCATION
-          </p>
-          <div class="subscribe">
-            <p class="download-the-smart-t">Download the Smart Trips app <br />and log trips on your phone!</p>
-          </div>
-          <img class="app-store" src="img/app-store-1@1x.png" alt="app store" />
-          <img class="path-205-1" src="img/path-205-10@1x.png" alt="Path 205" />
-          <img class="path-206-1" src="img/path-206-10@1x.png" alt="Path 206" />
+        <div class="grid app-store-card">
+            <p>Download the Smart Trips app <br> and log trips on your
+                phone!</p>
+            <img class="app-store-icons" src="img/app-store-1@1x.png" alt="app store"/>
         </div>
-        <div class="base-2"></div>
-      </div>
     </div>
-  </body>
+</footer>
+
+<div class="base_bottom"></div>
+</body>
 </html>

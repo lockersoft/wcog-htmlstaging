@@ -1,190 +1,162 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
     <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
     <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
-    <meta name="viewport" content="width=1400, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="css/st-bike.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="css/globals.css"/>
+    <!--PAGE SPECIFIC CSS-->
+    <link rel="stylesheet" type="text/css" href="css/st-bike.css"/>
+    <!--NAV/FOOTER CSS-->
+    <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <title></title>
-  </head>
-  <body style="margin: 0; background: #ffffff">
-    <input type="hidden" id="anPageName" name="page" value="st-bike" />
-    <div class="container-center-horizontal">
-      <div class="st-bike screen">
-        <div class="base"></div>
-        <div class="flex-row flex">
-          <div class="flex-col flex">
-            <div class="overlap-group8">
-              <h1 class="bicycling-is lato-bold-green-blue-34px">Bicycling is…</h1>
-              <img class="smart-trips_logo" src="img/smarttrips-logo-2@1x.png" alt="SmartTrips_logo" />
-              <div class="overlap-group5">
-                <p class="convenient-walking lato-normal-ship-gray-14px-2">
-                  <span class="lato-bold-ship-gray-14px">Convenient. </span
-                  ><span class="lato-normal-ship-gray-14px"
-                    >Walking is limited by distance, and buses follow fixed routes and schedules. A bicycle can take you
-                    wherever you want to go, whenever you want.<br /></span
-                  ><span class="lato-bold-ship-gray-14px">Efficient.</span
-                  ><span class="lato-normal-ship-gray-14px">
-                    Peddling an easy 10 mph on city streets and trails, you can often cover short distances as quickly
-                    as you could drive in a car.<br /></span
-                  ><span class="lato-bold-ship-gray-14px">Healthy.</span
-                  ><span class="lato-normal-ship-gray-14px">
-                    Riding a bicycle is gentle exercise that’s good for your heart and easy on your joints. It’s also a
-                    great way to improve and maintain your balance.<br /></span
-                  ><span class="lato-bold-ship-gray-14px">Fun. </span
-                  ><span class="lato-normal-ship-gray-14px"
-                    >Feeling that easy, fluid motion and the breeze on your face is pure joy!<br /></span
-                  ><span class="lato-bold-ship-gray-14px">Popular</span
-                  ><span class="lato-normal-ship-gray-14px"
-                    >. Perhaps you’ve noticed - Bellingham and Whatcom County residents use their bicycles for
-                    transportation in much greater numbers than other places in Washington.</span
-                  >
-                </p>
-                <div class="perks"><div class="perks-1 arial-regular-normal-white-12px">PERKS</div></div>
-                <div class="component-14-2">
-                  <div class="bike arial-regular-normal-white-12px">BIKE</div>
-                  <div class="overlap-group arial-regular-normal-green-blue-12px">
-                    <div class="rectangle-401"></div>
-                    <div class="riding-tips">riding tips</div>
-                    <div class="bike-classes bike-2">bike classes</div>
-                    <div class="self-guidedrides">self-guided<br />rides</div>
-                  </div>
+</head>
+<body>
+<div class="base"></div>
+<!--OUTER WRAPPER-->
+<div class="outer">
+    <!--CONTENT WRAPPER-->
+    <div class="wrapper">
+        <!--HEADER-->
+        <header class="header">
+            <!--LOGO-->
+            <a href="index.html"><img class="smart-trips_logo" src="img/smarttrips-logo-1@1x.png" alt="SmartTrips_logo"/></a>
+            <!--MOBILE MENU ICON-->
+            <input id="menu-btn" class="menu-btn" type="checkbox">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--NAV-->
+            <nav>
+                <ul class="menu">
+                    <li><a href="st-perks.html">PERKS</a></li>
+                    <li><a class="active" href="st-bike.html">BIKE</a></li>
+                    <li><a href="st-bus.html">BUS</a></li>
+                    <li><a href="st-rideshare.html">RIDESHARE</a></li>
+                    <li><a href="st-events.html">EVENTS</a></li>
+                    <li><a class="button_blue" href="#">SIGN IN</a></li>
+                    <li><a class="button_blue" href="#">SIGN UP</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="two-col-span"><!-- ALL CONTENT GOES BELOW THIS-->
+            <!--MAIN CONTENT-->
+            <div>
+                <h1 class="page-title">Bicycling is...</h1>
+                <div class="grid grid-two-column bikes">
+
+                    <img class="image-bikes-buckling-helmet" src="img/images--evantide-2023-223@1x.png"
+                         alt="Boy buckling bicycle helmet">
+                    <p><b>Convenient.</b> Walking is limited by distance, and buses follow fixed routes and
+                        schedules. A bicycle can take you wherever you want to go, whenever you want.</p>
+                    <p><b>Efficient.</b> Peddling an easy 10 mph on city streets and trails, you can often
+                        cover short distances as quickly as you could drive in a car.
+                    </p>
+                    <p><b>Healthy.</b> Riding a bicycle is gentle exercise that’s good for your heart and easy
+                        on your joints. It’s also a great way to improve and maintain your balance.</p>
+                    <p><b>Fun.</b> Feeling that easy, fluid motion and the breeze on your face is pure joy!
+                    </p>
+                    <p><b>Popular.</b> Perhaps you’ve noticed - Bellingham and Whatcom County residents use
+                        their bicycles for transportation in much greater numbers than other places
+                        in Washington.</p>
+
+                    <h3>Want to give it a try?</h3>
+                    <ul class="custom-bullets">
+                        <li><a href="#">Biking Tips</a></li>
+                        <li><a href="#">Bikes on the Bus</a></li>
+                        <li><a href="#">Bike Classes and Education</a></li>
+                        <li><a href="#">Maps</a></li>
+                    </ul>
+
+                    <h3>Biking Tips</h3>
+                    <p>Bicycling is a great way to get around town for short trips and daily errands.
+                        You’ll save money on gas and car repairs while sneaking a bit of fun and exercise
+                        into your day. Check out these tips and tricks to share the road confidently and
+                        safely with vehicles, pedestrians, and other cyclists:
+                        <a href="#">Confident City Cycling Tips for Safe Cycling on City Streets</a>
+                        <span class="notes">(link to Confident City Cycling PDF - reformat the brochure vertically)</span>
+                    </p>
+                    <p>For videos showcasing traffic and safety tips, road positioning, signaling, starting,
+                        stopping and shifting <a href="#">visit the League of American Bicyclists YouTube channel.</a>
+                    </p>
+
+                    <h3>Bikes on the Bus</h3>
+                    <p>Want to get further than you can ride your bike? Consider pairing your bike with the bus.
+                        Each WTA bus has a rack that can accommodate up to three bicycles. Stop by the WTA
+                        transit center to practice using the bike rack on a parked bus.
+                        <a href="#">This video demonstrates how to load your bike onto the bus.</a>
+                        <span class="notes">(video embedded? Link to WTA YouTube?)</span>
+                    </p>
+                    <video poster="img/bus-video-1@1x.png" controls>
+                        <source src="video/myVideo.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Bike Classes and Education</h3>
+                    <p>Bike classes are available, free of charge, to individuals, families, and small
+                        groups. Classes include Learn to Ride, Confident City Cycling,
+                        Getting the Most out of your E-bike, Basic Bike Maintenance, and more.
+                        <a href="#">For a full list of classes and details, visit our Bike Class page.</a>
+                    </p>
+                    <img class="image-bikes-trail-riding" src="img/images--evantide-2023-208@1x.png"
+                         alt="Person riding bike on trail">
+                    <p>Smart Trips is available for presentations to any type of group interested in
+                        learning more about biking for transportation. Our presentations include details
+                        about how to dress for different types of weather, helpful accessories
+                        (lights, bags, etc.), maintenance tips, choosing fun and comfortable routes,
+                        and the rules of the road. These presentations are perfect for businesses who
+                        encourage biking to work, neighborhood associations, school classes, special events,
+                        and more. </p>
+                    <p class="bike-smart-trip-schools">Smart Trips offers bicycle skills course installation and instruction for
+                        elementary school aged children at schools and community events. Skills courses
+                        are temporary, and instruction includes learning bike control and the rules of the
+                        road. Kids practice stopping at stop signs and navigating intersections.</p>
+
+                    <hr>
+
+                    <h3>Maps</h3>
+                    <p>We have maps for making Smart Trips. These Bellingham and Whatcom County maps
+                        are designed to show you how to reach many of your nearby destinations by
+                        walking, bicycling or riding the bus. WTA bus stops and routes are highlighted
+                        as well as trails and bicycle routes. The Bellingham map has symbols for grocery
+                        stores, pharmacies, mailboxes, and many other destinations. The county map shows
+                        hills and areas of caution for bicyclists.</p>
+                    <a class="bikes-bellingham-map" href="#">Bellingham Map</a><br>
+                    <a class="bikes-county-map" href="#">County Map</a>
                 </div>
-                <div class="perks"><div class="perks-1 arial-regular-normal-green-blue-12px">PERKS</div></div>
-                <div class="component-14-2">
-                  <div class="bike-1 bike-2 arial-bold-finn-12px">BIKE</div>
-                  <div class="overlap-group arial-regular-normal-green-blue-12px">
-                    <div class="rectangle-401"></div>
-                    <div class="riding-tips">riding tips</div>
-                    <div class="bike-classes bike-2">bike classes</div>
-                    <div class="self-guidedrides">self-guided<br />rides</div>
-                  </div>
-                </div>
-                <p class="want-to-give-it-a-try lato-bold-green-blue-20px">Want to give it a try?</p>
-              </div>
             </div>
-            <div class="biking-tips-container">
-              <div class="biking-tips lato-bold-green-blue-20px">Biking Tips</div>
-              <p class="biking-tips-bik lato-bold-green-blue-16px">
-                &gt; Biking Tips <br />&gt; Bikes on the Bus <br />&gt; Bike Classes and Education<br />&gt; Maps
-              </p>
-            </div>
-            <div class="overlap-group3">
-              <img class="path-205 path" src="img/path-205-10@1x.png" alt="Path 205" />
-              <img class="path-206 path" src="img/path-206-10@1x.png" alt="Path 206" />
-              <p class="bicycling-is-a-great lato-normal-green-blue-14px-2">
-                <span class="lato-normal-ship-gray-14px"
-                  >Bicycling is a great way to get around town for short trips and daily errands. You’ll save money on
-                  gas and car repairs while sneaking a bit of fun and exercise into your day. Check out these tips and
-                  tricks to share the road confidently and safely with vehicles, pedestrians, and other cyclists:
-                  <br /></span
-                ><span class="span-1 lato-normal-green-blue-14px"
-                  >Confident City Cycling Tips for Safe Cycling on City Streets</span
-                ><span class="lato-normal-ship-gray-14px">&nbsp;</span
-                ><span class="lato-normal-citrus-14px"
-                  >(link to Confident City Cycling PDF – reformat the brochure vertically)<br /></span
-                ><span class="lato-normal-ship-gray-14px"
-                  >For videos showcasing traffic and safety tips, road positioning, signaling, starting, stopping and
-                  shifting </span
-                ><span class="span-1 lato-normal-green-blue-14px"
-                  >visit the League of American Bicyclists YouTube channel.</span
-                >
-              </p>
-              <img class="bus-video" src="img/bus-video-1@1x.png" alt="bus video" />
-              <div class="bikes-on-the-bus lato-bold-green-blue-20px">Bikes on the Bus</div>
-              <p class="want-to-get-further">
-                <span class="lato-normal-ship-gray-14px"
-                  >Want to get further than you can ride your bike? Consider pairing your bike with the bus. Each WTA
-                  bus has a rack that can accommodate up to three bicycles. Stop by the WTA transit center to practice
-                  using the bike rack on a parked bus. </span
-                ><span class="span-1 lato-normal-green-blue-14px"
-                  >This video demonstrates how to load your bike onto the bus</span
-                ><span class="lato-normal-ship-gray-14px">. </span
-                ><span class="lato-normal-citrus-14px">(video embedded? Link to WTA YouTube?)</span>
-              </p>
-            </div>
-            <div class="bike-classes-and-education lato-bold-green-blue-20px">Bike Classes and Education</div>
-            <p class="bike-classes-are-ava lato-normal-ship-gray-14px-2">
-              <span class="lato-normal-ship-gray-14px"
-                >Bike classes are available, free of charge, to individuals, families, and small groups. Classes include
-                Learn to Ride, Confident City Cycling, Getting the Most out of your E-bike, Basic Bike Maintenance, and
-                more. </span
-              ><span class="span-1 lato-normal-green-blue-14px"
-                >For a full list of classes and details, visit our Bike Class page.<br /></span
-              ><span class="lato-normal-ship-gray-14px"
-                >Smart Trips is available for presentations to any type of group interested in learning more about
-                biking for transportation. Our presentations include details about how to dress for different types of
-                weather, helpful accessories (lights, bags, etc.), maintenance tips, choosing fun and comfortable
-                routes, and the rules of the road. These presentations are perfect for businesses who encourage biking
-                to work, neighborhood associations, school classes, special events, and more. <br />Smart Trips offers
-                bicycle skills course installation and instruction for elementary school aged children at schools and
-                community events. Skills courses are temporary, and instruction includes learning bike control and the
-                rules of the road. Kids practice stopping at stop signs and navigating intersections.</span
-              >
-            </p>
-            <img class="line-6" src="img/line-6@1x.png" alt="Line 6" />
-            <div class="maps lato-bold-green-blue-20px">Maps</div>
-          </div>
-          <div class="flex-col-1">
-            <div class="flex-row-1">
-              <div class="overlap-group4">
-                <div class="rideshare"><div class="rideshare-1 arial-regular-normal-white-12px">RIDESHARE</div></div>
-                <div class="overlap-group4-item"><div class="bus arial-regular-normal-white-12px">BUS</div></div>
-                <div class="rideshare">
-                  <div class="rideshare-1 arial-regular-normal-green-blue-12px">RIDESHARE</div>
-                </div>
-                <div class="overlap-group4-item"><div class="bus-1 arial-regular-normal-green-blue-12px">BUS</div></div>
-              </div>
-              <div class="events-container">
-                <div class="events"><div class="events-1 arial-regular-normal-white-12px">EVENTS</div></div>
-                <div class="events"><div class="events-1 arial-regular-normal-green-blue-12px">EVENTS</div></div>
-              </div>
-              <div class="button-1"><div class="sign-in sign arial-bold-white-12px">SIGN IN</div></div>
-              <div class="button-1-1"><div class="sign-up sign arial-bold-white-12px">SIGN UP</div></div>
-            </div>
-            <img
-              class="images-evantide-2023_223 images-evantide"
-              src="img/images--evantide-2023-223@1x.png"
-              alt="Images  Evantide 2023_223"
-            />
-            <img
-              class="images-evantide-2023_208 images-evantide"
-              src="img/images--evantide-2023-208@1x.png"
-              alt="Images  Evantide 2023_208"
-            />
-          </div>
+        </section><!-- ALL CONTENT GOES ABOVE THIS-->
+    </div><!--END CONTENT WRAPPER-->
+</div><!--END OUTER-->
+
+<footer class="grid">
+    <div class="grid grid-three-column footer-layout">
+        <div class="grid grid-two-column social-info">
+            <ul class="social-media-icons">
+                <li><a class="footer-instagram-icon" href="#"><img class="path-206 path" src="../Whatcom/img/path-206-10@1x.png" alt="Path 206"/></a></li>
+                <li><a class="footer-facebook-icon" href="#"><img class="path-205 path" src="../Whatcom/img/path-205-10@1x.png" alt="Path 205"/></a></li>
+            </ul>
+            <ul class="footer-info-links">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">EMPLOYERS</a></li>
+                <li><a href="#">YOUTH EDUCATION</a></li>
+            </ul>
         </div>
-        <div class="overlap-group2">
-          <div class="base-1 base-3"></div>
-          <div class="base-2 base-3"></div>
-          <p class="fa-qs-contact-u arial-bold-white-12px">
-            FAQs&nbsp;&nbsp; |&nbsp;&nbsp; CONTACT US&nbsp;&nbsp; |&nbsp;&nbsp; EMPLOYERS&nbsp;&nbsp; |&nbsp;&nbsp;
-            YOUTH EDUCATION
-          </p>
-          <p class="art-ride-loopcordat lato-normal-green-blue-14px">
-            Art Ride Loop<br />Cordata Park Loop<br />Barkley Village to Cornwall Park Loop<br />Marine Park to Connelly
-            Creek Ride<br />Elizabeth Park to Little Squalicum Park<br />Ferndale Loop<br />Lynden Loop
-          </p>
-          <p class="we-have-maps-for-mak lato-normal-green-blue-14px-2">
-            <span class="lato-normal-ship-gray-14px"
-              >We have maps for making Smart Trips. These Bellingham and Whatcom County maps are designed to show you
-              how to reach many of your nearby destinations by walking, bicycling or riding the bus. WTA bus stops and
-              routes are highlighted as well as trails and bicycle routes. The Bellingham map has symbols for grocery
-              stores, pharmacies, mailboxes, and many other destinations. The county map shows hills and areas of
-              caution for bicyclists.<br /></span
-            ><span class="span-1 lato-normal-green-blue-14px">Bellingham Map<br /></span
-            ><span class="span-1 lato-normal-green-blue-14px">County Map</span>
-          </p>
-          <img class="path-205-1" src="img/path-205-10@1x.png" alt="Path 205" />
-          <img class="path-206-1" src="img/path-206-10@1x.png" alt="Path 206" />
+        <div class="grid app-store-card">
+            <p>Download the Smart Trips app <br> and log trips on your
+                phone!</p>
+            <img class="app-store-icons" src="img/app-store-1@1x.png" alt="app store"/>
         </div>
-      </div>
     </div>
-  </body>
+</footer>
+
+<div class="base_bottom"></div>
+</body>
 </html>

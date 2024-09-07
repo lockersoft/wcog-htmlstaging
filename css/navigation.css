@@ -1,0 +1,190 @@
+/*#####################  MOBILE MENU #######################*/
+/*#####################  MOBILE MENU #######################*/
+/*#####################  MOBILE MENU #######################*/
+.menu li a:hover {
+    background-color: #aaa;
+    border-radius: 5px;
+    transition: background-color .2s ease-in-out;
+}
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+.header ul li {
+    margin: .5em 1em;
+}
+.header ul a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.header ul a:hover {;
+    color: var(--finn);
+}
+.header .smart-trips_logo {
+    position: relative; /*Ensures (along with z-index) the logo is on top of the mobile menu*/
+    float: left;
+    display: block;
+    padding: 1em;
+    margin: 0 auto;
+    width: auto;
+    max-width: 150px;
+    z-index: 999 !important;
+}
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: .2s ease-in-out;
+    background-color: #FFFFFF; /*background color of mobile dropdown menu*/
+}
+.header .menu-btn {
+    display: none;
+}
+.header .menu-icon {
+    padding: 1em;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    min-height: 55px;
+}
+.header .menu-icon .nav-icon,
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon:after {
+    content: "";
+    background: var(--ship-gray);
+    display: block;
+    height: var(--bar-height);
+    width: var(--bar-width);
+    border-radius: var(--roundedEnd);
+    position: relative;
+    /*top: 0;*/
+    transition: all .2s ease-in-out;
+}
+.header .menu-icon .nav-icon:before {
+    position: absolute !important;
+    top: calc(var(--bar-height) + var(--bar-gap));
+    transition: all .2s ease-in-out;
+}
+.header .menu-icon .nav-icon:after {
+    position: absolute !important;
+    top: calc(var(--bar-height) * 2 + var(--bar-gap) * 2);
+    transition: all .2s ease-in-out;
+}
+.header .menu-btn:checked ~ nav .menu {
+    max-height: 100vh;
+}
+
+
+
+/*#################  BACON CHEESEBURGER MENU ANIMATION ###################*/
+/*#################  BACON CHEESEBURGER MENU ANIMATION ###################*/
+/*#################  BACON CHEESEBURGER MENU ANIMATION ###################*/
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(45deg);
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(-45deg);
+    top: calc(var(--bar-height) + var(--bar-gap));
+}
+
+
+
+
+/*#################  MOBILE MENU OVERLAY ###################*/
+/*#################  MOBILE MENU OVERLAY ###################*/
+/*#################  MOBILE MENU OVERLAY ###################*/
+
+/*MOBILE MENU - TO OVERLAY CONTENT
+   INSTEAD OF PUSHING IT DOWN*/
+.header .menu-btn:checked ~ nav .menu {
+        padding-top: calc(var(--header-height));
+}
+.header .menu-icon {
+    z-index: 999;
+}
+nav {
+    font-family: var(--font-family-arial-regular);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 990;
+    box-shadow: 1px 4px 5px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+/*######################  MEDIA QUERIES  ###########################*/
+/*######################  MEDIA QUERIES  ###########################*/
+/*######################  MEDIA QUERIES  ###########################*/
+@media screen and (max-width: 218px) {
+    .header img {
+        min-width: 100px;
+        width: 100%;
+
+    }
+    .header .smart-trips_logo {
+        padding: 0;
+    }
+}
+
+
+/*Screen surpasses 440px */
+@media screen and (min-width: 768px) {
+    .header .smart-trips_logo {
+        max-width: 250px;
+    }
+}
+
+
+/*Screen surpasses 1153px*/
+@media screen and (min-width: 1280px) {
+    nav {
+        position: relative;
+        left: 0;
+        padding-top: 0;
+        width: 100%;
+        font-size: 14px;
+    }
+    /*MOBILE MENU*/
+    .header li {
+        float: left;
+    }
+    .header li a {
+
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+
+    .header .menu-btn:checked ~ nav .menu {
+        padding-top: 0;
+    }
+    .menu li a:hover {
+        background-color: transparent;
+    }
+    .button_blue {
+        background-color: var(--green-blue);
+        font-family: arial, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        border-radius: 3px;
+    }
+    .button_blue:hover {
+        background-color: rgba(26, 109, 181, 1) !important;
+    }
+} /*END MOBILE CHANGES ( < 1153px) */

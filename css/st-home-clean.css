@@ -1,450 +1,215 @@
-/* screen - st-home-clean */
-
-.st-home-clean {
-  align-items: flex-end;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  height: 955px;
-  overflow: hidden;
-  width: 1400px;
+.st-home-column-1 p {
+    line-height: 1.7;
+}
+.log-smart-trips {
+    grid-template-rows: auto 160px 25px auto;
+}
+.standalone-grid h3 {
+    color: var(--ship-gray);
+}
+.stats {
+    color: var(--finn);
+    font-family: var(--font-family-lato);
+    font-weight: 800;
+    font-size: 20px;
 }
 
-.st-home-clean .flex-row {
-  gap: 60px;
-  height: 513px;
-  margin-right: 32px;
-  margin-top: 24px;
-  min-width: 1269px;
+.two-col-span {
+    grid-column: 1 / 3;
+}
+.three-col-span {
+    grid-column: 1 / 4;
+}
+.grid-three-column {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.grid-three-column > *:nth-child(2) {
+    margin-bottom: 1em;
 }
 
-.st-home-clean .flex-col {
-  align-self: flex-end;
-  flex-direction: column;
-  gap: 17px;
-  min-height: 505px;
-  width: 342px;
+.log-smart-trips h3 {
+    grid-column: 1 / 3;
+}
+.log-smart-trips p {
+    grid-column: 1 / 3;
+}
+.log-smart-trips img {
+    grid-column: 1 / 3;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.st-home-clean .smart-trips_logo {
-  height: 93px;
-  object-fit: cover;
-  width: 205px;
+/*#############  STATISTICS CARD  ###########*/
+.hand_holding_iphone_1 {
+    max-width: 300px;
+    position: relative;
+}
+.statistics-card div {
+    text-align: center;
+}
+.statistics-card p {
+    text-align: center;
+}
+.path-200, .path-207 {
+    max-width: 30px;
+}
+.standalone-grid {
+    background-color: #efefef;
+    padding: 1em;
+}
+.smart-trip-statistics-slideshow {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center; /*vertical align buttons/number of stats*/
+}
+.ellipse, .ellipse-active {
+    border-radius: 3px;
+    height: 6px;
+    width: 6px;
+    margin: 5px;
+}
+.ellipse {
+    background-color: var(--sail);
+}
+.ellipse-active {
+    background-color: var(--green-blue);
+}
+.pagination {
+    grid-template-columns: repeat(4, 20px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.bicycle-icon {
+    max-width: 200px;
+}
+.st-home-column-1 {
+    grid-row: 2;
+    padding: 1em;
+}
+.st-home-column-2 {
+    grid-row: 1;
+    align-content: center;
+}
+/*###############  END STATISTICS  ##################*/
+
+/*######################  MEDIA QUERIES  ###########################*/
+/*######################  MEDIA QUERIES  ###########################*/
+/*######################  MEDIA QUERIES  ###########################*/
+
+@media screen and (min-width: 400px) {
+    .recent-winners {
+        grid-row: 4;
+    }
+    .trip-log {
+
+    }
+    .log-smart-trips {
+        grid-template-rows: auto 90px 25px auto;
+    }
 }
 
-.st-home-clean .group-12 {
-  flex-direction: column;
-  gap: 16px;
-  min-height: 395px;
-  width: 342px;
+@media screen and (min-width: 768px) {
+    .log-smart-trips {
+        grid-template-rows: auto 130px 25px auto;
+    }
+    .grid-three-column {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .smart-trips_2024 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .st-home-column-1 {
+        grid-row: 2;
+        padding: 1em;
+    }
+    .st-home-column-2 {
+        grid-row: 1;
+        align-content: center;
+    }
+    .st-home-grid-two-column {
+        grid-template-columns: 50% 50%;
+    }
+    .log-smart-trips {
+        border-right: 2px solid #aaa;
+    }
+    .log-smart-trips p {
+        grid-column: 1 / 2;
+    }
+    .log-smart-trips img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 5;
+        align-self: end;
+    }
+    .grid-three-column > *:nth-child(2) {
+        margin-bottom: initial;
+    }
+    /*specific position of hand holding iPhone*/
+    .hand_holding_iphone_1 {
+        min-width: 300px;
+        position: relative;
+        left: -80px;
+    }
+    .stats {
+        font-size: 26px;
+    }
 }
 
-.st-home-clean .walk-bike-share-a {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 42px;
-  margin-top: -5px;
-  min-height: 167px;
-  width: 321px;
-}
+@media screen and (min-width: 992px) {
+    .st-grid-two-column {
+        grid-template-columns: 30% 70%;
+    }
+    .st-home-column-1 {
+        grid-row: 1;
+        padding: 1em;
+    }
+    .st-home-column-2 {
+        grid-row: 1;
+        align-content: center;
+    }
 
-.st-home-clean .when-you-make-smart {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-l);
-  font-weight: 700;
-  height: 214px;
-  letter-spacing: 0;
-  line-height: 24px;
-  width: 342px;
-}
+    /*PAGE SPECIFIC STYLING*/
+    .st-home-column-1 {
+        padding: .5em;
+    }
+    /*END STYLING*/
 
-.st-home-clean .span {
-  color: var(--ship-gray);
-  font-weight: 400;
+    /*TOP LEFT OFFSET OF HERO IMAGE (MAIN PAGE ONLY)*/
+    .smart-trips_2024 {
+        position: relative;
+        top: -75px;
+        left: 55px;
+    }
+    .grid-three-column {
+        grid-template-columns: .9fr 1fr .5fr;
+        align-items: initial;
+        justify-content: initial;
+        justify-items: initial;
+    }
+    .standalone-grid {
+         padding: 2em 5em 0em 2em;
+     }
+    .bicycle-icon {
+        max-width: 350px;
+    }
+    .st-grid-two-column {
+        grid-template-columns: 30% 70%;
+    }
+    .stats {
+        font-size: 38px;
+    }
 }
-
-.st-home-clean .span3 {
-  color: var(--ship-gray);
-}
-
-.st-home-clean .overlap-group6 {
-  height: 484px;
-  position: relative;
-  width: 867px;
-}
-
-.st-home-clean .smart-trips_2024 {
-  height: 441px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 43px;
-  width: 867px;
-}
-
-.st-home-clean .group-10 {
-  height: 194px;
-  left: 117px;
-  min-width: 657px;
-  position: absolute;
-  top: 0;
-}
-
-.st-home-clean .overlap-group2 {
-  align-self: flex-end;
-  height: 184px;
-  position: relative;
-  width: 183px;
-}
-
-.st-home-clean .perks {
-  display: flex;
-  height: 184px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 106px;
-}
-
-.st-home-clean .component-14 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  left: 94px;
-  min-height: 125px;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-home-clean .rectangle-401 {
-  background-color: var(--white);
-  height: 93px;
-  left: 0;
-  opacity: 0.0;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-home-clean .bike-classes {
-  left: 10px;
-  letter-spacing: 0;
-  line-height: 14px;
-  opacity: 0.0;
-  position: absolute;
-  top: 28px;
-  white-space: nowrap;
-}
-
-.st-home-clean .overlap-group4 {
-  height: 119px;
-  margin-top: 10px;
-  position: relative;
-  width: 175px;
-}
-
-.st-home-clean .rideshare {
-  display: flex;
-  height: 81px;
-  left: 74px;
-  position: absolute;
-  top: 0;
-  width: 101px;
-}
-
-.st-home-clean .rideshare-1 {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 9px;
-  margin-top: 1px;
-  white-space: nowrap;
-  width: 72px;
-}
-
-.st-home-clean .events-container {
-  height: 60px;
-  margin-left: 13px;
-  margin-top: 10px;
-  position: relative;
-  width: 80px;
-}
-
-.st-home-clean .button-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  margin-left: 12px;
-  min-width: 84px;
-  padding: 6px 18px;
-}
-
-.st-home-clean .button-1-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  margin-left: 26px;
-  min-width: 84px;
-  padding: 6px 15px;
-}
-
-.st-home-clean .flex-col-1 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  min-height: 393px;
-  width: 1401px;
-}
-
-.st-home-clean .overlap-group5 {
-  height: 371px;
-  position: relative;
-  width: 1401px;
-}
-
-.st-home-clean .path-208 {
-  height: 291px;
-  left: 1px;
-  top: 0;
-  width: 1400px;
-}
-
-.st-home-clean .the-amazing-impact-o {
-  height: 39px;
-  left: 599px;
-  letter-spacing: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 29px;
-  width: 677px;
-}
-
-.st-home-clean .base-1 {
-  background-color: var(--ship-gray);
-  height: 80px;
-  left: 0;
-  position: absolute;
-  top: 291px;
-  width: 1401px;
-}
-
-.st-home-clean .fa-qs-contact-u {
-  left: 166px;
-  letter-spacing: 0;
-  line-height: 26px;
-  position: absolute;
-  top: 322px;
-  white-space: nowrap;
-}
-
-.st-home-clean .subscribe {
-  display: flex;
-  height: 32px;
-  left: 933px;
-  position: absolute;
-  top: 314px;
-  width: 194px;
-}
-
-.st-home-clean .text-3 {
-  color: var(--finn);
-  font-family: var(--font-family-lato);
-  font-size: 36px;
-  font-weight: 700;
-  left: 733px;
-  letter-spacing: 0;
-  line-height: 36px;
-  position: absolute;
-  top: 108px;
-  white-space: nowrap;
-}
-
-.st-home-clean .path-200 {
-  height: 33px;
-  left: 988px;
-  top: 111px;
-  width: 17px;
-}
-
-.st-home-clean .app-store {
-  height: 52px;
-  left: 1144px;
-  object-fit: cover;
-  position: absolute;
-  top: 306px;
-  width: 206px;
-}
-
-.st-home-clean .line-2 {
-  height: 237px;
-  left: 550px;
-  object-fit: cover;
-  position: absolute;
-  top: 30px;
-  width: 1px;
-}
-
-.st-home-clean .overlap-group-1 {
-  height: 281px;
-  left: 100px;
-  position: absolute;
-  top: 29px;
-  width: 466px;
-}
-
-.st-home-clean .hand_holding_iphone_1 {
-  height: 262px;
-  left: 152px;
-  object-fit: cover;
-  position: absolute;
-  top: 19px;
-  width: 314px;
-}
-
-.st-home-clean .log-your-smart-trips {
-  height: 126px;
-  left: 1px;
-  letter-spacing: 0;
-  line-height: 18px;
-  position: absolute;
-  top: 35px;
-  width: 209px;
-}
-
-.st-home-clean .log-your-trips-in-yo {
-  height: 39px;
-  left: 1px;
-  letter-spacing: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  width: 442px;
-}
-
-.st-home-clean .see-recent-winners {
-  height: 37px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  text-decoration: underline;
-  top: 179px;
-  width: 162px;
-}
-
-.st-home-clean .log-my-trips {
-  height: 31px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  text-decoration: underline;
-  top: 146px;
-  width: 144px;
-}
-
-.st-home-clean .path-205 {
-  height: 14px;
-  left: 134px;
-  top: 325px;
-  width: 7px;
-}
-
-.st-home-clean .path-206 {
-  height: 14px;
-  left: 101px;
-  top: 325px;
-  width: 14px;
-}
-
-.st-home-clean .number-of-smart-trip {
-  height: 37px;
-  left: 671px;
-  letter-spacing: 0;
-  line-height: 18px;
-  position: absolute;
-  top: 64px;
-  width: 380px;
-}
-
-.st-home-clean .pagination {
-  align-items: flex-start;
-  display: flex;
-  gap: 10px;
-  height: 6px;
-  left: 787px;
-  min-width: 54px;
-  position: absolute;
-  top: 169px;
-}
-
-.st-home-clean .ellipse-8 {
-  background-color: var(--green-blue);
-  border-radius: 3px;
-  height: 6px;
-  width: 6px;
-}
-
-.st-home-clean .ellipse {
-  background-color: var(--sail);
-  border-radius: 3px;
-  height: 6px;
-  width: 6px;
-}
-
-.st-home-clean .noun-bicycle-100339 {
-  height: 147px;
-  left: 1100px;
-  object-fit: cover;
-  position: absolute;
-  top: 38px;
-  width: 223px;
-}
-
-.st-home-clean .show-me-the-impressi {
-  height: 25px;
-  left: 599px;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  text-decoration: underline;
-  top: 209px;
-  width: 287px;
-}
-
-.st-home-clean .path-207 {
-  height: 33px;
-  left: 638px;
-  top: 111px;
-  width: 17px;
-}
-
-.st-home-clean .base-2 {
-  background-color: var(--citrus);
-  height: 22px;
-  margin-left: 1px;
-  width: 1400px;
-}
-
-.st-home-clean .group {
-  align-items: flex-start;
-  display: flex;
-}
-
-.st-home-clean .path {
-  object-fit: cover;
-  position: absolute;
+@media screen and (min-width: 1200px) {
+    .st-home-grid-two-column {
+        padding-left: 4em;
+    }
+    .log-smart-trips {
+        grid-template-rows: auto 120px 25px auto;
+    }
 }

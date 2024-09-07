@@ -1,128 +1,130 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
     <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
     <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
-    <meta name="viewport" content="width=1400, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="css/st-home-clean.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="css/globals.css"/>
+    <!--PAGE SPECIFIC CSS-->
+    <link rel="stylesheet" type="text/css" href="css/st-home-clean.css"/>
+    <!--NAV/FOOTER CSS-->
+    <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <title></title>
-  </head>
-  <body style="margin: 0; background: #ffffff">
-    <input type="hidden" id="anPageName" name="page" value="st-home-clean" />
-    <div class="container-center-horizontal">
-      <div class="st-home-clean screen">
-        <div class="base"></div>
-        <div class="flex-row flex">
-          <div class="flex-col flex">
-            <img class="smart-trips_logo" src="img/smarttrips-logo-1@1x.png" alt="SmartTrips_logo" />
-            <div class="group-12 group">
-              <p class="walk-bike-share-a">
-                Walk, bike, share a ride or ride the bus. Make a difference anywhere you go.
-              </p>
-              <p class="when-you-make-smart">
-                <span class="span"
-                  >When you make Smart Trips, you accomplish a lot more than getting to your destination. You help
-                  create a clean, healthy, and vibrant community in Whatcom County. While you’re at it, you’ll cut
-                  stress, save money, and earn rewards. <br /></span
-                ><span class="span-1">Sign in to log your trips.<br /></span><span class="span">New user?</span
-                ><span class="span3">&nbsp;</span><span class="span-1"> Sign up to get started.</span>
-              </p>
+</head>
+<body>
+<div class="base"></div><!--THIS IS THE GREEN TOP BAR-->
+<!--OUTER WRAPPER-->
+<div class="outer">
+    <!--CONTENT WRAPPER-->
+    <div class="wrapper">
+        <!--HEADER-->
+        <header class="header">
+            <!--LOGO-->
+            <a href="index.html"><img class="smart-trips_logo" src="img/smarttrips-logo-1@1x.png" alt="SmartTrips_logo"/></a>
+            <!--MOBILE MENU ICON-->
+            <input id="menu-btn" class="menu-btn" type="checkbox">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--NAV-->
+            <nav>
+                <ul class="menu">
+                    <li><a href="st-perks.html">PERKS</a></li>
+                    <li><a href="st-bike.html">BIKE</a></li>
+                    <li><a href="st-bus.html">BUS</a></li>
+                    <li><a href="st-rideshare.html">RIDESHARE</a></li>
+                    <li><a href="st-events.html">EVENTS</a></li>
+                    <li><a class="button_blue" href="#">SIGN IN</a></li>
+                    <li><a class="button_blue" href="#">SIGN UP</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--TWO COLUMN | FIRST ROW-->
+        <section class="two-col-span">
+            <div class="grid two-col-span st-grid-two-column">
+                <section class="st-home-column-1">
+                    <h1>Walk, bike, share a ride or ride the bus. Make a difference anywhere
+                        you go.</h1>
+                    <p>When you make Smart Trips, you accomplish a lot more than getting to
+                        your destination. You help create a clean, healthy, and vibrant
+                        community in Whatcom County. While you’re at it, you’ll cut stress,
+                        save money, and earn rewards.</p>
+                    <a href="#">Sign in to log your trips.</a>
+                    <p>New user? <a href="#">Sign up to get started.</a></p>
+                </section>
+                <div class="st-home-column-2">
+                    <img class="smart-trips_2024" src="img/smart-trips-2024@1x.png" alt="Smart Trips_2024"/>
+                </div>
             </div>
-          </div>
-          <div class="overlap-group6">
-            <img class="smart-trips_2024" src="img/smart-trips-2024@1x.png" alt="Smart Trips_2024" />
-            <div class="group-10 group">
-              <div class="overlap-group2">
-                <div class="perks"><div class="perks-1 arial-regular-normal-white-12px">PERKS</div></div>
-                <div class="component-14">
-                  <div class="bike arial-regular-normal-white-12px">BIKE</div>
-                  <div class="overlap-group arial-regular-normal-green-blue-12px">
-                    <div class="rectangle-401"></div>
-                    <div class="riding-tips">riding tips</div>
-                    <div class="bike-classes">bike classes</div>
-                    <div class="self-guidedrides">self-guided<br />rides</div>
-                  </div>
-                </div>
-                <div class="perks"><div class="perks-1 arial-regular-normal-green-blue-12px">PERKS</div></div>
-                <div class="component-14 arial-regular-normal-green-blue-12px">
-                  <div class="bike">BIKE</div>
-                  <div class="overlap-group">
-                    <div class="rectangle-401"></div>
-                    <div class="riding-tips">riding tips</div>
-                    <div class="bike-classes">bike classes</div>
-                    <div class="self-guidedrides">self-guided<br />rides</div>
-                  </div>
-                </div>
-              </div>
-              <div class="overlap-group4">
-                <div class="rideshare"><div class="rideshare-1 arial-regular-normal-white-12px">RIDESHARE</div></div>
-                <div class="overlap-group4-item"><div class="bus arial-regular-normal-white-12px">BUS</div></div>
-                <div class="rideshare">
-                  <div class="rideshare-1 arial-regular-normal-green-blue-12px">RIDESHARE</div>
-                </div>
-                <div class="overlap-group4-item"><div class="bus-1 arial-regular-normal-green-blue-12px">BUS</div></div>
-              </div>
-              <div class="events-container">
-                <div class="events"><div class="events-1 arial-regular-normal-white-12px">EVENTS</div></div>
-                <div class="events"><div class="events-1 arial-regular-normal-green-blue-12px">EVENTS</div></div>
-              </div>
-              <div class="button-1"><div class="sign-in sign arial-bold-white-12px">SIGN IN</div></div>
-              <div class="button-1-1"><div class="sign-up sign arial-bold-white-12px">SIGN UP</div></div>
+        </section>
+    </div><!--END CONTENT WRAPPER-->
+    <!--THREE COLUMN | SECOND ROW-->
+    <div class="standalone-grid grid grid-three-column">
+        <section class="grid st-home-grid-two-column log-smart-trips">
+            <h3>Log your trips in your Trip Diary (and win)!</h3>
+            <p>Log your Smart Trips on this site (or download our handy app) and you'll be eligible
+                for discount rewards and monthly and quarterly cash prize drawings!</p>
+            <a class="trip-log" href="#">Log my trips</a>
+            <a class="recent-winners" href="#">See recent winners</a>
+            <img class="hand_holding_iphone_1" src="img/hand-holding-iphone-1-1@1x.png"
+                 alt="hand_holding_iphone_1"/>
+        </section>
+        <section class="statistics-card">
+            <div>
+                <h3>The amazing impact of Smart Trips in Whatcom County:</h3>
+                <p class="lato-normal-ship-gray-14px"> Number of Smart Trips recorded&nbsp;&nbsp;since 2006:</p>
             </div>
-          </div>
+            <div class="smart-trip-statistics-slideshow grid">
+                <img class="path-207" src="img/path-207@1x.png" alt="Path 207"/>
+                <div>
+                    <span class="stats">5,390,582</span>
+                </div>
+                <img class="path-200" src="img/path-200@1x.png" alt="Path 200"/>
+            </div>
+            <div class="pagination grid">
+                <div class="ellipse-active"></div>
+                <div class="ellipse"></div>
+                <div class="ellipse"></div>
+                <div class="ellipse"></div>
+            </div>
+            <br>
+            <p class="show-me-the-impressi lato-bold-green-blue-14px"><a href="#">Show me the impressive the Smart Trip
+                stats!</a></p>
+        </section>
+        <div class="bicycle-icon">
+            <img class="noun-bicycle-100339" src="img/noun-bicycle-100339@1x.png" alt="noun-bicycle-100339"/>
         </div>
-        <div class="flex-col-1">
-          <div class="overlap-group5">
-            <img class="path-208 path" src="img/path-208@1x.png" alt="Path 208" />
-            <p class="the-amazing-impact-o lato-bold-ship-gray-20px">
-              The amazing impact of Smart Trips in Whatcom County:
-            </p>
-            <div class="base-1"></div>
-            <p class="fa-qs-contact-u arial-bold-white-12px">
-              FAQs&nbsp;&nbsp; |&nbsp;&nbsp; CONTACT US&nbsp;&nbsp; |&nbsp;&nbsp; EMPLOYERS&nbsp;&nbsp; |&nbsp;&nbsp;
-              YOUTH EDUCATION
-            </p>
-            <div class="subscribe">
-              <p class="download-the-smart-t">Download the Smart Trips app <br />and log trips on your phone!</p>
-            </div>
-            <h1 class="text-3">5,390,582</h1>
-            <img class="path-200 path" src="img/path-200@1x.png" alt="Path 200" />
-            <img class="app-store" src="img/app-store-1@1x.png" alt="app store" />
-            <img class="line-2" src="img/line-2@1x.png" alt="Line 2" />
-            <div class="overlap-group-1">
-              <img class="hand_holding_iphone_1" src="img/hand-holding-iphone-1-1@1x.png" alt="hand_holding_iphone_1" />
-              <p class="log-your-smart-trips lato-normal-ship-gray-14px">
-                Log your Smart Trips on this site (or download our handy app) and you’ll be eligible for discount
-                rewards and monthly and quarterly cash prize drawings!
-              </p>
-              <p class="log-your-trips-in-yo lato-bold-ship-gray-20px">Log your trips in your Trip Diary (and win)!</p>
-              <div class="see-recent-winners lato-bold-green-blue-14px">See recent winners</div>
-              <div class="log-my-trips lato-bold-green-blue-14px">Log my trips</div>
-            </div>
-            <img class="path-205 path" src="img/path-205-10@1x.png" alt="Path 205" />
-            <img class="path-206 path" src="img/path-206-10@1x.png" alt="Path 206" />
-            <p class="number-of-smart-trip lato-normal-ship-gray-14px">
-              Number of Smart Trips recorded&nbsp;&nbsp;since 2006:
-            </p>
-            <div class="pagination">
-              <div class="ellipse-8"></div>
-              <div class="ellipse"></div>
-              <div class="ellipse"></div>
-              <div class="ellipse"></div>
-            </div>
-            <img class="noun-bicycle-100339" src="img/noun-bicycle-100339@1x.png" alt="noun-bicycle-100339" />
-            <p class="show-me-the-impressi lato-bold-green-blue-14px">Show me the impressive the Smart Trip stats!</p>
-            <img class="path-207 path" src="img/path-207@1x.png" alt="Path 207" />
-          </div>
-          <div class="base-2"></div>
+    </div><!--END THREE COLUMN | SECOND ROW-->
+</div><!--END OUTER-->
+<!--FOOTER-->
+<footer class="grid">
+    <div class="grid grid-three-column footer-layout">
+        <div class="grid grid-two-column social-info">
+            <ul class="social-media-icons">
+                <li><a class="footer-instagram-icon" href="#"><img class="path-206 path" src="img/path-206-10@1x.png" alt="Path 206"/></a></li>
+                <li><a class="footer-facebook-icon" href="#"><img class="path-205 path" src="img/path-205-10@1x.png" alt="Path 205"/></a></li>
+            </ul>
+            <ul class="footer-info-links">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">EMPLOYERS</a></li>
+                <li><a href="#">YOUTH EDUCATION</a></li>
+            </ul>
         </div>
-      </div>
+        <div class="grid app-store-card">
+            <p>Download the Smart Trips app <br> and log trips on your
+                phone!</p>
+            <img class="app-store-icons" src="img/app-store-1@1x.png" alt="app store"/>
+        </div>
     </div>
-  </body>
+</footer>
+
+<div class="base_bottom"></div><!--THIS IS THE GREEN BOTTOM BAR-->
+</body>
 </html>

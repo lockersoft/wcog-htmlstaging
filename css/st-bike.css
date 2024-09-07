@@ -1,416 +1,70 @@
-/* screen - st-bike */
-
-.st-bike {
-  align-items: flex-start;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  height: 2006px;
-  overflow: hidden;
-  width: 1400px;
+.bikes hr {
+    border: var(--hr-border-style-gray-30);
+    width: 100%;
+    grid-row: 20;
+}
+.bike-smart-trip-schools {
+    padding-bottom: 1em;
+}
+.bikes {
+    padding: 0 1em 1em 1em;
+}
+.bikes video {
+    margin: 2em 0 2em 0;
+}
+.bikes p {
+    margin-bottom: .5em;
+    line-height: 1.2;
+}
+.bikes img {
+    max-width: 400px;
+    justify-self: center;
+}
+.bikes h3 {
+    margin: 2em 0 .5em 0;
+    padding: 0;
+}
+.bikes h3 + p {
+    margin: 0 0 auto 0;
+}
+.bikes .bikes-bellingham-map {
+    margin: .5em 0 0 0;
+}
+@media screen and (min-width: 480px) {
+    .bikes {
+        padding: 0 1em 3em 1em;
+    }
 }
 
-.st-bike .flex-row {
-  align-self: center;
-  height: 1673px;
-  margin-right: 40.0px;
-  margin-top: 19px;
-  min-width: 1180px;
+@media screen and (min-width: 768px) {
+    .bikes hr {
+        border: var(--hr-border-style-gray-30);
+        grid-row: 18;
+    }
+    .bikes .bikes-bellingham-map {
+        margin: .5em 0 .5em 0;
+    }
+    .bikes {
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 3em;
+    }
+    .bikes img {
+        grid-column: 2;
+    }
+    .bikes p, .bikes h3, .bikes ul, .bikes a, .bikes video {
+        grid-column: 1;
+    }
+    .bikes .image-bikes-buckling-helmet {
+        grid-row: 1 / span 10;
+    }
+    .bikes .image-bikes-trail-riding {
+        grid-row: 10 / span 6;
+    }
 }
 
-.st-bike .flex-col {
-  flex-direction: column;
-  min-height: 1673px;
-  width: 711px;
+@media screen and (min-width: 992px) {
+    .bikes .image-bikes-trail-riding {
+        grid-row: 12 / span 6;
+    }
 }
 
-.st-bike .overlap-group8 {
-  align-self: flex-end;
-  height: 454px;
-  position: relative;
-  width: 703px;
-}
-
-.st-bike .bicycling-is {
-  left: 0;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 129px;
-  white-space: nowrap;
-  width: 319px;
-}
-
-.st-bike .smart-trips_logo {
-  height: 62px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 136px;
-}
-
-.st-bike .overlap-group5 {
-  height: 439px;
-  left: 2px;
-  position: absolute;
-  top: 15px;
-  width: 701px;
-}
-
-.st-bike .convenient-walking {
-  height: 256px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  top: 179px;
-  width: 602px;
-}
-
-.st-bike .perks {
-  display: flex;
-  height: 184px;
-  left: 518px;
-  position: absolute;
-  top: 0;
-  width: 106px;
-}
-
-.st-bike .component-14-2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  left: 612px;
-  min-height: 125px;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-bike .rectangle-401 {
-  background-color: var(--white);
-  height: 93px;
-  left: 0;
-  opacity: 0.0;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-bike .bike-classes {
-  left: 10px;
-  line-height: 14px;
-  opacity: 0.0;
-  position: absolute;
-  top: 28px;
-}
-
-.st-bike .want-to-give-it-a-try {
-  height: 34px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 405px;
-  white-space: nowrap;
-  width: 274px;
-}
-
-.st-bike .biking-tips-container {
-  height: 158px;
-  margin-left: 10px;
-  margin-top: 11px;
-  position: relative;
-  width: 559px;
-}
-
-.st-bike .biking-tips {
-  height: 34px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 124px;
-  white-space: nowrap;
-  width: 276px;
-}
-
-.st-bike .biking-tips-bik {
-  height: 136px;
-  left: 2px;
-  letter-spacing: 0;
-  line-height: 24px;
-  position: absolute;
-  top: 0;
-  width: 557px;
-}
-
-.st-bike .overlap-group3 {
-  height: 682px;
-  margin-top: 10px;
-  position: relative;
-  width: 636px;
-}
-
-.st-bike .path-205 {
-  left: 43px;
-  width: 7px;
-}
-
-.st-bike .path-206 {
-  left: 10px;
-  width: 14px;
-}
-
-.st-bike .bicycling-is-a-great {
-  height: 227px;
-  left: 10px;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  top: 0;
-  width: 626px;
-}
-
-.st-bike .bus-video {
-  height: 351px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 331px;
-  width: 625px;
-}
-
-.st-bike .bikes-on-the-bus {
-  height: 34px;
-  left: 10px;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 165px;
-  white-space: nowrap;
-  width: 569px;
-}
-
-.st-bike .want-to-get-further {
-  color: var(--citrus);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  height: 152px;
-  left: 10px;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  top: 206px;
-  width: 626px;
-}
-
-.st-bike .bike-classes-and-education {
-  height: 34px;
-  letter-spacing: 0;
-  line-height: 44px;
-  margin-bottom: -10px;
-  margin-left: 9px;
-  margin-top: 26px;
-  white-space: nowrap;
-}
-
-.st-bike .bike-classes-are-ava {
-  height: 232px;
-  letter-spacing: 0;
-  line-height: 14px;
-  margin-left: 9px;
-  margin-top: 7px;
-  width: 626px;
-}
-
-.st-bike .line-6 {
-  height: 4px;
-  margin-left: 9.0px;
-  margin-top: 4px;
-  object-fit: cover;
-  width: 625px;
-}
-
-.st-bike .maps {
-  height: 34px;
-  letter-spacing: 0;
-  line-height: 44px;
-  margin-bottom: -10px;
-  margin-left: 9px;
-  margin-top: 18px;
-  white-space: nowrap;
-}
-
-.st-bike .flex-col-1 {
-  align-items: flex-end;
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  min-height: 1577px;
-  width: 469px;
-}
-
-.st-bike .flex-row-1 {
-  align-items: flex-start;
-  display: flex;
-  height: 129px;
-  min-width: 469px;
-}
-
-.st-bike .overlap-group4 {
-  align-self: flex-end;
-  height: 119px;
-  position: relative;
-  width: 175px;
-}
-
-.st-bike .rideshare {
-  display: flex;
-  height: 81px;
-  left: 74px;
-  position: absolute;
-  top: 0;
-  width: 101px;
-}
-
-.st-bike .rideshare-1 {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 9px;
-  margin-top: 1px;
-  white-space: nowrap;
-  width: 72px;
-}
-
-.st-bike .events-container {
-  height: 60px;
-  margin-left: 13px;
-  margin-top: 10px;
-  position: relative;
-  width: 80px;
-}
-
-.st-bike .button-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  margin-left: 8px;
-  min-width: 84px;
-  padding: 6px 18px;
-}
-
-.st-bike .button-1-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  margin-left: 25px;
-  min-width: 84px;
-  padding: 6px 15px;
-}
-
-.st-bike .images-evantide-2023_223 {
-  height: 658px;
-  margin-top: 66px;
-}
-
-.st-bike .images-evantide-2023_208 {
-  height: 618px;
-  margin-top: 106px;
-}
-
-.st-bike .overlap-group2 {
-  height: 394px;
-  margin-left: -252px;
-  margin-top: 7px;
-  position: relative;
-  width: 1653px;
-}
-
-.st-bike .base-1 {
-  background-color: var(--citrus);
-  height: 22px;
-  top: 266px;
-  width: 1400px;
-}
-
-.st-bike .base-2 {
-  background-color: var(--ship-gray);
-  height: 80px;
-  top: 186px;
-  width: 1401px;
-}
-
-.st-bike .fa-qs-contact-u {
-  left: 418px;
-  letter-spacing: 0;
-  line-height: 26px;
-  position: absolute;
-  top: 217px;
-  white-space: nowrap;
-}
-
-.st-bike .art-ride-loopcordat {
-  left: 0;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  text-decoration: underline;
-  top: 243px;
-  width: 280px;
-}
-
-.st-bike .we-have-maps-for-mak {
-  height: 290px;
-  left: 351px;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  top: 0;
-  width: 626px;
-}
-
-.st-bike .path-205-1 {
-  height: 14px;
-  left: 386px;
-  object-fit: cover;
-  position: absolute;
-  top: 221px;
-  width: 7px;
-}
-
-.st-bike .path-206-1 {
-  height: 14px;
-  left: 353px;
-  object-fit: cover;
-  position: absolute;
-  top: 221px;
-  width: 14px;
-}
-
-.st-bike .base-3 {
-  left: 252px;
-  position: absolute;
-}
-
-.st-bike .images-evantide {
-  object-fit: cover;
-  width: 438px;
-}
-
-.st-bike .path {
-  height: 14px;
-  object-fit: cover;
-  position: absolute;
-  top: 662px;
-}

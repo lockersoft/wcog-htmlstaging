@@ -1,493 +1,176 @@
-/* screen - st-trip-diary */
-
-.st-trip-diary {
-  align-items: flex-end;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  height: 952px;
-  overflow: hidden;
-  width: 1400px;
+header nav li:has(.remove-through-css) {
+    display: none;
+}
+.trip-diary-stat-info {
+    line-height: 1.5;
+}
+.trip-diary-grid-two-column {
+    grid-template-columns: 1fr;
+    padding: 1em;
+}
+.trip-diary .calendar-banner {
+    background-color: var(--finn);
+    width: 100%;
+    padding: 1em;
+    grid-row: 1;
+    grid-column: 1 / 2;
+}
+.trip-diary .calendar-banner span {
+    font-family: var(--font-family-lato);
+    color: #FFFFFF;
+}
+.trip-diary ul {
+    font-family: var(--font-family-lato);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.trip-diary .calendar-details {
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.trip-diary span {
+    color: var(--green-blue);
+    font-weight: bold;
+}
+.trip-diary .calendar-overlay {
+    justify-items: center;
+    align-items: center;
+}
+.trip-diary .calendar {
+    grid-row: 2;
+    grid-area: 2 / 1;
+}
+.trip-diary .calendar-details {
+    max-width: 200px;
+    grid-row: 2;
+    grid-area: 2 / 1;
+}
+.trip-diary h3 {
+    margin: .5em 0 0 0;
+}
+.trip-diary small {
+    font-family: var(--font-family-lato);
+}
+.trip-diary .trip-diary-savings {
+    margin: 1em 0 1em 0;
+    font-weight: bold;
+}
+.trip-diary .trip-diary-savings li:nth-of-type(even) {
+    margin: 0 0 1.5em 0;
 }
 
-.st-trip-diary .overlap-group8 {
-  height: 815px;
-  margin-right: -37px;
-  margin-top: 19px;
-  position: relative;
-  width: 1339px;
+@media screen and (min-width: 600px) {
+    .trip-diary .calendar-details {
+        max-width: 300px;
+    }
+    .trip-diary .trip-diary-savings {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .trip-diary .trip-diary-savings li:nth-of-type(odd) {
+        grid-row: 1;
+        justify-self: center;
+    }
+    .trip-diary .trip-diary-savings li:nth-of-type(even) {
+        grid-row: 2;
+        justify-self: center;
+    }
+    .image-trip-diary-iphone {
+        grid-column: 2;
+        grid-row: 1 / span 4;
+        max-width: 300px;
+    }
+    .trip-diary-app {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .trip-diary-grid-two-column {
+        grid-template-columns: 1fr;
+        padding: 1em 1em 0 1em;
+    }
+
 }
 
-.st-trip-diary .overlap-group11 {
-  height: 758px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1177px;
+@media screen and (min-width: 992px) {
+    .trip-diary-savings li:nth-of-type(even) {
+        font-size: 17px;
+    }
+    .trip-diary-grid-two-column {
+        grid-template-columns: 60% 40%;
+        grid-column-gap: 2em;
+    }
+    .trip-diary h2, .trip-diary h3, .trip-diary-app, .trip-diary-savings, .trip-diary p {
+        grid-column: 2;
+    }
+    .trip-diary .calendar-overlay {
+        grid-row: 1;
+    }
+    .trip-diary .calendar-overlay {
+        align-self: start;
+        align-items: center;
+        grid-row: 1 / span 8;
+    }
+    .trip-diary .calendar-banner {
+        grid-row: 1;
+    }
+    .trip-diary .calendar {
+        grid-row: 2 / span 6;
+    }
+    .trip-diary .trip-diary-app {
+        grid-row: 7;
+    }
+    .trip-diary .image-trip-diary-iphone {
+        grid-row: 4 / span 3;
+    }
+    .trip-diary small {
+        grid-column: 1 / 2;
+        grid-row: 5 / span 2;
+        align-self: center;
+        padding-bottom: 1em;
+    }
+    .trip-diary-individual-stats {
+        grid-column: 1 / 3;
+    }
+    .trip-diary-program-stats {
+        grid-column: 1 / 3;
+    }
+    .trip-diary .trip-diary-app-info {
+        grid-column: 1 / 3;
+    }
 }
 
-.st-trip-diary .button-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  left: 1061px;
-  min-width: 116px;
-  padding: 6px 16px;
-  position: absolute;
-  top: 5px;
-}
+@media screen and (min-width: 1280px) {
+    .trip-diary-individual-stats {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+    .trip-diary-program-stats {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    .trip-diary .trip-diary-app-info {
+        grid-column: 1;
+        grid-row: 3;
 
-.st-trip-diary .my-account {
-  letter-spacing: 0;
-  line-height: 12px;
-  min-height: 16px;
-  min-width: 82px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.st-trip-diary .overlap-group9 {
-  height: 222px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1093px;
-}
-
-.st-trip-diary .overlap-group7 {
-  height: 184px;
-  left: 0;
-  position: absolute;
-  top: 15px;
-  width: 878px;
-}
-
-.st-trip-diary .title {
-  left: 0;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 113px;
-  white-space: nowrap;
-  width: 803px;
-}
-
-.st-trip-diary .perks {
-  display: flex;
-  height: 184px;
-  left: 520px;
-  position: absolute;
-  top: 0;
-  width: 106px;
-}
-
-.st-trip-diary .rideshare {
-  display: flex;
-  height: 81px;
-  left: 777px;
-  position: absolute;
-  top: 0;
-  width: 101px;
-}
-
-.st-trip-diary .rideshare-1 {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 9px;
-  margin-top: 1px;
-  white-space: nowrap;
-  width: 72px;
-}
-
-.st-trip-diary .overlap-group7-item {
-  display: flex;
-  height: 119px;
-  left: 703px;
-  position: absolute;
-  top: 0;
-  width: 91px;
-}
-
-.st-trip-diary .component-14 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  left: 614px;
-  min-height: 125px;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-trip-diary .rectangle-401 {
-  background-color: var(--white);
-  height: 93px;
-  left: 0;
-  opacity: 0.0;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-trip-diary .bike-classes {
-  left: 10px;
-  letter-spacing: 0;
-  line-height: 14px;
-  opacity: 0.0;
-  position: absolute;
-  top: 28px;
-  white-space: nowrap;
-}
-
-.st-trip-diary .smart-trips_logo {
-  height: 62px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 136px;
-}
-
-.st-trip-diary .your-next-milestone-reward {
-  height: 34px;
-  left: 819px;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 188px;
-  white-space: nowrap;
-  width: 274px;
-}
-
-.st-trip-diary .overlap-group2 {
-  height: 551px;
-  left: 0;
-  position: absolute;
-  top: 207px;
-  width: 749px;
-}
-
-.st-trip-diary .april-calendar {
-  height: 502px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 49px;
-  width: 749px;
-}
-
-.st-trip-diary .rectangle-1447 {
-  background-color: var(--finn);
-  height: 49px;
-  left: 3px;
-  position: absolute;
-  top: 1px;
-  width: 741px;
-}
-
-.st-trip-diary .name {
-  color: var(--white);
-  font-family: var(--font-family-lato);
-  font-size: 24px;
-  font-weight: 700;
-  height: 34px;
-  left: 37px;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-  width: 274px;
-}
-
-.st-trip-diary .rectangle-1448 {
-  background-color: var(--citrus);
-  height: 85px;
-  left: 109px;
-  mix-blend-mode: multiply;
-  opacity: 0.5;
-  position: absolute;
-  top: 77px;
-  width: 107px;
-}
-
-.st-trip-diary .trip-field {
-  height: 386px;
-  left: 179px;
-  object-fit: cover;
-  position: absolute;
-  top: 116px;
-  width: 400px;
-}
-
-.st-trip-diary .rectangle-1449 {
-  background-color: var(--white);
-  height: 33px;
-  left: 204px;
-  position: absolute;
-  top: 134px;
-  width: 123px;
-}
-
-.st-trip-diary .monday-april-01 {
-  left: 209px;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 141px;
-  white-space: nowrap;
-}
-
-.st-trip-diary .events-container {
-  height: 60px;
-  left: 891px;
-  position: absolute;
-  top: 15px;
-  width: 80px;
-}
-
-.st-trip-diary .flex-col {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  left: 819px;
-  min-height: 583px;
-  position: absolute;
-  top: 232px;
-  width: 520px;
-}
-
-.st-trip-diary .image-1 {
-  height: 60px;
-  object-fit: cover;
-  width: 394px;
-}
-
-.st-trip-diary .youve-logged-947-tr {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-xl);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 22px;
-  margin-top: 10px;
-  min-height: 65px;
-  width: 373px;
-}
-
-.st-trip-diary .very-nicely-done {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-xxl);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 22px;
-  margin-top: 3px;
-  min-height: 113px;
-  width: 385px;
-}
-
-.st-trip-diary .overlap-group-container {
-  height: 314px;
-  margin-top: 18px;
-  position: relative;
-  width: 520px;
-}
-
-.st-trip-diary .overlap-group3 {
-  height: 59px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 98px;
-}
-
-.st-trip-diary .dollars-saved {
-  height: 34px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 0;
-  width: 98px;
-}
-
-.st-trip-diary .price {
-  height: 34px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 25px;
-  width: 98px;
-}
-
-.st-trip-diary .overlap-group4 {
-  height: 314px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 520px;
-}
-
-.st-trip-diary .view-all-of-your-ind {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-weight: 700;
-  height: 114px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 69px;
-  width: 337px;
-}
-
-.st-trip-diary .calories-burned {
-  height: 34px;
-  left: 145px;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 0;
-  width: 124px;
-}
-
-.st-trip-diary .text-1 {
-  left: 146px;
-  width: 124px;
-}
-
-.st-trip-diary .name-1 {
-  height: 34px;
-  left: 287px;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 0;
-  width: 98px;
-}
-
-.st-trip-diary .text-2 {
-  left: 288px;
-  width: 98px;
-}
-
-.st-trip-diary .calories-are-calcul {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-xxs);
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 13px;
-  position: absolute;
-  top: 250px;
-  width: 312px;
-}
-
-.st-trip-diary .hand_holding_iphone_1 {
-  height: 262px;
-  left: 206px;
-  object-fit: cover;
-  position: absolute;
-  top: 52px;
-  width: 314px;
-}
-
-.st-trip-diary .overlap-group6 {
-  height: 80px;
-  position: relative;
-  width: 1401px;
-}
-
-.st-trip-diary .path-205 {
-  left: 134px;
-  width: 7px;
-}
-
-.st-trip-diary .path-206 {
-  left: 101px;
-  width: 14px;
-}
-
-.st-trip-diary .base-1 {
-  background-color: var(--ship-gray);
-  height: 80px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1401px;
-}
-
-.st-trip-diary .fa-qs-contact-u {
-  left: 166px;
-  letter-spacing: 0;
-  line-height: 26px;
-  position: absolute;
-  top: 31px;
-  white-space: nowrap;
-}
-
-.st-trip-diary .subscribe {
-  display: flex;
-  height: 32px;
-  left: 933px;
-  position: absolute;
-  top: 23px;
-  width: 194px;
-}
-
-.st-trip-diary .app-store {
-  height: 52px;
-  left: 1144px;
-  object-fit: cover;
-  position: absolute;
-  top: 15px;
-  width: 206px;
-}
-
-.st-trip-diary .path-205-1 {
-  height: 14px;
-  left: 134px;
-  object-fit: cover;
-  position: absolute;
-  top: 34px;
-  width: 7px;
-}
-
-.st-trip-diary .path-206-1 {
-  height: 14px;
-  left: 101px;
-  object-fit: cover;
-  position: absolute;
-  top: 34px;
-  width: 14px;
-}
-
-.st-trip-diary .base-2 {
-  background-color: var(--citrus);
-  height: 22px;
-  width: 1400px;
-}
-
-.st-trip-diary .path {
-  height: 14px;
-  object-fit: cover;
-  position: absolute;
-  top: 33px;
-}
-
-.st-trip-diary .text {
-  height: 34px;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 25px;
+    }
+    .trip-diary .image-trip-diary-iphone {
+        grid-column: 2;
+        grid-row: 3 / span 4;
+    }
+    .trip-diary .trip-diary-app {
+        grid-template-columns: 60% 40%;
+    }
+    .trip-diary-grid-two-column {
+        grid-column-gap: 4em;
+    }
+    .trip-diary .calendar-details {
+        grid-area: 3 / 1;
+    }
+    .trip-diary .trip-diary-savings li:nth-of-type(odd) {
+        grid-row: 1;
+        justify-self: left;
+    }
+    .trip-diary .trip-diary-savings li:nth-of-type(even) {
+        grid-row: 2;
+        justify-self: left;
+    }
 }

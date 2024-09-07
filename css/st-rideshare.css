@@ -1,417 +1,63 @@
-/* screen - st-rideshare */
-
-.st-rideshare {
-  align-items: center;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  height: 1534px;
-  overflow: hidden;
-  width: 1400px;
+.ride-share {
+    margin-bottom: 3em;
 }
 
-.st-rideshare .overlap-group9 {
-  height: 1334px;
-  margin-right: 27.0px;
-  margin-top: 19px;
-  position: relative;
-  width: 1177px;
+@media screen and (min-width: 480px) {
+    .image-vanpool {
+        max-width: 300px;
+        align-self: center;
+        justify-self: center;
+    }
 }
-
-.st-rideshare .overlap-group12 {
-  height: 1332px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1177px;
+@media screen and (min-width: 768px) {
+    .ride-share {
+        grid-column-gap: 3em;
+    }
+    .ride-share img {
+        align-self: center;
+        justify-self: center;
+    }
 }
+@media screen and (min-width: 992px) {
+    .ride-share {
+        padding: 0 1em 1em 1em;
+    }
+    .ride-share p  {
+        margin: .7em 0 .7em 0;
+    }
+    .ride-share img {
+        grid-column: 2;
+    }
+    .ride-share p, .ride-share h3, .ride-share ul  {
+        grid-column: 1;
+    }
+    .image-two-people-in-car {
+        grid-row: 1 / span 7;
+    }
+    .image-carpool {
+        grid-row: 8 / span 8;
+    }
+    .ride-share .image-vanpool {
+        justify-self: start;
+        grid-row: 18 / span 10;
+    }
+    .ride-share h3 {
+        margin: 1em 0 0 0;
+        padding: 0;
+    }
+    .ride-share h3:last-of-type {
+        margin-bottom: .5em;
+    }
+    .ride-share .rideshare-vanpool-information {
+        margin-bottom: .5em;
+    }
 
-.st-rideshare .overlap-group11 {
-  height: 1061px;
-  left: 0;
-  position: absolute;
-  top: 5px;
-  width: 1177px;
 }
-
-.st-rideshare .overlap-group5 {
-  height: 215px;
-  left: 2px;
-  position: absolute;
-  top: 201px;
-  width: 602px;
-}
-
-.st-rideshare .component-15-5 {
-  display: flex;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 602px;
-}
-
-.st-rideshare .sharing-a-ride-if-o {
-  flex: 1;
-  letter-spacing: 0;
-  line-height: 14px;
-  margin-bottom: -2px;
-  margin-right: -2px;
-  width: 602px;
-}
-
-.st-rideshare .tips-for-rideshari {
-  height: 85px;
-  left: 2px;
-  line-height: 24px;
-  overflow: hidden;
-  top: 130px;
-  width: 557px;
-}
-
-.st-rideshare .want-to-give-it-a-try {
-  height: 34px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 85px;
-  white-space: nowrap;
-  width: 274px;
-}
-
-.st-rideshare .overlap-group8 {
-  height: 590px;
-  left: 0;
-  position: absolute;
-  top: 471px;
-  width: 589px;
-}
-
-.st-rideshare .path-205 {
-  left: 35px;
-  position: absolute;
-  top: 372px;
-  width: 7px;
-}
-
-.st-rideshare .path-206 {
-  left: 2px;
-  position: absolute;
-  top: 372px;
-  width: 14px;
-}
-
-.st-rideshare .you-dont-have-to-sh {
-  height: 574px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 18px;
-  position: absolute;
-  top: 0;
-  width: 589px;
-}
-
-.st-rideshare .whatcom-transportati {
-  height: 34px;
-  left: 4px;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 556px;
-  white-space: nowrap;
-  width: 516px;
-}
-
-.st-rideshare .overlap-group10 {
-  height: 493px;
-  left: 520px;
-  position: absolute;
-  top: 10px;
-  width: 657px;
-}
-
-.st-rideshare .overlap-group4 {
-  height: 184px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 183px;
-}
-
-.st-rideshare .perks {
-  display: flex;
-  height: 184px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 106px;
-}
-
-.st-rideshare .component-14-2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  left: 94px;
-  min-height: 125px;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-rideshare .rectangle-401 {
-  background-color: var(--white);
-  height: 93px;
-  left: 0;
-  opacity: 0.0;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-rideshare .bike-classes {
-  left: 10px;
-  letter-spacing: 0;
-  line-height: 14px;
-  opacity: 0.0;
-  position: absolute;
-  top: 28px;
-  white-space: nowrap;
-}
-
-.st-rideshare .adobe-stock_292940362 {
-  height: 314px;
-  left: 153px;
-  object-fit: cover;
-  position: absolute;
-  top: 179px;
-  width: 504px;
-}
-
-.st-rideshare .overlap-group3 {
-  height: 119px;
-  left: 703px;
-  position: absolute;
-  top: 10px;
-  width: 175px;
-}
-
-.st-rideshare .rideshare {
-  display: flex;
-  height: 81px;
-  left: 74px;
-  position: absolute;
-  top: 0;
-  width: 101px;
-}
-
-.st-rideshare .rideshare-1 {
-  width: 72px;
-}
-
-.st-rideshare .rideshare-2 {
-  width: 73px;
-}
-
-.st-rideshare .events-container {
-  height: 60px;
-  left: 891px;
-  position: absolute;
-  top: 10px;
-  width: 80px;
-}
-
-.st-rideshare .button-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  left: 983px;
-  min-width: 84px;
-  padding: 6px 18px;
-  position: absolute;
-  top: 0;
-}
-
-.st-rideshare .button-1-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  left: 1093px;
-  min-width: 84px;
-  padding: 6px 15px;
-  position: absolute;
-  top: 0;
-}
-
-.st-rideshare .tips-for-ridesharing {
-  height: 34px;
-  left: 0;
-  line-height: 44px;
-  top: 437px;
-  white-space: nowrap;
-  width: 276px;
-}
-
-.st-rideshare .flex-col {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  left: 0;
-  min-height: 177px;
-  position: absolute;
-  top: 0;
-  width: 319px;
-}
-
-.st-rideshare .smart-trips_logo {
-  height: 62px;
-  object-fit: cover;
-  width: 136px;
-}
-
-.st-rideshare .title {
-  letter-spacing: 0;
-  line-height: 44px;
-  margin-bottom: -1px;
-  min-height: 43px;
-  white-space: nowrap;
-}
-
-.st-rideshare .pool-container {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 177px;
-  left: 673px;
-  min-height: 766px;
-  position: absolute;
-  top: 566px;
-  width: 504px;
-}
-
-.st-rideshare .carpool2 {
-  height: 282px;
-  object-fit: cover;
-  width: 504px;
-}
-
-.st-rideshare .wta_vanpool {
-  height: 307px;
-  object-fit: cover;
-  width: 287px;
-}
-
-.st-rideshare .flex-col-1 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  left: 2px;
-  min-height: 261px;
-  position: absolute;
-  top: 1073px;
-  width: 628px;
-}
-
-.st-rideshare .overlap-group6 {
-  height: 140px;
-  position: relative;
-  width: 628px;
-}
-
-.st-rideshare .rideshare-matching-resources {
-  height: 34px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 44px;
-  position: absolute;
-  top: 106px;
-  white-space: nowrap;
-  width: 516px;
-}
-
-.st-rideshare .wta-vanpool-program {
-  height: 114px;
-  left: 2px;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  top: 0;
-  width: 626px;
-}
-
-.st-rideshare .httpswwwrideshar {
-  height: 114px;
-  letter-spacing: 0;
-  line-height: 14px;
-  text-decoration: underline;
-  width: 626px;
-}
-
-.st-rideshare .overlap-group7 {
-  align-items: flex-start;
-  background-color: var(--ship-gray);
-  display: flex;
-  height: 80px;
-  margin-right: 1.0px;
-  margin-top: 59px;
-  min-width: 1401px;
-  padding: 30.5px 102px;
-}
-
-.st-rideshare .path-211 {
-  align-self: flex-end;
-  width: 14px;
-}
-
-.st-rideshare .path-205-1 {
-  align-self: center;
-  height: 14px;
-  margin-left: 18px;
-  margin-top: 2.0px;
-  object-fit: cover;
-  width: 7px;
-}
-
-.st-rideshare .fa-qs-contact-u {
-  letter-spacing: 0;
-  line-height: 26px;
-  margin-left: 25px;
-  margin-top: 0.48px;
-  min-height: 16px;
-  white-space: nowrap;
-}
-
-.st-rideshare .base-1 {
-  background-color: var(--citrus);
-  height: 22px;
-  margin-right: 2.0px;
-  width: 1400px;
-}
-
-.st-rideshare .path {
-  height: 14px;
-  object-fit: cover;
-}
-
-.st-rideshare .rideshare-3 {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 9px;
-  margin-top: 1px;
-  white-space: nowrap;
-}
-
-.st-rideshare .tips-for {
-  letter-spacing: 0;
-  position: absolute;
+@media screen and (min-width: 1200px) {
+    .image-two-people-in-car {
+        grid-row: 1 / span 6;
+    }
+    .image-carpool {
+        grid-row: 7 / span 8;
+    }
 }

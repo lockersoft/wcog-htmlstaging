@@ -1,314 +1,89 @@
-/* screen - st-bike-classes */
-
-.st-bike-classes {
-  align-items: center;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  height: 2421px;
-  overflow: hidden;
-  width: 1400px;
+dl, ul {
+    font-family: var(--font-family-lato);
+}
+.bike-classes {
+    padding: 1em;
+    grid-column-gap: 3em;
+}
+.bike-classes .pad-bottom-1 {
+    margin-bottom: 1em;
+}
+dd {
+    margin: 0;
+    padding-bottom: 1.5em;
+}
+.bike-classes-skills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.bike-classes-skills li {
+    padding-bottom: 1em;
+}
+.bike-class-information dt, .bike-class-information dd {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: .8em;
+}
+.bike-classes-top-link, .bike-classes-schedule {
+    text-decoration: none;
+}
+.bike-classes .bike-classes-top-link:hover {
+    color: var(--finn);
+    font-weight: bold;
+}
+.bike-classes hr {
+    border: var(--hr-border-style-gray-30);
+    grid-column: 1 / 2;
+    grid-row: 7;
+    display: block;
+    width: 100%;
+}
+.pad-bottom {
+    padding-bottom: 2em;
+}
+.bike-classes dl dt {
+    margin-bottom: .5em;
 }
 
-.st-bike-classes .flex-row {
-  height: 221px;
-  margin-right: 27.0px;
-  margin-top: 19px;
-  min-width: 1177px;
+@media screen and (min-width: 992px) {
+    .bike-classes hr {
+        grid-row: 6;
+    }
+    .bike-classes h3 {
+        margin-bottom: 0;
+    }
+    .bike-classes img {
+        grid-column: 2;
+    }
+    .bike-classes p, .bike-classes ul, .bike-classes a, .bike-classes h3,
+    .bike-classes dl {
+        grid-column: 1;
+    }
+    .image-riding-bike-dirt-road {
+        grid-row: 2 / span 5;
+    }
+    hr {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .image-walking-bikes {
+        grid-row: 6 / span 6;
+        align-self: center;
+        justify-self: center;
+    }
+    .pad-bottom {
+        padding-bottom: 3em;
+    }
 }
 
-.st-bike-classes .flex-col {
-  flex-direction: column;
-  min-height: 221px;
-  width: 510px;
-}
-
-.st-bike-classes .smart-trips_logo {
-  height: 62px;
-  object-fit: cover;
-  width: 136px;
-}
-
-.st-bike-classes .title {
-  letter-spacing: 0;
-  line-height: 44px;
-  margin-bottom: -1px;
-  margin-top: 67px;
-  min-height: 43px;
-  white-space: nowrap;
-}
-
-.st-bike-classes .all-classes-are-free {
-  height: 34px;
-  letter-spacing: 0;
-  line-height: 44px;
-  margin-bottom: -10px;
-  margin-left: 2px;
-  margin-top: 15px;
-  white-space: nowrap;
-}
-
-.st-bike-classes .overlap-group3 {
-  align-self: center;
-  height: 184px;
-  margin-bottom: 7.0px;
-  margin-left: 10px;
-  position: relative;
-  width: 183px;
-}
-
-.st-bike-classes .perks {
-  display: flex;
-  height: 184px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 106px;
-}
-
-.st-bike-classes .component-14-1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  left: 94px;
-  min-height: 125px;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-bike-classes .rectangle-401 {
-  background-color: var(--white);
-  height: 93px;
-  left: 0;
-  opacity: 0.0;
-  position: absolute;
-  top: 0;
-  width: 89px;
-}
-
-.st-bike-classes .bike-classes {
-  left: 10px;
-  line-height: 14px;
-  opacity: 0.0;
-  position: absolute;
-  top: 28px;
-}
-
-.st-bike-classes .overlap-group4 {
-  height: 119px;
-  margin-top: 15px;
-  position: relative;
-  width: 175px;
-}
-
-.st-bike-classes .rideshare {
-  display: flex;
-  height: 81px;
-  left: 74px;
-  position: absolute;
-  top: 0;
-  width: 101px;
-}
-
-.st-bike-classes .rideshare-1 {
-  height: 16px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin-left: 9px;
-  margin-top: 1px;
-  white-space: nowrap;
-  width: 72px;
-}
-
-.st-bike-classes .events-container {
-  height: 60px;
-  margin-left: 13px;
-  margin-top: 15px;
-  position: relative;
-  width: 80px;
-}
-
-.st-bike-classes .button-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  margin-left: 12px;
-  margin-top: 5px;
-  min-width: 84px;
-  padding: 6px 18px;
-}
-
-.st-bike-classes .button-1-1 {
-  align-items: flex-end;
-  background-color: var(--green-blue);
-  border-radius: 4px;
-  display: flex;
-  height: 33px;
-  justify-content: flex-end;
-  margin-left: 26px;
-  margin-top: 5px;
-  min-width: 84px;
-  padding: 6px 15px;
-}
-
-.st-bike-classes .flex-row-1 {
-  align-items: flex-start;
-  display: flex;
-  gap: 115px;
-  height: 2005px;
-  margin-left: 4.0px;
-  margin-top: 8px;
-  min-width: 1206px;
-}
-
-.st-bike-classes .flex-col-1 {
-  min-height: 2005px;
-  width: 588px;
-}
-
-.st-bike-classes .overlap-group7 {
-  height: 493px;
-  margin-left: 1.0px;
-  position: relative;
-  width: 587px;
-}
-
-.st-bike-classes .all-of-our-classes-a {
-  color: var(--dove-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  height: 154px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  top: 0;
-  width: 587px;
-}
-
-.st-bike-classes .scroll-down-to-see-a {
-  height: 345px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 24px;
-  position: absolute;
-  top: 148px;
-  width: 550px;
-}
-
-.st-bike-classes .line-7 {
-  height: 4px;
-  margin-top: 2px;
-  object-fit: cover;
-  width: 586px;
-}
-
-.st-bike-classes .learn-to-ride {
-  height: 34px;
-  letter-spacing: 0;
-  line-height: 44px;
-  margin-bottom: -10px;
-  margin-left: 0;
-  margin-top: 5px;
-  white-space: nowrap;
-}
-
-.st-bike-classes .overlap-group6 {
-  height: 1443px;
-  margin-left: 0;
-  margin-top: 25px;
-  position: relative;
-  width: 588px;
-}
-
-.st-bike-classes .path-205 {
-  left: 34px;
-  width: 7px;
-}
-
-.st-bike-classes .path-206 {
-  left: 1px;
-  width: 14px;
-}
-
-.st-bike-classes .to-schedule-learn-to {
-  height: 1443px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 14px;
-  position: absolute;
-  top: 0;
-  width: 588px;
-}
-
-.st-bike-classes .flex-col-2 {
-  gap: 101px;
-  min-height: 791px;
-  width: 503px;
-}
-
-.st-bike-classes .hovander-park {
-  height: 359px;
-  object-fit: cover;
-  width: 503px;
-}
-
-.st-bike-classes .images-evantide-2023_237 {
-  height: 331px;
-  object-fit: cover;
-  width: 498px;
-}
-
-.st-bike-classes .overlap-group2 {
-  align-items: flex-end;
-  background-color: var(--ship-gray);
-  display: flex;
-  height: 80px;
-  margin-left: 1.0px;
-  margin-top: 46px;
-  min-width: 1401px;
-  padding: 31px 101px;
-}
-
-.st-bike-classes .path-206-1 {
-  height: 14px;
-  margin-bottom: 0.52px;
-  object-fit: cover;
-  width: 14px;
-}
-
-.st-bike-classes .path-205-1 {
-  height: 14px;
-  margin-bottom: 1px;
-  margin-left: 19px;
-  object-fit: cover;
-  width: 7px;
-}
-
-.st-bike-classes .fa-qs-contact-u {
-  align-self: flex-start;
-  letter-spacing: 0;
-  line-height: 26px;
-  margin-left: 25px;
-  min-height: 16px;
-  white-space: nowrap;
-}
-
-.st-bike-classes .base-1 {
-  background-color: var(--citrus);
-  height: 22px;
-  width: 1400px;
-}
-
-.st-bike-classes .path {
-  height: 14px;
-  object-fit: cover;
-  position: absolute;
-  top: 504px;
+@media screen and (min-width: 1200px) {
+    .bike-classes hr {
+        grid-row: 6;
+    }
+    .image-walking-bikes {
+        grid-row: 5 / span 9;
+        align-self: center;
+        justify-self: center;
+    }
 }

@@ -1,169 +1,186 @@
-:root { 
-  --citrus: #a1c11e;
-  --dove-gray: #707070;
-  --finn: #69165e;
-  --green-blue: #1a6db5;
-  --sail: #bce0fd;
-  --ship-gray: #3d3c3e;
-  --white: #ffffff;
- 
-  --font-size-l: 15px;
-  --font-size-m: 14px;
-  --font-size-s: 13.5px;
-  --font-size-xl: 16px;
-  --font-size-xs: 12px;
-  --font-size-xxl: 20px;
-  --font-size-xxs: 9px;
- 
-  --font-family-arial-bold: "Arial-Bold", Helvetica;
-  --font-family-arial-regular: "Arial-Regular", Helvetica;
-  --font-family-helveticaneue-regular: "HelveticaNeue-Regular", Helvetica;
-  --font-family-lato: "Lato", Helvetica;
+:root {
+    --citrus: #a1c11e;
+    --dove-gray: #707070;
+    --finn: #69165e;
+    --green-blue: #1A6DB5;
+    --sail: #bce0fd;
+    --ship-gray: #3d3c3e;
+    --white: #ffffff;
+
+    --font-size-l: 15px;
+    --font-size-m: 14px;
+    --font-size-s: 13.5px;
+    --font-size-xl: 16px;
+    --font-size-xs: 12px;
+    --font-size-xxl: 20px;
+    --font-size-xxs: 9px;
+    --font-size-xlm: 17px;
+
+    --font-family-arial-bold: "Arial-Bold", Helvetica;
+    --font-family-arial-regular: "Arial-Regular", Helvetica;
+    --font-family-helveticaneue-regular: "HelveticaNeue-Regular", Helvetica;
+    --font-family-lato: "Lato", Helvetica;
+
+    /*MOBILE VARIABLES (Bacon Cheeseburger Menu)*/
+    --bar-width: 35px;
+    --bar-height: 5px;
+    --bar-gap: 4px;
+    --roundedEnd: 9999px;
+    --animation-timing: 200ms ease-in-out;
+    --mobileMenuHeight: calc(var(--bar-height) * 3 + var(--bar-gap) * 2);
+    --menu-checked: 0;
+
+/*    HEADER OFFSET*/
+    --header-height: 176px;
+    --hr-border-style-gray-30: 1px solid rgb(112, 112, 112, 0.3);
+
 }
 .arial-regular-normal-green-blue-12px {
-  color: var(--green-blue);
-  font-family: var(--font-family-arial-regular);
-  font-size: var(--font-size-xs);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--green-blue);
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
 }
 
 .lato-normal-ship-gray-14px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
 }
 
 .lato-bold-ship-gray-14px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .arial-regular-normal-white-12px {
-  color: var(--white);
-  font-family: var(--font-family-arial-regular);
-  font-size: var(--font-size-xs);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--white);
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
 }
 
 .lato-bold-green-blue-20px {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-xxl);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--green-blue);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .arial-bold-white-12px {
-  color: var(--white);
-  font-family: var(--font-family-arial-bold);
-  font-size: var(--font-size-xs);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--white);
+    font-family: var(--font-family-arial-bold);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .lato-normal-green-blue-14px {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--green-blue);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
 }
 
 .lato-bold-green-blue-14px {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--green-blue);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .lato-normal-ship-gray-14px-2 {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-m);
 }
 
 .lato-bold-ship-gray-13-5px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-s);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .lato-normal-ship-gray-13-5px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-s);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
 }
 
 .lato-bold-green-blue-34px {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
+    color: var(--green-blue);
+    font-family: var(--font-family-lato);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .lato-bold-green-blue-16px {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-xl);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--green-blue);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .lato-normal-citrus-14px {
-  color: var(--citrus);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--citrus);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
 }
 
 .arial-bold-finn-12px {
-  color: var(--finn);
-  font-family: var(--font-family-arial-bold);
-  font-size: var(--font-size-xs);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--finn);
+    font-family: var(--font-family-arial-bold);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .lato-normal-ship-gray-16px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-xl);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
 }
 
 .lato-normal-green-blue-14px-2 {
-  color: var(--green-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-m);
+    color: var(--green-blue);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-m);
 }
 
 .lato-bold-ship-gray-20px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-xxl);
-  font-style: normal;
-  font-weight: 700;
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .lato-bold-ship-gray-18px {
-  color: var(--ship-gray);
-  font-family: var(--font-family-lato);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
 }
+
+
