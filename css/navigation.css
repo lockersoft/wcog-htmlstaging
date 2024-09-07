@@ -179,7 +179,7 @@ nav {
     }
     .button_blue {
         background-color: var(--green-blue);
-        font-family: arial, sans-serif;
+        font-family: arial, Helvetica, sans-serif;
         font-weight: 400;
         color: #fff;
         border-radius: 3px;
