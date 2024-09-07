@@ -16,10 +16,10 @@
     --font-size-xxs: 9px;
     --font-size-xlm: 17px;
 
-    --font-family-arial-bold: "Arial-Bold", Helvetica;
-    --font-family-arial-regular: "Arial-Regular", Helvetica;
-    --font-family-helveticaneue-regular: "HelveticaNeue-Regular", Helvetica;
-    --font-family-lato: "Lato", Helvetica;
+    --font-family-arial-bold: "Arial-Bold", Helvetica, sans-serif;
+    --font-family-arial-regular: "Arial-Regular", Helvetica, sans-serif;
+    --font-family-helveticaneue-regular: "HelveticaNeue-Regular", Helvetica, sans-serif;
+    --font-family-lato: "Lato", Helvetica, sans-serif;
 
     /*MOBILE VARIABLES (Bacon Cheeseburger Menu)*/
     --bar-width: 35px;
