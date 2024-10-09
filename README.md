@@ -3,4 +3,4 @@ Auto deployed through GitHub actions using web-deploy action
 
 URL:  whatcomhtml.lockersoft.dev
 
-URL: lockersoft.github.io
+URL: https://lockersoft.github.io/wcog-htmlstaging/
