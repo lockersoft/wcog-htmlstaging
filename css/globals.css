@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6, p, a {
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-lato), sans-serif;
 }
 h1, h2, h3, h4 {
     color: var(--green-blue);
@@ -56,13 +56,30 @@ img {
     background-color: var(--citrus);
     min-height: 13px;
     max-height: 13px;
-    width: 100%;
+    /*original*/
+    /*width: 100%;*/
+
+    /*updated properties to make the green bar the full size of the
+    screen, overriding the max-width of the body element*/
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .base_bottom {
     background-color: var(--citrus);
     min-height: 13px;
     max-height: 13px;
-    width: 100%;
+    /*original*/
+    /*width: 100%;*/
+
+    /*updated properties to make the green bar the full size of the
+    screen, overriding the max-width of the body element*/
+    position: relative;
+    width: 100vw;
+    left: 50%;
+
+    transform: translateX(-50%);
 }
 .grid {
     display: grid;

@@ -9,7 +9,7 @@
 }
 .stats {
     color: var(--finn);
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-lato), sans-serif;
     font-weight: 800;
     font-size: 20px;
 }
@@ -193,8 +193,8 @@
         justify-items: initial;
     }
     .standalone-grid {
-         padding: 2em 5em 0em 2em;
-     }
+        padding: 2em 5em 0 2em;
+    }
     .bicycle-icon {
         max-width: 350px;
     }

@@ -79,9 +79,7 @@
 
 
 
-/*#################  BACON CHEESEBURGER MENU ANIMATION ###################*/
-/*#################  BACON CHEESEBURGER MENU ANIMATION ###################*/
-/*#################  BACON CHEESEBURGER MENU ANIMATION ###################*/
+/*################# MENU ANIMATION ###################*/
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
 }
@@ -109,7 +107,7 @@
     z-index: 999;
 }
 nav {
-    font-family: var(--font-family-arial-regular);
+    font-family: var(--font-family-arial-regular), sans-serif;
     position: absolute;
     left: 0;
     width: 100%;
@@ -117,7 +115,12 @@ nav {
     box-shadow: 1px 4px 5px rgba(0,0,0,0.3);
 }
 
+/*Position of the home icon vertically*/
+.home-icon {
+    max-width: 25px;
+    height: auto;
 
+}
 
 
 
@@ -148,6 +151,10 @@ nav {
 
 /*Screen surpasses 1153px*/
 @media screen and (min-width: 1280px) {
+    .home-icon {
+        position: relative;
+        top: -5px;
+    }
     nav {
         position: relative;
         left: 0;
