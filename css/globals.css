@@ -117,6 +117,14 @@ img {
     text-decoration: none;
     font-weight: bold;
 }
+
+.custom-unordered-list-type-1 {
+    margin: 0;
+    padding: 0;
+}
+.custom-unordered-list-type-1 li {
+    text-indent: 2em;
+}
 /*#####################################*/
 
 
