@@ -52,5 +52,5 @@ jobs:
         script: |
           whoami
           ls -al
-          echo "The repository ${{ github.repository }} contains the following
+          echo "The repository ${{ github.repository }} contains the following:"
           tree
