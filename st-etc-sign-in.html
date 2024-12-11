@@ -1,10 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8"/>
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="css/globals.css"/>
+    <!--PAGE SPECIFIC CSS-->
+    <link rel="stylesheet" type="text/css" href="css/st-etc-sign-in.css"/>
+    <!--NAV/FOOTER CSS-->
+    <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <title></title>
 </head>
 <body>
+<div class="base"></div>
+<!--OUTER WRAPPER-->
+<div class="outer">
+    <!--CONTENT WRAPPER-->
+    <div class="wrapper">
+        <!--HEADER-->
+        <header class="header">
+            <!--LOGO-->
+            <a href="index.html"><img class="smart-trips_logo" src="img/smarttrips-logo-1@1x.png"
+                                      alt="SmartTrips_logo"/></a>
+            <!--MOBILE MENU ICON-->
+            <input id="menu-btn" class="menu-btn" type="checkbox">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--NAVIGATION-->
+            <nav>
+                <ul class="menu">
+                    <!--MAIN TIER NAV-->
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-perks">Perks-label</label>
+                        <a class="tier-1-perks" href="st-perks.html">PERKS</a>
+                        <input type="checkbox" id="nav-sub-menu-perks">
+                        <ul class="tier-2-perks">
+                            <li><a href="#">Cash Prizes</a></li>
+                            <li><a href="#">Discounts</a></li>
+                            <li><a href="#">Milestones</a></li>
+                            <li><a href="#">Leaders</a></li>
+                            <li><a href="#">Emergency Ride Home</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-bike">Bike-label</label>
+                        <a class="tier-1-bike active" href="st-bike.html">BIKE</a>
+                        <input type="checkbox" id="nav-sub-menu-bike">
+                        <ul class="tier-2-bike">
+                            <li><a href="#">Riding Tips</a></li>
+                            <li><a href="#">Bike Classes</a></li>
+                            <li><a href="#">Self-Guided Rides</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-bus">Bus-label</label>
+                        <a class="tier-1-bus" href="st-bus.html">BUS</a>
+                        <input type="checkbox" id="nav-sub-menu-bus">
+                        <ul class="tier-2-bus">
+                            <li><a href="#">How to Ride</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-rideshare">Rideshare-label</label>
+                        <a class="tier-1-rideshare" href="st-rideshare.html">RIDESHARE</a>
+                        <input type="checkbox" id="nav-sub-menu-rideshare">
+                        <ul class="tier-2-rideshare">
+                            <li><a href="#">Vanpool</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-events">Events-label</label>
+                        <a class="tier-1-events" href="st-events.html">EVENTS</a>
+                        <input type="checkbox" id="nav-sub-menu-events">
+                        <ul class="tier-2-events">
+                            <li><a href="#">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="button_blue" href="#">SIGN IN</a></li>
+                    <li><a class="button_blue" href="#">SIGN UP</a></li>
+                    <li><a href="#"><img class="home-icon" src="img/home-icon.png" alt="Home"></a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <section class="two-col-span"><!-- ALL CONTENT GOES BELOW THIS-->
+
+            <div class="grid etc-sign-in-info">
+
+                <img src="img/images-evantide-2023-140.png" alt="People riding the bus">
+
+                <h1 class="page-title">Welcome Smart Trip Coordinators!</h1>
+
+                <div class="grid grid-two-column coordinator-info">
+                    <p>We appreciate you and your company for your participation in the Smart Trips program. We are here
+                        to help. Contact us any time for support, brainstorming, technical assistance or just to chat.
+                        We love hearing your success stories. Reach out to Blanche, Smart Trips Business Coordinator at
+                        blanche@wcog.org or 360-685-8387.
+                    </p>
+
+                    <img class="centered-image" src="img/boy-riding-bike.png" alt="Boy riding bike">
+
+                    <h3>Resources for Smart Trips Coordinators</h3>
+                    <ul class="custom-bullets text-green-blue bold-text spacing-b-medium">
+                        <li><a href="#">Employee List</a></li>
+                        <li><a href="#">Run a Report</a></li>
+                        <li><a href="#">Instructions for Issuing a First Time Riders Pass</a></li>
+                        <li><a href="#">Smart Trips Coordinator Toolkit</a></li>
+                    </ul>
+
+                    <h3>
+                        <img class="green-arrow-right" src="img/green-arrow-right.png" alt="Green arrow right">
+                        Employee List
+                    </h3>
+                    <p class="text-green-blue">What do I do with the Employee List?</p>
+                    <ul class="custom-unordered-list-type-2">
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            See who at your company is signed up
+                        </li>
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Request an employee bus pass
+                        </li>
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Remove an employee from your list
+                        </li>
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Print the list for reference
+                        </li>
+                    </ul>
+                    <button>See Employee List</button>
+
+                    <div class="dashed-border"></div>
+
+                    <h3>
+                        <img class="green-arrow-right" src="img/green-arrow-right.png" alt="Green arrow right">
+                        Run a Report
+                    </h3>
+                    <p><span class="text-green-blue">How do I run a report?</span> It's easy!</p>
+                    <ul class="custom-unordered-list-type-2">
+                        <li><img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Choose your report options including date range, trip purpose, trip mode, and number of
+                            trips taken.
+                        </li>
+                        <li><img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Click on Run a Report button</li>
+                        <li><img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            The report will appear. You may either print directly from the screen or download to
+                            Excel.
+                        </li>
+                        <li><img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            To print a formatted report just click on the grey Print Report button at the bottom of the
+                            page. The page that prints is ready to display.
+                        </li>
+                    </ul>
+
+                    <h4>Why should I run a report?</h4>
+                    <p><strong>See who your Smart Trip makers are.</strong> These people can be great ambassadors for the program.</p>
+                    <p><strong>Find a bike or bus buddy for another employee.</strong> Select bus or bike as the Trip Mode and see who
+                        your riders are. You could then contact them about supporting another rider.</p>
+                    <p><strong>Run an in-house promotion!</strong> You can run a one-off promotion or run them on a regular basis.</p>
+                    <p><strong>Encourage employees to start logging their trips.</strong> Run a report to see who your regular Smart Trip
+                        makers are, promote the program, then run another report in a week or two to see who signed up.
+                        You could even send them all a coffee card or prize for signing up. Or give them a shout
+                        out!</p>
+                    <p><strong>Run a promotion for a particular month</strong>, like Bike Month in May!</p>
+                    <p><strong>Choose a different Trip Mode each season</strong> to celebrate your walkers, bicyclists, bussers and
+                        ridesharers.</p>
+                    <p><strong>Looking for a rideshare for someone?</strong> Start with finding out who your ridesharers are. Maybe they
+                        have room for another rider.</p>
+                    <p><strong>Run a report to find out who isn’t a bus rider</strong> and send them a free 6-ride pass (just ask the
+                        Smart Trips office for these to give away).</p>
+
+                    <button>Run a Report</button>
+
+                    <div class="dashed-border"></div>
+
+                    <h3>
+                        <img class="green-arrow-right" src="img/green-arrow-right.png" alt="Green arrow right">
+                        Instructions for Issuing a Free First Time Riders Pass
+                    </h3>
+                    <p>Remember these passes are only for people <strong>new</strong> to riding WTA. Passes are good for unlimited rides
+                        for 31 days from the first day it is used.</p>
+                    <p>It is easy for <strong>you</strong> to request this one-time free 31-day pass (worth $30.00) for your
+                        employees.</p>
+
+                    <ul class="custom-unordered-list-type-2">
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Go to your Employee List.</li>
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Find the name of your employee wanting a pass in your list of participants. If they aren’t
+                            on your employee list, have them set up a Smart Trips account or have them check to make
+                            sure they have the correct employer listed on their Smart Trips account.
+                        </li>
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Click the button Request Bus Pass. If they have a green Approved button then they have
+                            already received a bus pass from us. If they have Regular Rider button then they already
+                            have bus trips logged into their Smart Trips account and they don’t qualify as a new rider.
+                        </li>
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            We will send the pass directly to their house using the address in their Smart Trips
+                            account. Confirm their mailing address in their Smart Trips account is correct and includes
+                            an apartment number if needed!
+                        </li>
+                        <li>
+                            <img class="blue-arrow-right" src="img/arrowRight.png" alt="blue-arrow-right">
+                            Give them a WTA transit guide or go to ridewta.com and help them figure out their bus route
+                            to work. An individual will only be sent this pass one time. And remember Smart Trips is
+                            here to help if you aren’t sure about helping them plan their route.
+                        </li>
+                    </ul>
+
+                    <p class="spacing-b-medium">Please call or email if you have any troubles or questions: blanche@wcog.org or 360-685-8387.</p>
+
+                    <div class="dashed-border"></div>
+
+                    <div class="coordinator-toolkit-card spacing-b-medium spacing-t-medium">
+                        <img src="img/toolkit.png" alt="Crossed wrenches">
+                        <a href="#">Smart Trip Coordinator's Toolkit</a>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- ALL CONTENT GOES ABOVE THIS-->
+    </div><!--END CONTENT WRAPPER-->
+</div><!--END OUTER-->
+<!--FOOTER-->
+<footer class="grid">
+    <div class="grayBar"></div>
+    <div class="grid"></div>
+    <div class="grid grid-three-column footer-layout">
+        <div class="grid grid-two-column social-info">
+            <ul class="social-media-icons">
+                <li><a class="footer-instagram-icon" href="#"><img class="path-206 path" src="img/path-206-10@1x.png"
+                                                                   alt="Path 206"/></a></li>
+                <li><a class="footer-facebook-icon" href="#"><img class="path-205 path" src="img/path-205-10@1x.png"
+                                                                  alt="Path 205"/></a></li>
+            </ul>
+            <ul class="footer-info-links">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="st-contact.html">CONTACT US</a></li>
+                <li><a href="#">EMPLOYERS</a></li>
+                <li><a href="#">YOUTH EDUCATION</a></li>
+                <li><a class="translate-link" href="#">Translate this page</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="base_bottom"></div>
 </body>
 </html>

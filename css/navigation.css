@@ -123,6 +123,38 @@ nav {
 }
 
 
+/*########### NEW NAV SUB-MENU TESTING ############*/
+/*########### NEW NAV SUB-MENU TESTING ############*/
+/*########### NEW NAV SUB-MENU TESTING ############*/
+.toggle, [id^=nav-sub-menu] {
+    display: none;
+}
+nav ul ul {
+    display: none;
+}
+.tier-1-perks:hover ~ .tier-2-perks, ul.tier-2-perks:hover {
+    display: block;
+}
+.tier-1-bike:hover ~ .tier-2-bike, ul.tier-2-bike:hover {
+    display: block;
+}
+.tier-1-bus:hover ~ .tier-2-bus, ul.tier-2-bus:hover {
+    display: block;
+}
+.tier-1-rideshare:hover ~ .tier-2-rideshare, ul.tier-2-rideshare:hover {
+    display: block;
+}
+.tier-1-events:hover ~ .tier-2-events, ul.tier-2-events:hover {
+    display: block;
+}
+@media only screen and (min-width: 1280px) {
+
+}
+/*########### NEW NAV SUB-MENU TESTING ############*/
+/*########### NEW NAV SUB-MENU TESTING ############*/
+/*########### NEW NAV SUB-MENU TESTING ############*/
+
+
 
 
 
@@ -194,4 +226,93 @@ nav {
     .button_blue:hover {
         background-color: rgba(26, 109, 181, 1) !important;
     }
+
+    /*########### NEW NAV SUB-MENU TESTING ############*/
+    /*########### NEW NAV SUB-MENU TESTING ############*/
+    /*########### NEW NAV SUB-MENU TESTING ############*/
+
+    /*Perks sub-nav*/
+    .tier-1-perks:hover ~ .tier-2-perks, ul.tier-2-perks:hover {
+        position: absolute;
+        display: block;
+    }
+    .tier-1-perks:hover ~ .tier-2-perks, ul.tier-2-perks:hover {
+        display:flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /*Bike sub-nav*/
+    .tier-1-bike:hover ~ .tier-2-bike, ul.tier-2-bike:hover {
+        position: absolute;
+        display: block;
+    }
+    .tier-1-bike:hover ~ .tier-2-bike, ul.tier-2-bike:hover {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /*Bus sub-nav*/
+    .tier-1-bus:hover ~ .tier-2-bus, ul.tier-2-bus:hover {
+        position: absolute;
+        display: block;
+    }
+    .tier-1-bus:hover ~ .tier-2-bus, ul.tier-2-bus:hover {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /*Rideshare sub-nav*/
+    .tier-1-rideshare:hover ~ .tier-2-rideshare, ul.tier-2-rideshare:hover {
+        position: absolute;
+        display: block;
+    }
+    .tier-1-rideshare:hover ~ .tier-2-rideshare, ul.tier-2-rideshare:hover {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /*Events sub-nav*/
+    .tier-1-events:hover ~ .tier-2-events, ul.tier-2-events:hover {
+        position: absolute;
+        display: block;
+    }
+    .tier-1-events:hover ~ .tier-2-events, ul.tier-2-events:hover {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    /*########### NEW NAV SUB-MENU TESTING ############*/
+    /*########### NEW NAV SUB-MENU TESTING ############*/
+    /*########### NEW NAV SUB-MENU TESTING ############*/
+
+
+
 } /*END MOBILE CHANGES ( < 1153px) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
