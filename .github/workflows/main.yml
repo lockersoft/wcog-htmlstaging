@@ -65,5 +65,5 @@ jobs:
         USER: ${{ secrets.USERNAME }}
         KEY: ${{ secrets.WCOG_HTML_SECRET }}
         TARGET: /home/dh_qp73ft/whatcomhtml.lockersoft.dev/
-        ARGS: -avz --delete
+        ARGS: -avz
         SSH_ARGS: '-p 22 -o StrictHostKeyChecking=no'
