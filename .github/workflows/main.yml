@@ -54,3 +54,13 @@ jobs:
           ls -al
           echo "The repository ${{ github.repository }} contains the following:"
           tree
+
+    - name: Deploy to website
+      uses: up9cloud/action-rsync@master
+      env:
+        HOST: whatcomhtml.lockersoft.dev
+        USER: ${{ secrets.USERNAME }}
+        KEY: ${{ secrets.WCOG_HTML_SECRET }}
+        TARGET: /home/dh_qp73ft/whatcomhtml.lockersoft.dev/
+        ARGS: -avz --delete
+        SSH_ARGS: '-p 22 -o StrictHostKeyChecking=no'
