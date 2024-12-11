@@ -35,14 +35,61 @@
       <!--NAV-->
       <nav>
         <ul class="menu">
-          <li><a href="st-perks.html">PERKS</a></li>
-          <li><a href="st-bike.html">BIKE</a></li>
-          <li><a href="st-bus.html">BUS</a></li>
-          <li><a href="st-rideshare.html">RIDESHARE</a></li>
-          <li><a href="st-events.html">EVENTS</a></li>
+          <!--MAIN TIER NAV-->
+          <li>
+            <!--Tier 2-->
+            <label class="toggle" for="nav-sub-menu-perks">Perks-label</label>
+            <a class="tier-1-perks" href="st-perks.html">PERKS</a>
+            <input type="checkbox" id="nav-sub-menu-perks">
+            <ul class="tier-2-perks">
+              <li><a href="#">Cash Prizes</a></li>
+              <li><a href="#">Discounts</a></li>
+              <li><a href="#">Milestones</a></li>
+              <li><a href="#">Leaders</a></li>
+              <li><a href="#">Emergency Ride Home</a></li>
+            </ul>
+          </li>
+          <li>
+            <!--Tier 2-->
+            <label class="toggle" for="nav-sub-menu-bike">Bike-label</label>
+            <a class="tier-1-bike" href="st-bike.html">BIKE</a>
+            <input type="checkbox" id="nav-sub-menu-bike">
+            <ul class="tier-2-bike">
+              <li><a href="#">Riding Tips</a></li>
+              <li><a href="#">Bike Classes</a></li>
+              <li><a href="#">Self-Guided Rides</a></li>
+            </ul>
+          </li>
+          <li>
+            <!--Tier 2-->
+            <label class="toggle" for="nav-sub-menu-bus">Bus-label</label>
+            <a class="tier-1-bus" href="st-bus.html">BUS</a>
+            <input type="checkbox" id="nav-sub-menu-bus">
+            <ul class="tier-2-bus">
+              <li><a href="#">How to Ride</a></li>
+            </ul>
+          </li>
+          <li>
+            <!--Tier 2-->
+            <label class="toggle" for="nav-sub-menu-rideshare">Rideshare-label</label>
+            <a class="tier-1-rideshare" href="st-rideshare.html">RIDESHARE</a>
+            <input type="checkbox" id="nav-sub-menu-rideshare">
+            <ul class="tier-2-rideshare">
+              <li><a href="#">Vanpool</a></li>
+            </ul>
+          </li>
+          <li>
+            <!--Tier 2-->
+            <label class="toggle" for="nav-sub-menu-events">Events-label</label>
+            <a class="tier-1-events" href="st-events.html">EVENTS</a>
+            <input type="checkbox" id="nav-sub-menu-events">
+            <ul class="tier-2-events">
+              <li><a href="#">Calendar</a></li>
+            </ul>
+          </li>
           <li><a class="button_blue" href="#">SIGN IN</a></li>
           <li><a class="button_blue" href="#">SIGN UP</a></li>
-          <li><a  href="#"><img class="home-icon" src="img/home-icon.png" alt="Home"></a></li>
+          <li><a href="#"><img class="home-icon" src="img/home-icon.png" alt="Home"></a></li>
         </ul>
       </nav>
     </header>
