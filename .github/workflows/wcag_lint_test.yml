@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm install eslint stylelint stylelint-config-standard axe-core pa11y lighthouse
+        npm install eslint stylelint stylelint-config-standard axe-core pa11y lighthouse puppeteer
 
     - name: Run ESLint
       run: npx eslint '**/*.js' --format unix > eslint_report.txt || true
