@@ -1,13 +1,13 @@
-name: Accessibility and Formatting Check
+name: Comprehensive Accessibility and Formatting Check
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  check:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,8 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm install eslint stylelint stylelint-config-standard axe-core
-        npm install -g pa11y
+        npm install eslint stylelint stylelint-config-standard axe-core pa11y lighthouse
 
     - name: Run ESLint
       run: npx eslint '**/*.js' --format unix > eslint_report.txt || true
@@ -33,6 +32,15 @@ jobs:
       run: |
         find . -name "*.html" -print0 | xargs -0 -I {} pa11y --reporter csv {} >> pa11y_report.csv || true
 
+    - name: Run Axe with Playwright for accessibility
+      run: |
+        npx playwright install-deps
+        npx playwright test || true
+
+    - name: Run Lighthouse for performance and accessibility
+      run: |
+        npx lighthouse https://your-site.com --output json --output-path=./lighthouse_report.json || true
+
     - name: Combine reports
       run: |
         echo "# Accessibility and Formatting Issues" > issues_report.md
@@ -43,8 +51,11 @@ jobs:
         echo "## CSS Issues" >> issues_report.md
         cat stylelint_report.txt >> issues_report.md
         echo "" >> issues_report.md
-        echo "## Accessibility Issues" >> issues_report.md
+        echo "## Pa11y Accessibility Issues" >> issues_report.md
         cat pa11y_report.csv >> issues_report.md
+        echo "" >> issues_report.md
+        echo "## Lighthouse Report" >> issues_report.md
+        cat lighthouse_report.json | jq '.' >> issues_report.md
 
     - name: Generate fix suggestions
       run: |
@@ -69,5 +80,6 @@ jobs:
     - name: Upload report
       uses: actions/upload-artifact@main
       with:
-        name: issues-report
+        name: comprehensive-issues-report
         path: issues_report.md
+
