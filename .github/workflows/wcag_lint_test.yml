@@ -39,7 +39,7 @@ jobs:
 
     - name: Run Lighthouse for performance and accessibility
       run: |
-        npx lighthouse https://your-site.com --output json --output-path=./lighthouse_report.json || true
+        npx lighthouse https://whatcomhtml.lockersoft.dev/ --output json --output-path=./lighthouse_report.json || true
 
     - name: Combine reports
       run: |
