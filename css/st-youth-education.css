@@ -1,0 +1,67 @@
+h1 {
+    margin-left: 0.3em;
+    margin-bottom: 0;
+}
+h3 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+p {
+    margin-bottom: 2em;
+}
+.travel-brochure {
+    margin: 1em 0 1em 0;
+}
+.youth-education h3:nth-of-type(1) {
+    margin-top: 1em;
+}
+.youth-education {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.youth-education ul {
+    font-family: var(--font-family-lato), sans-serif;
+}
+.travel-benefits {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.travel-benefits li {
+    margin-bottom: .75em;
+}
+.educational-opportunities {
+    margin-top: 1em;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 992px) {
+    h3 {
+        margin-top: 1em;
+    }
+    p {
+        margin-bottom: 1em;
+    }
+    .image-1 {
+        grid-row: 1 / span 4;
+    }
+    .image-2 {
+        position: relative;
+        top: 2em;
+        grid-row: 5 / span 4;
+    }
+    .image-3 {
+        grid-row: 10 / span 6;
+        margin-bottom: 1em;
+    }
+    .youth-education {
+        align-items: start;
+        column-gap: 4em;
+    }
+    img {
+        grid-column: 2;
+    }
+    ul, h3, p {
+        grid-column: 1;
+    }
+}

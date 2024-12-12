@@ -113,36 +113,6 @@ button, h3, h4, ul, p, a {
     grid-column: 1;
 }
 
-
-
-
-/*.with-image {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 8px;*/
-/*    margin-bottom: 12px;*/
-/*}*/
-
-/*.with-image img {*/
-/*    display: block;*/
-/*    height: auto;*/
-/*}*/
-
-/*.with-image strong {*/
-/*    display: inline;*/
-/*    vertical-align: middle;*/
-/*}*/
-
-
-
-
-
-
-
-
-
-
-
 /*UTILITIES*/
 .centered-image {
     margin: 0 auto;
