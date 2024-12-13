@@ -1,5 +1,5 @@
 dl, ul {
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-lato), sans-serif;
 }
 .bike-classes {
     padding: 1em;
@@ -45,7 +45,6 @@ dd {
 .bike-classes dl dt {
     margin-bottom: .5em;
 }
-
 @media screen and (min-width: 992px) {
     .bike-classes hr {
         grid-row: 6;

@@ -5,6 +5,7 @@
     padding: 1em;
 }
 .employer-partner-info .custom-unordered-list-type-1 {
+    color: var(--ship-gray);
     padding-left: 1em;
 }
 .contactBox-employer-partners {
@@ -24,6 +25,7 @@
     margin-left: 1em;
     padding: 0;
 }
+
 .employer-partners-best-practices-list ul > li {
     text-indent: 0;
 }
@@ -72,6 +74,10 @@
 }
 .employer-partner-info h4 {
     margin-bottom: .5em;
+}
+.best-practices-link {
+    color: var(--ship-gray);
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -132,6 +138,10 @@
     }
 }
 @media only screen and (min-width: 1280px) {
+    .employer-partner-info {
+        grid-template-columns: 55% 45%;
+        column-gap: 2em;
+    }
     .employer-partner-button_blue {
         background-color: var(--green-blue);
         font-family: arial, Helvetica, sans-serif;
