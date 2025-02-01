@@ -137,7 +137,8 @@
         grid-template-columns: 50% 50%;
     }
     .log-smart-trips {
-        border-right: 2px solid #aaa;
+        /*produces border on outer right edge of handing holding phone*/
+        /*border-right: 2px solid #aaa;*/
     }
     .log-smart-trips p {
         grid-column: 1 / 2;
@@ -196,7 +197,7 @@
         padding: 2em 5em 0 2em;
     }
     .bicycle-icon {
-        max-width: 350px;
+        max-width: 250px;
     }
     .st-grid-two-column {
         grid-template-columns: 30% 70%;

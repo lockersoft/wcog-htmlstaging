@@ -226,6 +226,7 @@ nav ul ul {
     }
     .button_blue:hover {
         background-color: rgba(26, 109, 181, 1) !important;
+        color: var(--citrus) !important;
     }
 
     /*########### NEW NAV SUB-MENU TESTING ############*/
