@@ -1,10 +1,27 @@
+h2 {
+    font-size: 150%;
+    color: var(--ship-gray);
+}
+.st-home-column-2 {
+    background-image: url(/img/smart-trips-2024@1x.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
 .st-home-column-1 p {
     line-height: 1.7;
 }
-.log-smart-trips {
-    grid-template-rows: auto 160px 25px auto;
+.st-home-column-1 h1 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.standalone-grid h3 {
+.log-smart-trips {
+    grid-template-rows: auto auto 25px auto;
+    background-color: #efefef;
+    padding: 1em;
+}
+
+.standalone-grid h2 {
     color: var(--ship-gray);
 }
 .stats {
@@ -29,8 +46,15 @@
 .grid-three-column > *:nth-child(2) {
     margin-bottom: 1em;
 }
-
-.log-smart-trips h3 {
+.log-smart-trips {
+    padding: 0;
+}
+.log-smart-trips h2, .log-smart-trips p, .log-smart-trips a {
+    padding: 0 1em;
+}
+.log-smart-trips h2 {
+    position: relative;
+    left: -5px;
     grid-column: 1 / 3;
 }
 .log-smart-trips p {
@@ -53,11 +77,24 @@
 .statistics-card p {
     text-align: center;
 }
-.path-200, .path-207 {
-    max-width: 30px;
+/*CUSTOM POSITIONING OF ELEMENTS WITHIN INDEX STATISTICS CARD*/
+.statistics-card {
+    position: relative;
+    top: 20px;
 }
+.statistics-card {
+    position: relative;
+    /*left: 50px;*/
+}
+.bicycle-icon {
+    position: relative;
+}
+/*END OF CUSTOM POSITIONING OF ELEMENTS WITHIN INDEX STATISTICS CARD*/
+.path-200, .path-207 {
+    max-width: 20px;
+}
+
 .standalone-grid {
-    background-color: #efefef;
     padding: 1em;
 }
 .smart-trip-statistics-slideshow {
@@ -78,6 +115,7 @@
     background-color: var(--green-blue);
 }
 .pagination {
+    padding-top: 1em;
     grid-template-columns: repeat(4, 20px);
     justify-items: center;
     align-items: center;
@@ -111,14 +149,20 @@
         grid-template-rows: auto 90px 25px auto;
     }
 }
+@media screen and (min-width: 700px) {
+
+}
 
 @media screen and (min-width: 768px) {
     .log-smart-trips {
-        grid-template-rows: auto 130px 25px auto;
+        grid-template-rows: auto 110px 35px auto;
     }
     .grid-three-column {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
 
+    }
+    .bicycle-icon {
+        margin: 1em;
     }
     .smart-trips_2024 {
         position: relative;
@@ -137,8 +181,8 @@
         grid-template-columns: 50% 50%;
     }
     .log-smart-trips {
-        /*produces border on outer right edge of handing holding phone*/
-        /*border-right: 2px solid #aaa;*/
+        margin-left: 3em;
+        margin-right: 3em;
     }
     .log-smart-trips p {
         grid-column: 1 / 2;
@@ -160,9 +204,46 @@
     .stats {
         font-size: 26px;
     }
+    .log-smart-trips h2 {
+        left: 5px;
+    }
+    .log-smart-trips p {
+        position: relative;
+        left: 13px;
+    }
+    .log-smart-trips a {
+        position: relative;
+        left: 12px;
+    }
+    .log-smart-trips img {
+        left: -55px;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    .log-smart-trips h2 {
+        text-align: left;
+    }
+    .log-smart-trips {
+        grid-template-rows: auto 150px 35px auto;
+    }
+    .st-home-column-2 {
+        position: relative;
+        left: 50px;
+        min-height: 450px;
+        top: -50px;
+        background-image: url(/img/smart-trips-2024@1x.png);
+        background-size: cover;
+        background-position: center;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .bicycle-icon {
+        position: relative;
+        top: 45px;
+    }
+
     .st-grid-two-column {
         grid-template-columns: 30% 70%;
     }
@@ -185,16 +266,25 @@
     .smart-trips_2024 {
         position: relative;
         top: -75px;
-        left: 55px;
+        left: 67px;
     }
     .grid-three-column {
-        grid-template-columns: .9fr 1fr .5fr;
+        grid-template-columns: 42% 1fr .5fr;
         align-items: initial;
         justify-content: initial;
         justify-items: initial;
     }
     .standalone-grid {
-        padding: 2em 5em 0 2em;
+        position: relative;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+    .standalone-grid {
+        margin-top: -50px;
+    }
+    .st-home-column-2 {
+        left: 60px;
     }
     .bicycle-icon {
         max-width: 250px;
@@ -205,12 +295,155 @@
     .stats {
         font-size: 38px;
     }
+    .log-smart-trips {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+        margin: 0;
+        width: 93%;
+    }
+    .log-smart-trips h2 {
+        position: relative;
+        left: 37px;
+    }
+    .log-smart-trips p {
+        position: relative;
+        left: 42px;
+    }
+    .log-smart-trips a {
+        position: relative;
+        left: 40px;
+    }
+    .log-smart-trips img {
+        position: relative;
+        left: -45px;
+    }
+}
+@media screen and (min-width: 1052px) {
+    .grid-three-column {
+        grid-template-columns: 41.5% 1fr .5fr;
+    }
+}
+@media screen and (min-width: 1150px) {
+    .grid-three-column {
+        grid-template-columns: 41% 1fr .5fr;
+    }
 }
 @media screen and (min-width: 1200px) {
+    .statistics-card .show-me-the-impressi {
+        position: relative;
+        left: -80px;
+    }
+    .log-smart-trips h2 {
+        position: relative;
+        left: 7px;
+    }
+    .log-smart-trips p {
+        position: relative;
+        left: 12px;
+    }
+    .log-smart-trips a {
+        position: relative;
+        left: 10px;
+    }
+    .log-smart-trips img {
+        position: relative;
+        left: -55px;
+    }
+    .grid-three-column {
+        grid-template-columns: 41% 1fr .5fr;
+    }
+    .standalone-grid {
+        padding: 0;
+        left: -10px;
+    }
     .st-home-grid-two-column {
         padding-left: 4em;
     }
     .log-smart-trips {
-        grid-template-rows: auto 120px 25px auto;
+        grid-template-rows: auto 150px 35px auto;
+    }
+}
+@media screen and (min-width: 1245px) {
+    .standalone-grid {
+        margin-top: -50px;
+    }
+    .grid-three-column {
+        grid-template-columns: 40.5% 1fr .5fr;
+    }
+}
+/*### Moves up content due to main image offset*/
+@media screen and (min-width: 1275px) {
+    .standalone-grid {
+        margin-top: -50px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+    .statistics-card h2 {
+        position: relative;
+    }
+    .log-smart-trips h2 {
+        position: relative;
+        left: 22px;
+    }
+    .log-smart-trips p {
+        position: relative;
+        left: 28px;
+    }
+    .log-smart-trips a {
+        position: relative;
+        left: 28px;
+    }
+    .log-smart-trips img {
+        position: relative;
+    }
+    .standalone-grid {
+        margin-top: -50px;
+        left: -25px;
+    }
+    .grid-three-column {
+        grid-template-columns: 41.25% 1fr .5fr;
+    }
+}
+
+/*THIS IS WHAT IT NEEDS TO END UP AS*/
+@media screen and (min-width: 1380px) {
+    .grid-three-column {
+        grid-template-columns: .85fr 1fr .5fr;
+    }
+    .log-smart-trips {
+        padding-top: 1.1em;
+        width: 100%;
+    }
+    .log-smart-trips p, .log-smart-trips a {
+        position: relative;
+        left: 0;
+    }
+    .log-smart-trips {
+        grid-template-rows: auto 145px 35px auto;
+    }
+    .log-smart-trips h2 {
+        position: relative;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        left: -5px;
+    }
+    .standalone-grid {
+        left: 3px;
+    }
+    .smart-trips_2024 {
+        left: 75px;
+    }
+    .bicycle-icon {
+        position: relative;
+        top: 40px;
+    }
+    .statistics-card {
+        position: relative;
+        left: 50px;
     }
 }
