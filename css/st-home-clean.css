@@ -412,6 +412,12 @@ h2 {
 
 /*THIS IS WHAT IT NEEDS TO END UP AS*/
 @media screen and (min-width: 1380px) {
+    .st-home-column-2 {
+        background-image: url(/img/smart-trips-2024@1x.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 400px;
+    }
     .grid-three-column {
         grid-template-columns: .85fr 1fr .5fr;
     }
