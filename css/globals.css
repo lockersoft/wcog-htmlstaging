@@ -89,7 +89,7 @@ img {
     padding: .5em;
 }
 /*#####################################*/
-/*###### CUSTOM BULLETS FOR UL's ######*/
+/*###### CUSTOM BULLETS FOR UL across site ######*/
 /*#####################################*/
 .custom-bullets {
     list-style: none;
@@ -98,20 +98,23 @@ img {
 }
 .custom-bullets li {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
+    padding-left: 15px;
+    margin-bottom: 8px;
 }
 .custom-bullets li::before {
-    content: "";
+    font-family: var(--font-family-lato), sans-serif;
+    content: ">";
+    font-weight: bold !important;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 0;
     transform: translateY(-50%);
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-left: 10px solid var(--green-blue);
-    border-bottom: 10px solid transparent;
+    color: var(--green-blue);
+    /*border-top: 10px solid transparent;*/
+    /*border-left: 10px solid var(--green-blue);*/
+    /*border-bottom: 10px solid transparent;*/
 }
 .custom-bullets li a {
     text-decoration: none;
@@ -134,6 +137,30 @@ img {
 .two-col-span {
     grid-column: 1 / 3;
 }
+
+/*###### TEXT SIZE ######*/
+
+.text-small {
+    font-size: var(--font-size-s);
+}
+.text-medium {
+    font-size: var(--font-size-m);
+}
+.text-large {
+    font-size: var(--font-size-l);
+}
+/*
+    --font-size-xxs: 9px;
+    --font-size-xs: 12px;
+    --font-size-s: 13.5px;
+    --font-size-m: 14px;
+    --font-size-l: 15px;
+    --font-size-xl: 16px;
+    --font-size-xlm: 17px;
+    --font-size-xxl: 20px;
+
+*/
+
 
 /*###### TEMP COLORS ######*/
 .background-red {
