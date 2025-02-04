@@ -3,7 +3,7 @@ h2 {
     color: var(--ship-gray);
 }
 .st-home-column-2 {
-    background-image: url('/img/smart-trips-2024@1x.png');
+    background-image: url('../img/smart-trips-2024@1x.png');
     background-size: cover;
     background-position: center;
     min-height: 300px;
