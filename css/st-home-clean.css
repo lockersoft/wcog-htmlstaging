@@ -419,6 +419,7 @@ h2 {
 @media screen and (min-width: 1380px) {
     .st-home-column-2 {
         background-image: url(/img/smart-trips-2024@1x.png);
+
         background-size: cover;
         background-position: center;
         min-height: 400px;
