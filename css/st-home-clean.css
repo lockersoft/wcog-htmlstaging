@@ -195,7 +195,6 @@ h2 {
     .grid-three-column > *:nth-child(2) {
         margin-bottom: initial;
     }
-    /*specific position of hand holding iPhone*/
     .hand_holding_iphone_1 {
         min-width: 300px;
         position: relative;
