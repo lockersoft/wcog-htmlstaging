@@ -190,6 +190,18 @@ img {
 .text-citrus {
     color: #a1c11e;
 }
+.text-light-gray {
+    color: #dedede;
+}
+.text-medium-gray {
+    color: #aaa;
+}
+.text-gray {
+    color: #888;
+}
+.text-dark-gray {
+    color: #444;
+}
 .notes {
     color: var(--citrus); /*This class highlights what seem to be notes on the page*/
 }

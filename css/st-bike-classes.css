@@ -46,10 +46,12 @@ dl, ul {
 .bike-classes .pad-bottom-1 {
     margin-bottom: 1em;
 }
-.learnToRideQA dd, .cityCycling1QA dd, .cityCycling2QA dd, .rideAlongQA dd {
+.learnToRideQA dd, .cityCycling1QA dd, .cityCycling2QA dd, .rideAlongQA dd, .eBikeQA dd, .familyClassQA dd,
+.teenBikeClassQA dd, .teenBusClassQA dd, .bikeMaintenanceQA dd {
     margin: 0 0 2.3em;
 }
-.learnToRideQA, .cityCycling1QA, .cityCycling2QA, .rideAlongQA {
+.learnToRideQA, .cityCycling1QA, .cityCycling2QA, .rideAlongQA, .eBikeQA, .familyClassQA,
+.teenBikeClassQA, .teenBusClassQA, .bikeMaintenanceQA {
     margin-bottom: 2em;
 }
 .bike-classes-skills {
@@ -98,6 +100,9 @@ dl, ul {
 .cityCycling2HR {
 
 }
+.eBikeHR {
+
+}
 .bike-classes-schedule + p {
     margin-top: .5em;
     margin-bottom: .1em;
@@ -116,7 +121,8 @@ dl, ul {
 .cityCyclingSkills {
     margin-bottom: 1.5em;
 }
-.rideAlongSkills {
+.rideAlongSkills, .eBikeSkills, .familyClassSkills, .teenBikeSkills, .teenBusSkills, .bikeMaintenanceSkills,
+.phoneConsultationSkills, .routePlanningSkills {
     margin-bottom: 1em;
 }
 
