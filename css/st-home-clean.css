@@ -285,7 +285,7 @@ h2 {
         left: 60px;
     }
     .bicycle-icon {
-        max-width: 250px;
+        max-width: 225px;
     }
     .st-grid-two-column {
         grid-template-columns: 30% 70%;
@@ -379,6 +379,9 @@ h2 {
         font-size: 30px;
     }
 }
+@media screen and (min-width: 1280px) {
+
+}
 @media screen and (min-width: 1300px) {
     .statistics-card .show-me-the-impressi {
         position: relative;
@@ -432,7 +435,7 @@ h2 {
         left: 0;
     }
     .log-smart-trips {
-        grid-template-rows: auto 145px 35px auto;
+        grid-template-rows: auto 138px 35px auto;
     }
     .log-smart-trips h2 {
         position: relative;

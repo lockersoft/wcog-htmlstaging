@@ -141,11 +141,15 @@ nav ul ul {
 }
 .tier-1-bus:hover ~ .tier-2-bus, ul.tier-2-bus:hover {
     display: block;
+
 }
 .tier-1-rideshare:hover ~ .tier-2-rideshare, ul.tier-2-rideshare:hover {
     display: block;
 }
 .tier-1-events:hover ~ .tier-2-events, ul.tier-2-events:hover {
+    display: block;
+}
+.menu li:focus-within > ul {
     display: block;
 }
 @media only screen and (min-width: 1280px) {

@@ -149,6 +149,18 @@ img {
 .text-large {
     font-size: var(--font-size-l);
 }
+.text-x-large {
+    font-size: var(--font-size-xl);
+}
+.text-xx-large {
+    font-size: var(--font-size-xxl);
+}
+.text-xxx-large {
+    font-size: var(--font-size-xxxl);
+}
+.text-xxxx-large {
+    font-size: var(--font-size-xxxxl);
+}
 /*
     --font-size-xxs: 9px;
     --font-size-xs: 12px;
