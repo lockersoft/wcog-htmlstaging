@@ -30,6 +30,15 @@
 .bikes .bikes-bellingham-map {
     margin: .5em 0 0 0;
 }
+/*Update 2/8/2025*/
+.bikes-content {
+    position: relative;
+    top: 2.5em;
+}
+
+/*END UPDATE 2/8/2025*/
+
+
 @media screen and (min-width: 480px) {
     .bikes {
         padding: 0 1em 3em 1em;
