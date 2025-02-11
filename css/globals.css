@@ -98,7 +98,7 @@ img {
 }
 .custom-bullets li {
     position: relative;
-    padding-left: 15px;
+    padding-left: 12px;
     margin-bottom: 8px;
 }
 .custom-bullets li::before {

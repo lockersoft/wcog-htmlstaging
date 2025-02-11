@@ -1,6 +1,12 @@
+* {
+    color: var(--ship-gray);
+}
 .bus {
     padding: 0 1em 3em 1em;
     grid-column-gap: 3em;
+}
+.bus p {
+    margin: 0 0 .7em 0;
 }
 .bus-content {
     margin-top: 4.4em;
@@ -8,20 +14,30 @@
 .page-title {
     margin: 0;
 }
-.bus video {
+.bus iframe {
+    border: none;
     padding: 1em 0 2em 0;
     width: 100%;
     height: auto;
+    min-height: 300px;
 }
 .bus .bus-tips li {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+.custom-bullets li {
+    margin-bottom: .5em;
+}
 .bus ul {
     font-family: var(--font-family-lato), sans-serif;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.custom-bullets {
+    margin-bottom: .7em;
 }
 .bus img {
     max-width: 500px;
@@ -29,14 +45,38 @@
     justify-self: center;
 }
 .bus h2 {
-    margin: 1em 0 .5em 0;
+    margin: 1em 0 .2em 0;
     font-size: var(--font-size-xxl);
 }
+.bus h2:nth-of-type(3) {
+    margin-bottom: .2em;
+}
+.wtaRouteSchedules {
+    margin-bottom: .5em;
+}
+h2:nth-of-type(3) + p {
+    margin-bottom: 1.8em;
+}
+.tripPlanner {
+    margin-bottom: .7em;
+}
+@media screen and (min-width: 600px) {
+    .bus iframe {
+        min-height: 400px;
+    }
+}
 @media screen and (min-width: 768px) {
+    .grid-two-column {
+        grid-template-columns: 1.5fr 1fr;
+        width: 100%;
+    }
     .bus img {
         grid-column: 2;
         max-width: 300px;
 
+    }
+    .bus iframe {
+        min-height: 300px;
     }
     .image-bus-driver {
         grid-row: 1 / span 9;
@@ -46,13 +86,13 @@
         align-self: start;
         justify-self: start;
     }
-    .bus p, .bus h2, .bus a, .bus span, .bus ul, .bus video {
+    .bus p, .bus h2, .bus a, .bus span, .bus ul, .bus iframe {
         grid-column: 1;
     }
 }
 @media screen and (min-width: 992px) {
     .bus .image-bus-loading-bike {
-        grid-row: 16 / span 8;
+        grid-row: 15 / span 8;
         justify-self: center;
         align-self: start;
     }
@@ -63,12 +103,28 @@
         max-width: 500px;
     }
     .bus h2:first-of-type {
-        margin: 1em 0 .5em 0;
+        margin: 1em 0 .3em 0;
     }
-    .bus p {
-        margin: 0 0 .7em 0;
+    .bus h2:nth-of-type(2) {
+        margin-bottom: .7em;
     }
     .bus-bellingham-map {
         padding-bottom: .5em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    /*Bikes on the Bus title*/
+    h2:nth-last-of-type(2) {
+        margin-top: .8em;
+    }
+    iframe {
+        margin-top: 1em;
+    }
+    .grid-two-column {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4em;
+    }
+    .bus iframe {
+        min-height: 400px;
     }
 }
