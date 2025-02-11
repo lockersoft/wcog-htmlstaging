@@ -2,6 +2,12 @@
     padding: 0 1em 3em 1em;
     grid-column-gap: 3em;
 }
+.bus-content {
+    margin-top: 4.4em;
+}
+.page-title {
+    margin: 0;
+}
 .bus video {
     padding: 1em 0 2em 0;
     width: 100%;
@@ -12,7 +18,7 @@
     margin-bottom: 1em;
 }
 .bus ul {
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-lato), sans-serif;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -22,8 +28,9 @@
     align-self: center;
     justify-self: center;
 }
-.bus h3 {
+.bus h2 {
     margin: 1em 0 .5em 0;
+    font-size: var(--font-size-xxl);
 }
 @media screen and (min-width: 768px) {
     .bus img {
@@ -39,7 +46,7 @@
         align-self: start;
         justify-self: start;
     }
-    .bus p, .bus h3, .bus a, .bus span, .bus ul, .bus video {
+    .bus p, .bus h2, .bus a, .bus span, .bus ul, .bus video {
         grid-column: 1;
     }
 }
@@ -55,7 +62,7 @@
     .bus img {
         max-width: 500px;
     }
-    .bus h3:first-of-type {
+    .bus h2:first-of-type {
         margin: 1em 0 .5em 0;
     }
     .bus p {
