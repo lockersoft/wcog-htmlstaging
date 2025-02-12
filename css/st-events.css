@@ -1,3 +1,9 @@
+* {
+    color: var(--ship-gray);
+}
+.events-content {
+    margin-top: 4.4em;
+}
 .ellipse, .ellipse-active {
     border-radius: 3px;
     height: 6px;
@@ -27,7 +33,7 @@
     color: var(--ship-gray);
 }
 .events-banner-content-details {
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-lato), sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -195,10 +201,10 @@
         right: 15%;
     }
     .prev-image {
-        max-width: 70px;
+        max-width: 50px;
     }
     .next-image {
-        max-width: 70px;
+        max-width: 50px;
     }
 }
 
