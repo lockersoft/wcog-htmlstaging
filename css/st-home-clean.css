@@ -120,9 +120,7 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-.icon-styling {
-    max-width: 200px;
-}
+
 .st-home-column-1 {
     grid-row: 2;
     padding: 1em;
@@ -134,9 +132,16 @@ h2 {
 /*###############  END STATISTICS  ##################*/
 
 .stat-icon-images img {
+    position: relative;
+    top: -20px;
     max-width: 200px;
 }
-
+.icon-styling {
+    /*background-color: #729;*/
+    /*margin: 0 auto;*/
+    padding: 3em;
+    max-width: 200px;
+}
 
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
