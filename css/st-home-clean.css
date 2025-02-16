@@ -85,7 +85,7 @@ h2 {
     position: relative;
     /*left: 50px;*/
 }
-.bicycle-icon {
+.icon-styling {
     position: relative;
 }
 /*END OF CUSTOM POSITIONING OF ELEMENTS WITHIN INDEX STATISTICS CARD*/
@@ -115,12 +115,12 @@ h2 {
 }
 .pagination {
     padding-top: 1em;
-    grid-template-columns: repeat(4, 20px);
+    grid-template-columns: repeat(5, 20px);
     justify-items: center;
     align-items: center;
     justify-content: center;
 }
-.bicycle-icon {
+.icon-styling {
     max-width: 200px;
 }
 .st-home-column-1 {
@@ -132,6 +132,11 @@ h2 {
     align-content: center;
 }
 /*###############  END STATISTICS  ##################*/
+
+.stat-icon-images img {
+    max-width: 200px;
+}
+
 
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
@@ -160,7 +165,7 @@ h2 {
         grid-template-columns: 1fr;
 
     }
-    .bicycle-icon {
+    .icon-styling {
         margin: 1em;
     }
     .smart-trips_2024 {
@@ -219,6 +224,22 @@ h2 {
 }
 
 @media screen and (min-width: 992px) {
+
+    /*TESTING NEW STATS SLIDESHOW*/
+    /*TESTING NEW STATS SLIDESHOW*/
+    /*TESTING NEW STATS SLIDESHOW*/
+    .stat-slideshow {
+        grid-template-columns: 2fr 1fr;
+    }
+    .stat-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*TESTING NEW STATS SLIDESHOW*/
+    /*TESTING NEW STATS SLIDESHOW*/
+    /*TESTING NEW STATS SLIDESHOW*/
+
+
     .log-smart-trips h2 {
         text-align: left;
     }
@@ -236,7 +257,7 @@ h2 {
     h1 {
         font-size: 26px;
     }
-    .bicycle-icon {
+    .icon-styling {
         position: relative;
         top: 45px;
     }
@@ -283,7 +304,7 @@ h2 {
     .st-home-column-2 {
         left: 60px;
     }
-    .bicycle-icon {
+    .icon-styling {
         max-width: 225px;
     }
     .st-grid-two-column {
@@ -448,7 +469,7 @@ h2 {
     .smart-trips_2024 {
         left: 75px;
     }
-    .bicycle-icon {
+    .icon-styling {
         position: relative;
         top: 40px;
     }
