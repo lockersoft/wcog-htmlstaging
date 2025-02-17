@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" data-page="home">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
     <meta name="og:type" content="website"/>
     <meta name="twitter:card" content="photo"/>
     <link rel="stylesheet" type="text/css" href="css/styleguide.css"/>
     <link rel="stylesheet" type="text/css" href="css/globals.css"/>
     <!--PAGE SPECIFIC CSS-->
-    <link rel="stylesheet" type="text/css" href="css/st-home-clean.css"/>
+    <link rel="stylesheet" type="text/css" href="css/st-perks-discount.css"/>
     <!--NAV/FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
-    <!--JQUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!--JS-->
-    <script src="/js/slideshow.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <title>Smart Trips | Walk, Bike, Ride & Earn Rewards in Whatcom County</title>
+    <title>Smart Trips | Save at Local Businesses in Whatcom County</title>
 </head>
 <body>
-<div class="base"></div><!--THIS IS THE GREEN TOP BAR-->
+<div class="base"></div>
 <!--OUTER WRAPPER-->
 <div class="outer">
     <!--CONTENT WRAPPER-->
@@ -42,7 +39,7 @@
                     <li>
                         <!--Tier 2-->
                         <label class="toggle" for="nav-sub-menu-perks">Perks-label</label>
-                        <a class="tier-1-perks" href="st-perks.html">PERKS</a>
+                        <a class="tier-1-perks active" href="st-perks.html">PERKS</a>
                         <input type="checkbox" id="nav-sub-menu-perks">
                         <ul class="tier-2-perks">
                             <li><a href="st-perks.html#cashPrizes">Cash Prizes</a></li>
@@ -96,70 +93,52 @@
                 </ul>
             </nav>
         </header>
-        <!--TWO COLUMN | FIRST ROW-->
-        <section class="two-col-span">
-            <div class="grid two-col-span st-grid-two-column">
-                <section class="st-home-column-1">
-                    <h1>Walk, bike, share a ride or ride the bus. Make a difference anywhere
-                        you go.</h1>
-                    <p>When you make Smart Trips, you accomplish a lot more than getting to
-                        your destination. You help create a clean, healthy, and vibrant
-                        community in Whatcom County. While you’re at it, you’ll cut stress,
-                        save money, and earn rewards.</p>
-                    <a class="text-green-blue" href="#"><strong>Sign in to log your trips.</strong></a>
-                    <p>New user? <a class="text-green-blue" href="#"><strong>Sign up to get started.</strong></a></p>
 
+        <section class="two-col-span"><!-- ALL CONTENT GOES BELOW THIS-->
+            <!--MAIN CONTENT-->
+            <div class="grid grid-two-column perks-discount">
+                <section aria-labelledby="discount-heading">
+                    <h1 id="discount-heading">Smart Trips Discounts</h1>
+                    <p><b>After logging just ten Smart Trips you’re eligible for discounts from local businesses throughout Whatcom County!</b></p>
+                    <p>After you’ve made ten Smart Trips, we’ll mail you a Smart Trips Discount Card and Discount Guide. Cards are good until the end of the calendar year. Starting in January, as soon as you log ten trips you’ll receive your card for that year.  </p>
+                    <p>Want to see what businesses are offering discounts? <a href="#">View the entire Guide here.</a></p>
+                    <p>Or, jump to a specific section to view businesses by category or city.</p>
                 </section>
-                <div class="st-home-column-2">
-                    <!--test changes-->
-<!--                    <img class="smart-trips_2024" src="img/smart-trips-2024@1x.png" alt="Smart Trips_2024"/>-->
-                </div>
+
+                <section class="discount-brochure-information">
+                    <a href="#"><img src="img/2025_Discount_Brochure.jpg" alt="Discount Brochure"></a>
+                    <ul>
+                        <li><a href="#">Art & Imagery</a></li>
+                        <li><a href="#">Automobile Parts & Services</a></li>
+                        <li><a href="#">Bike Shops</a></li>
+                        <li><a href="#">Books & Gifts</a></li>
+                        <li><a href="#">Clothing & Jewelry</a></li>
+                        <li><a href="#">Food & Drink</a></li>
+                        <li><a href="#">Health Care</a></li>
+                        <li><a href="#">Home & Garden</a></li>
+                        <li><a href="#">Pet Care</a></li>
+                        <li><a href="#">Recreation & Fitness</a></li>
+                        <li><a href="#">Bellingham</a></li>
+                        <li><a href="#">Lynden</a></li>
+                        <li><a href="#">Ferndale</a></li>
+                        <li><a href="#">Blaine</a></li>
+                    </ul>
+                    <ul>
+
+                    </ul>
+                </section>
+
+                <section>
+                    <div>
+                        <img src="img/Bikes_downtown_Bellingham.png"
+                             alt="Two people walking their bicycles near a street sign in downtown Bellingham, pointing to City Hall, Library, Courthouse, and Mt. Baker Theatre."
+                             loading="lazy">
+
+                    </div>
+                </section>
             </div>
-        </section>
+        </section><!-- ALL CONTENT GOES ABOVE THIS-->
     </div><!--END CONTENT WRAPPER-->
-    <!--THREE COLUMN | SECOND ROW-->
-    <div class="standalone-grid grid grid-three-column">
-        <section class="grid st-home-grid-two-column log-smart-trips">
-            <h2>Log your trips in your Trip Diary (and win)!</h2>
-            <p>Log your Smart Trips on this site (or download our handy app) and you'll be eligible
-                for discount rewards and monthly and quarterly cash prize drawings!</p>
-            <a class="text-green-blue" href="st-trip-diary.html"><strong>Log my trips</strong></a>
-            <a class="text-green-blue" href="st-perks.html"><strong>See recent winners</strong></a>
-            <img class="hand_holding_iphone_1" src="img/hand-holding-iphone-1-1@1x.png"
-                 alt="hand_holding_iphone_1"/>
-        </section>
-        <section class="statistics-card">
-            <div>
-                <h2>The amazing impact of Smart Trips in Whatcom County:</h2>
-                <p class="stat-info-p"> Number of Smart Trips recorded since 2006:</p>
-            </div>
-            <div class="smart-trip-statistics-slideshow grid">
-                <img class="path-207" src="img/path-207@1x.png" alt="Path 207"/>
-                <div>
-                    <span class="stats">5,390,582</span>
-                </div>
-                <img class="path-200" src="img/path-200@1x.png" alt="Path 200"/>
-            </div>
-            <div class="pagination grid">
-                <div class="ellipse-active"></div>
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-            </div>
-            <br>
-            <p class="show-me-the-impressi"><a href="st-trip-diary.html"><strong>Show me the impressive the Smart Trip
-                stats!</strong></a></p>
-        </section>
-        <div class="stat-icon-images icon-styling">
-            <img class="stat-icon-image" src="img/icon_Bicycle.png" alt="noun-bicycle-100339"/>
-        </div>
-    </div><!--END THREE COLUMN | SECOND ROW-->
-
-
-
-
-
 </div><!--END OUTER-->
 <!--FOOTER-->
 <footer class="grid">
@@ -179,14 +158,9 @@
                 <li><a href="#"><u>Translate this page</u></a></li>
             </ul>
         </div>
-        <div class="grid app-store-card">
-            <p>Download the Smart Trips app <br> and log trips on your
-                phone!</p>
-            <img class="app-store-icons" src="img/app-store-1@1x.png" alt="app store"/>
-        </div>
     </div>
 </footer>
 
-<div class="base_bottom"></div><!--THIS IS THE GREEN BOTTOM BAR-->
+<div class="base_bottom"></div>
 </body>
 </html>
