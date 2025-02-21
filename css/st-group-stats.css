@@ -1,0 +1,434 @@
+* {
+    color: var(--ship-gray);
+    font-family: var(--font-family-lato), sans-serif;
+}
+.group-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    margin-top: 1.1em;
+    grid-column-gap: 5em;
+}
+.group-stats-totals h1 {
+    margin-bottom: .3em;
+}
+/*image max sizes*/
+.group-stats-travel-savings img {
+    max-width: 70px;
+}
+.group-stats-travel-savings div:nth-of-type(1) img { /*person icon*/
+    max-width: 40px;
+}
+.group-stats-travel-savings div:nth-of-type(2) img { /*bicycle icon*/
+    max-width: 100px;
+}
+.group-stats-travel-savings div:nth-of-type(3) img { /*car icon*/
+    max-width: 70px;
+}
+.group-stats-travel-savings div:nth-of-type(4) img { /*bus icon*/
+    max-width: 70px;
+}
+
+/*GROUP STATS*/
+.group-stats-travel-savings div div p {
+    color: var(--finn);
+    font-size: var(--font-size-xxxl);
+}
+.padding-for-borders {
+    overflow: visible;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.group-stats-benefits div h2 { /*All h2's in benefits section*/
+    display: flex;
+    align-items: center; /*vertical alignment of icon and heading*/
+    justify-content: left;
+    gap: 10px;
+    overflow: hidden;
+    padding: .5em .5em .5em .5em; /*adds some spacing to match comps*/
+    margin: 0; /*moves all the way up to the top of the panel*/
+    font-size: var(--font-size-xxxl);
+
+}
+.group-stats-benefits img {
+    max-width: 85px;
+}
+.group-stats-panel {
+    grid-column: 1;
+}
+.group-stats-travel-savings div {
+    justify-items: center;
+}
+.group-stats-travel-savings h2 {
+    display: flex;
+    background-color: var(--finn);
+    color: white;
+    justify-content: left;
+    padding-left: 2em;
+    align-items: center;
+}
+/*introduction paragraph*/
+.group-stats-totals p:first-of-type {
+    font-size: var(--font-size-xxl);
+}
+
+.group-stats-travel-savings h2 {
+    margin: 0;
+}
+.group-stats-travel-savings {
+    padding: 0;
+    background-color: rgba(112, 112, 112, .2);
+}
+
+.group-stats-travel-savings {
+    margin-top: 3em;
+}
+
+/*TOTALS | FIRST SECTION*/
+table {
+
+}
+table tr td img {
+    max-width: 16px;
+}
+.left {
+    text-align:left;
+    padding-right: .5em;
+
+}
+
+.center {
+    text-align: center;
+}
+.right {
+    padding-left: .3em;
+    text-align: left;
+    font-size: var(--font-size-xxxxxl);
+    font-weight: bold;
+    color: var(--finn);
+}
+.padding-for-borders div table {
+    width: 100%; /* makes table full width*/
+}
+
+.modes-of-transportation { /*targets all/each of the divs with the modes of transportation*/
+    display: flex;
+    width: 100%;
+}
+.group-stats-travel-savings h2 {
+    padding: 1em 0 1em 1em;
+}
+/*BORDERS ON MOBILE*/
+.modes-of-transportation:nth-of-type(1) {
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+  }
+.modes-of-transportation:nth-of-type(2) {
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+}
+.modes-of-transportation:nth-of-type(3)  {
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+}
+.mode-left img {
+    margin: 0 auto;
+}
+
+.modes-of-transportation table tr td {
+    width: 50%;
+}
+.benefits-economic, .benefits-environmental, .benefits-health {
+    border: 1px solid var(--ship-gray);
+}
+.benefits-economic-top-panel, .benefits-environmental-top-panel, .benefits-health-top-panel {
+    background-color: #efefef;
+}
+.group-stats-benefits > div { /*adds some spacing between all benefits sections on mobile*/
+    margin-top: 1em;
+}
+.benefits-economic-top-panel h2 {
+    font-size: var(--font-size-xxl);
+}
+.group-stats-benefits .bottom-panel dl dd, .group-stats-benefits .bottom-panel p span {
+    color: var(--finn);
+}
+.group-stats-benefits .bottom-panel dl dd  {
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-size: var(--font-size-xxl);
+    font-weight: bold;
+}
+.group-stats-benefits .bottom-panel {
+    padding: 1em;
+}
+.group-stats-benefits .bottom-panel dl dt, .group-stats-benefits .bottom-panel p {
+    color: #7f7f7f;
+}
+.benefits-health .bottom-panel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.benefits-health .bottom-panel ul li {
+    font-size: var(--font-size-xl);
+    color: #7f7f7f;
+    margin: .5em 0 .75em 0;
+    font-weight: bold;
+}
+.group-stats-totals p { /*removes margin between h1 and first p - also need to remove padding after h1*/
+    margin-top: 0;
+}
+@media screen and (min-width: 500px) {
+    .padding-for-borders div table tr td{
+        justify-items: center; /*aligns the text and icon images in center of row*/
+    }
+    .group-stats-travel-savings div {
+        /*padding: 1.2em;*/
+    }
+    .group-stats-travel-savings div div { /*targets all the divs with the modes of transportation*/
+        display: flex;
+        align-items: center; /*aligns items vertically (up-and-down)*/
+        justify-content: center; /*aligns both items centered horizontally (side-to-side)*/
+        align-self: center;
+
+        width: 100%;
+    }
+    .group-stats-travel-savings div div p {
+        margin: 1em;
+        color: var(--finn);
+        font-size: var(--font-size-xxxxxl);
+        font-weight: bold;
+    }
+    .group-stats-travel-savings h2 {
+        grid-column: 1 / span 2;
+    }
+
+
+    .modes-of-transportation:nth-of-type(1) {
+        box-sizing: border-box;
+        border-bottom: 1px solid #999;
+    }
+    .modes-of-transportation:nth-of-type(2) {
+        box-sizing: border-box;
+        border-bottom: 1px solid #999;
+    }
+    .modes-of-transportation:nth-of-type(3) {
+        box-sizing: border-box;
+        border-bottom: 1px solid #999;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    /*REMOVE BOTTOM BORDERS ON WIDER SCREENS*/
+    .modes-of-transportation:nth-of-type(1) {
+        box-sizing: border-box;
+        border-bottom: none;
+    }
+    .modes-of-transportation:nth-of-type(2) {
+        box-sizing: border-box;
+        border-bottom: none;
+    }
+    .modes-of-transportation:nth-of-type(3) {
+        box-sizing: border-box;
+        border-bottom: none;
+    }
+    .group-stats-travel-savings div:nth-of-type(2), .group-stats-travel-savings div:nth-of-type(4) {
+        box-sizing: border-box;
+        border-left: 1px solid #999; /*produces LEFT side borders*/
+    }
+    .group-stats-travel-savings div:nth-of-type(3), .group-stats-travel-savings div:nth-of-type(4) {
+        box-sizing: border-box;
+        border-top: 1px solid #999; /*produces RIGHT side borders*/
+    }
+    .padding-for-borders {
+        grid-column: 1 / span 2;
+        padding: 1em 2em 1em 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .group-stats-travel-savings {
+        /*UNCOMMENT IF NEEDED*/
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .group-stats-travel-savings div div p {
+        font-size: var(--font-size-xxl);
+    }
+    .modes-of-transportation {
+        padding: 1em;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .group-stats-travel-savings {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+}
+/*END GROUP STATS*/
+@media screen and (min-width: 992px) {
+
+    .group-stats-panel {
+        margin-top: 3em;
+    }
+
+    /*BENEFITS*/
+    .group-stats-benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    grid-column: 1 / span 2;
+    }
+    .group-stats-benefits div h2 { /*All h2's in benefits section*/
+        font-size: var(--font-size-xxl);
+    }
+    .group-stats-benefits div h2 img {
+        max-width: 75px;
+    }
+    .benefits-economic {
+        padding: 0;
+        margin: 0;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .benefits-economic-top-panel {
+        display: block;
+        padding: 0;
+        margin: 0;
+        border-top-left-radius: 25px; /*only need to round the top corner*/
+        background-color: #efefef;
+    }
+    .benefits-environmental-top-panel {
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-color: #efefef;
+    }
+    .benefits-health {
+        padding: 0;
+        margin: 0;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .benefits-health-top-panel {
+        display: block;
+        padding: 0;
+        margin: 0;
+        border-top-right-radius: 25px; /*only need to round the top corner*/
+        background-color: #efefef;
+    }
+    .group-stats-benefits .bottom-panel {
+        margin: 1em;
+    }
+    .group-stats-benefits .bottom-panel dl dt,
+    .group-stats-benefits .bottom-panel p {
+        color: #7f7f7f;
+        font-weight: bold;
+    }
+    .group-stats-benefits .bottom-panel p {
+        font-size: var(--font-size-xxl);
+    }
+
+    .group-stats-benefits .bottom-panel dl dd:nth-of-type(1) {
+        margin-bottom: 1em;
+    }
+
+    .group-stats-benefits .bottom-panel dl dd {
+        margin: .5em 0 .5em 0;
+        padding: 0;
+        font-size: var(--font-size-xxl);
+        font-weight: bold;
+    }
+    table {
+        width: 100%;
+    }
+    .group-stats {
+        grid-column-gap: .5em;
+    }
+    .group-stats-travel-savings div div {
+        min-height: 120px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .group-stats-travel-savings div div {
+        /*justify-content: space-between;*/
+    }
+    .group-stats {
+        grid-template-columns: 1fr 1.6fr;
+    }
+    .group-stats-panel {
+        grid-column: 1 / span 2;
+    }
+    .group-stats .group-stats-benefits  > div {
+        flex: 1;
+    }
+    .modes-of-transportation table tr td {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .left {
+        font-size: var(--font-size-xxl);
+    }
+    .benefits-economic-top-panel, .benefits-environmental-top-panel, .benefits-health-top-panel {
+        min-height: 110px;
+    }
+
+    .group-stats-benefits div h2 { /*All h2's in benefits section*/
+        font-size: var(--font-size-xxxxxl);
+    }
+
+    .group-stats {
+        grid-column-gap: 3em;
+    }
+    .group-stats-travel-savings div div {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .group-stats-travel-savings div div p {
+        margin: 0 0 0 1em;
+        padding: 0;
+        font-size: var(--font-size-xxxxl);
+    }
+    table {
+        width: auto;
+    }
+    .group-stats-travel-savings div div {
+        min-height: auto;
+        display: flex;
+    }
+    .group-stats {
+        grid-template-columns: 1fr 1.3fr;
+    }
+    .group-stats .group-stats-benefits  > div {
+        flex: 1;
+    }
+    .padding-for-borders div table {
+        margin: .5em;
+    }
+    .mode-left {
+        text-align: center;
+    }
+    .mode-right {
+        text-align: right;
+    }
+    .group-stats-travel-savings h2 {
+        padding-top: .3em;
+        padding-bottom: .3em;
+    }
+    .benefits-environmental-top-panel h2 { /*Adjusts the environmental icon to match others*/
+        margin-left: .5em !important;
+    }
+
+}

@@ -84,6 +84,9 @@ footer ul {
     margin-left: 0;
     padding-left: 0;
 }
+.footer-info-links li > a u {
+    color: #fff !important;
+}
 
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
