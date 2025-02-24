@@ -1,4 +1,6 @@
-
+.contact-us-content {
+    margin-top: 2em;
+}
 /*UPDATES*/
 .left-column {
     /*force no space between hero image and
@@ -6,6 +8,10 @@
     /*top right bottom left*/
     padding: 1em 2em 2em 2em;
     background-color: var(--finn);
+}
+.staff-grid-two-column h2 {
+    font-size: var(--font-size-xxxxxl);
+    margin-bottom: 0;
 }
 .left-column h2, .left-column p, .left-column a {
     color: #ffffff;
@@ -47,6 +53,33 @@ address {
     display: grid;
     grid-template-columns: 1fr;
 }
+.staff-grid-two-column h3 {
+    font-size: var(--font-size-xl);
+}
+.left-column h2 {
+    font-size: var(--font-size-xxxxxl);
+}
+.left-column p:first-of-type {
+    font-weight: bold;
+}
+.left-column p {
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+.left-column p:nth-of-type(2) {
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.left-column p:nth-of-type(3) a {
+    text-decoration: none;
+}
+.left-column address {
+    font-size: var(--font-size-xxl);
+}
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
@@ -81,9 +114,23 @@ address {
         grid-column: 1 / 3;
     }
     .staff-grid-two-column {
+        width: 90%;
+        padding-left: 10%;
+        align-self: center;
         grid-template-columns: 40% 60%;
+    }
+    .left-column div h2 {
+        font-size: var(--font-size-xxxl);
+    }
+    .left-column p {
+        font-size: var(--font-size-xl);
     }
 }
 @media screen and (min-width: 1200px) {
-
+    .left-column div h2 {
+        font-size: var(--font-size-xxxxxl);
+    }
+    .left-column p {
+        font-size: var(--font-size-xxl);
+    }
 }
