@@ -80,6 +80,9 @@ address {
 .left-column address {
     font-size: var(--font-size-xxl);
 }
+.right-column h3 + p {
+    margin-top: .1em;
+}
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
