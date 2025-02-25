@@ -8,13 +8,17 @@
     z-index: -1;
     overflow: hidden;
 }
-[data-page="home"] .grayBar {
+/*ensures footer bar is appropriate height for app store icons*/
+/*corresponding section is footer on all pages with app store icons*/
+[data-page="home"] .grayBar,
+[data-page="trip-diary"] .grayBar,
+[data-page="group-stats"] .grayBar,
+[data-page="individual-stats"] .grayBar {
     height: 75.72px;
 }
-[data-page="trip-diary"] .grayBar {
-    height: 75.72px
-}
-
+/*[data-page="trip-diary"] .grayBar {*/
+/*    height: 75.72px;*/
+/*}*/
 footer p {
     display: flex;
     color: #fff;
@@ -24,7 +28,7 @@ footer p {
 }
 footer {
     font-family: arial, sans-serif;
-    min-height: 53px;
+    min-height: 1px;
     background-color: var(--ship-gray);
 }
 footer, footer a {
@@ -37,8 +41,13 @@ footer ul {
     max-height: 15px;
     width: auto;
 }
-.app-store-icons {
-    max-width: 300px;
+.app-store-icons-mobile a:nth-of-type(1) img  {
+    max-width: 150px; /*limit size of app store svgs/icons*/
+    margin: 1em auto 1em auto;
+}
+.app-store-icons-mobile a:nth-of-type(2) img {
+    margin: -3em auto -1em auto;
+    max-width: 170px;
 }
 .app-store-card {
     width: 100%;
@@ -73,6 +82,7 @@ footer ul {
     grid-column: 1 / 3;
     width: 100%;
     justify-items: center;
+    grid-auto-rows: auto;
 }
 .footer-info-links {
     display: flex;
@@ -88,6 +98,7 @@ footer ul {
     color: #fff !important;
 }
 
+
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
@@ -99,6 +110,13 @@ footer ul {
 } /*END TABLET*/
 
 @media screen and (min-width: 700px) {
+    .app-store-icons-mobile {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
     .footer-info-links {
     flex-direction: row;
     justify-content: center;
@@ -114,8 +132,6 @@ footer ul {
         padding-bottom: 0 !important;
         line-height: 12px;
     }
-
-
     .social-info {
         /*grid-template-columns: 100px 1fr;*/
         grid-template-columns: 1fr auto auto 1fr;
@@ -130,12 +146,44 @@ footer ul {
     .footer-info-links li {
         grid-template-columns: repeat(4, 1fr);
     }
+    .app-store-icons-mobile a:nth-of-type(1) img {
+        max-width: 150px; /*limit size of app store svgs/icons*/
+        margin: -2em auto 0 auto;
+    }
+    .app-store-icons-mobile a:nth-of-type(2) img {
+        margin: -2em auto 0 auto;
+    }
 } /*END TABLET*/
 
 @media screen and (min-width: 768px) {
 } /*END TABLET*/
 
 @media screen and (min-width: 992px) {
+    .footer-layout {
+        padding-left: 4em;
+    }
+    .app-store-icons-mobile { /*align mobile icons horizontally*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        grid-auto-rows: auto;
+    }
+
+    .app-store-icons-mobile a:nth-of-type(1) img  {
+        max-width: 150px; /*limit size of app store svgs/icons*/
+        margin: -.5em auto 0 auto;
+        align-self: center;
+        justify-self: center;
+    }
+    .app-store-icons-mobile a:nth-of-type(2) img {
+        max-width: 170px;
+        margin: -3em auto -2.5em auto;
+        align-self: center;
+        justify-self: center;
+    }
     .social-info {
         grid-column: 1;
     }
@@ -151,6 +199,17 @@ footer ul {
 
 }/*END DESKTOP*/
 @media screen and (min-width: 1200px) {
+    .footer-layout {
+        padding-left: .5em;
+    }
+    .app-store-icons-mobile a:nth-of-type(1) img  {
+        max-width: 120px; /*limit size of app store svgs/icons*/
+        margin: -1.4em auto -2em auto;
+    }
+    .app-store-icons-mobile a:nth-of-type(2) img {
+        max-width: 130px;
+        margin: -2em auto -2em auto;
+    }
     .social-media-icons {
         grid-template-columns: 1fr 1fr;
     }
@@ -170,13 +229,24 @@ footer ul {
         text-align: right;
         grid-column: 1;
     }
-    .app-store-card img {
-
-    }
     .social-info {
         padding-left: 4em;
     }
 
 }/*END DESKTOP*/
 
+@media screen and (min-width: 1280px) {
+    .footer-layout {
+        padding-left: .5em;
+    }
+    .app-store-icons-mobile a:nth-of-type(1) {
+        background-color: blue;
+        max-width: 150px; /*limit size of app store svgs/icons*/
+        margin: 0  auto;
 
+    }
+    .app-store-icons-mobile a:nth-of-type(2) {
+        max-width: 175px;
+        margin: 0 auto;
+    }
+}
