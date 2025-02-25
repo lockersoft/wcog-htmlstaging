@@ -101,6 +101,9 @@ h2 {
     justify-items: center;
     align-items: center; /*vertical align buttons/number of stats*/
 }
+.smart-trip-statistics-slideshow img:hover {
+    cursor: pointer;
+}
 .ellipse, .ellipse-active {
     border-radius: 3px;
     height: 6px;
