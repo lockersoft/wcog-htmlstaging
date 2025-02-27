@@ -357,7 +357,6 @@ h2 {
 @media screen and (min-width: 1200px) {
     .statistics-card .show-me-the-impressi {
         position: relative;
-        color: red;
         left: 0;
     }
     .log-smart-trips h2 {
