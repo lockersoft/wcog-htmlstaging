@@ -124,6 +124,7 @@ address {
     }
     .left-column div h2 {
         font-size: var(--font-size-xxxl);
+        margin-bottom: .4em;
     }
     .left-column p {
         font-size: var(--font-size-xl);

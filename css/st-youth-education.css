@@ -1,3 +1,4 @@
+
 h1 {
     margin-left: 0.3em;
     margin-bottom: 0;
@@ -63,5 +64,22 @@ p {
     }
     ul, h3, p {
         grid-column: 1;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .grid-two-column {
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+        grid-column-gap: 6em;
+    }
+    .image-1 {
+
+    }
+    .image-2 {
+        top: -2em;
+    }
+    .image-3 {
+        position: relative;
+        top: -8em;
     }
 }
