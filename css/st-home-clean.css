@@ -1,6 +1,12 @@
+h1 {
+    text-align: center;
+}
 h2 {
     font-size: 150%;
     color: var(--ship-gray);
+}
+.h1-break {
+    display: inline;
 }
 .st-home-column-2 {
     background-image: url('../img/smart-trips-2024@1x.png');
@@ -160,6 +166,11 @@ h2 {
         grid-template-rows: auto 90px 25px auto;
     }
 }
+@media screen and (min-width: 600px) {
+.h1-break:nth-of-type(odd) {
+    display: none;
+}
+}
 @media screen and (min-width: 700px) {
 
 }
@@ -231,22 +242,18 @@ h2 {
 }
 
 @media screen and (min-width: 992px) {
-
-    /*TESTING NEW STATS SLIDESHOW*/
-    /*TESTING NEW STATS SLIDESHOW*/
-    /*TESTING NEW STATS SLIDESHOW*/
+    .h1-break:nth-of-type(odd) {
+        display: inline;
+    }
+    h1 {
+        text-align: left;
+    }
     .stat-slideshow {
         grid-template-columns: 2fr 1fr;
     }
     .stat-grid {
         grid-template-columns: 1fr 1fr;
     }
-
-    /*TESTING NEW STATS SLIDESHOW*/
-    /*TESTING NEW STATS SLIDESHOW*/
-    /*TESTING NEW STATS SLIDESHOW*/
-
-
     .log-smart-trips h2 {
         text-align: left;
     }
