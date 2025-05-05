@@ -42,12 +42,23 @@ $(document).ready(function() {
     function updateSlide() {
         $(".stat-info-p").html(slides[currentIndex].text);
         $(".statistics-card .stats").html(slides[currentIndex].stats);
-        $(".stat-icon-image").attr("src", slides[currentIndex].iconImg).attr("alt", slides[currentIndex].altText);
+        const $icon = $(".stat-icon-image");
+        $icon.attr("src", slides[currentIndex].iconImg).attr("alt", slides[currentIndex].altText);
+
         $(".pagination div").each(function(index) {
             if (index === currentIndex) {
                 $(this).removeClass("ellipse").addClass("ellipse-active");
             } else {
                 $(this).removeClass("ellipse-active").addClass("ellipse");
+            }
+
+            //test target only select few images to resize (might just save a new copy of the image at the requested size...)
+
+            const src = $icon.attr("src");
+            if (src === slides[1].iconImg || src === slides[2].iconImg || src === slides[4].iconImg) {
+                $(".stat-icon-image").addClass("smaller-icon");
+            } else {
+                $(".stat-icon-image").removeClass("smaller-icon");
             }
         });
     }
