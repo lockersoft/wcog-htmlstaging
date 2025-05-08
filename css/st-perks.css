@@ -22,7 +22,7 @@ section h2 {
 }
 .perks-page-description {
     color: var(--ship-gray);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -176,14 +176,14 @@ section h2 {
         padding-left: .5em;
     }
     .perks-reasons {
-        padding: .1em 1.5em 1em 1em !important;
+        padding: .1em 2.4em 1em 1em !important;
     }
     .column-2 {
         position: relative;
         width: 100%;
         right: -76px;
-        grid-template-columns: 45% 55%;
-        max-height: 700px;
+        grid-template-columns: 44% 56%;
+        max-height: 650px;
         padding: 1em;
         grid-template-rows: 50px auto;
         gap: 0;
@@ -193,6 +193,7 @@ section h2 {
     }
     .column-2 img {
         margin-left: 0;
+        margin-right: 1.3em;
         grid-column: 2;
         width: 100%;
         align-self: flex-start;
