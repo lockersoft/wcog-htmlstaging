@@ -29,7 +29,7 @@
     margin-bottom: 0;
 }
 .perks-discount h1 + p b {
-    font-size: var(--font-size-xxl);
+    font-size: 18px;
 }
 figcaption {
     display: none;
