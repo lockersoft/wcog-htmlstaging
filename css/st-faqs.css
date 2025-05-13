@@ -16,6 +16,10 @@ p {
     font-family: var(--font-family-lato), sans-serif;
     margin-left: 1em;
     margin-right: 2em;
+    margin-bottom: 3em;
+}
+.goToTopLink {
+    text-decoration: none;
 }
 .faqs dt {
     font-weight: bold;
