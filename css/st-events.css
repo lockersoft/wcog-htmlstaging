@@ -189,7 +189,7 @@
         max-width: 50px;
     }
 }
-@media screen and (min-width: 808px) {
+@media screen and (min-width: 971px) {
     .events-slideshow-container {
         grid-template-rows: 10% 90%;
     }
