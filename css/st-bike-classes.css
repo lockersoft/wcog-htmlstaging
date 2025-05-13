@@ -46,6 +46,13 @@ dl, ul {
 .bike-classes .pad-bottom-1 {
     margin-bottom: 1em;
 }
+#teenTravelSkills {
+    margin-bottom: 0;
+}
+#teenTravelSkills + p {
+    margin-top: .5em;
+}
+
 .learnToRideQA dd, .cityCycling1QA dd, .cityCycling2QA dd, .rideAlongQA dd, .eBikeQA dd, .familyClassQA dd,
 .teenBikeClassQA dd, .teenBusClassQA dd, .bikeMaintenanceQA dd {
     margin: 0 0 2.3em;
