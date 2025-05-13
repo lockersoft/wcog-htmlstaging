@@ -35,8 +35,11 @@
 .events-banner-content-details {
     font-family: var(--font-family-lato), sans-serif;
     list-style: none;
-    margin: 0;
+    margin: 0 0 .5em 0;
     padding: 0;
+}
+.events-banner-content-details li {
+    line-height: 1.4em;
 }
 .prev, .next {
     cursor: pointer;
@@ -97,6 +100,7 @@
 .events-details {
     padding-bottom: 1.5em;
     z-index: 4;
+
 }
 .events-details-banner {
     text-align: center;
@@ -111,10 +115,22 @@
 .events-details-banner h2 {
     font-size: 32px;
     color: #FFFFFF;
+    margin-top: .6em;
+    margin-bottom: .6em;
 }
 .events-banner-content {
-    padding: 1em;
+    padding: 0 2.3em 1.5em 2.3em;
     height: auto;
+}
+.events-banner-content h3 {
+    margin-top: .9em;
+    margin-bottom: .7em;
+}
+.events-banner-content p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    line-height: 1.4em;
+    font-size: 15px;
 }
 .events-register-button {
     padding-top: .5em;
@@ -192,13 +208,13 @@
     .events-details {
         display: grid;
         background-color: rgba(255, 255, 255, .98);
-        width: 250px;
+        width: 280px;
         min-height: auto;
     }
     .events-details {
         position: absolute;
         top: 0;
-        right: 15%;
+        right: 11%;
     }
     .prev-image {
         max-width: 50px;
