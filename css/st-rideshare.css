@@ -40,8 +40,8 @@ h2:last-of-type {
     margin-top: .5em;
 }
 @media screen and (min-width: 480px) {
-    .image-vanpool {
-        max-width: 300px;
+    .image-rideshare {
+        max-width: 100%;
         align-self: center;
         justify-self: center;
     }
@@ -82,7 +82,7 @@ h2:last-of-type {
     .image-carpool {
         grid-row: 8 / span 8;
     }
-    .ride-share .image-vanpool {
+    .ride-share .image-rideshare {
         justify-self: start;
         grid-row: 16 / span 11;
     }
@@ -97,7 +97,7 @@ h2:last-of-type {
         margin-bottom: .7em;
     }
     .wwuCarpool {
-        grid-row: 20;
+        grid-row: 24;
     }
 }
 @media screen and (min-width: 1200px) {
