@@ -33,6 +33,7 @@ p {
 }
 .educational-opportunities {
     margin-top: 1em;
+    font-weight: bold;
 }
 
 /*MEDIA QUERIES*/
