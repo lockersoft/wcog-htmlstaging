@@ -124,6 +124,7 @@
 
 
 .employer-partner-info h2 {
+    font-size: 22px;
     padding: 0;
     margin: 0;
 }
@@ -152,8 +153,9 @@
     margin-bottom: 2em;
 }
 .custom-unordered-list-type-1 li {
+    /*Info (space between bullet-points and text (first two ul's))*/
     /*color: mediumpurple;*/
-    padding-left: 2em;
+    padding-left: 1em;
     text-indent: 0; /*overrides globals*/
 }
 .employer-partner-info h4 {
@@ -172,8 +174,10 @@
     font-weight: bold !important;
     line-height: 1.1;
 }
-/*UPDATE 2/24/2025*/
-/*All p margins*/
+.employer-partner-details li:before {
+    /*sets color of first ul/li carats by overriding*/
+    color: var(--green-blue) !important;
+}
 .employer-partner-info p b {
     color: var(--green-blue);
 }
@@ -212,14 +216,16 @@
 .employer-partners-best-practices-list > li:nth-of-type(2),
 .employer-partners-best-practices-list > li:nth-of-type(8)
 {
+    /*info (space betweeen bullet-points and text (a few specific li's))*/
     position: relative;
     /*color: orange;*/
-    padding-left: 2em;
+    padding-left: 1em;
 }
 .employer-partners-best-practices-list > li {
+    /*info (space betweeen bullet-points and text (all others that weren't captured with other styling))*/
     /*color: green;*/
     text-indent: 0;
-    padding-left: 2em;
+    padding-left: 1em;
 }
 .employer-partner-info h4 + p,
 .employer-partner-info h4 + p + p,
@@ -245,38 +251,6 @@
         margin-left: 0;
         margin-right: 0;
     }
-    /*.employer-partner-info {*/
-    /*    grid-template-areas:*/
-    /*    "img1 other"*/
-    /*    "img2 other"*/
-    /*    "img3 other"*/
-    /*    "img4 other"*/
-    /*    "img5 other";*/
-    /*    column-gap: 20px;*/
-    /*}*/
-    /*.employer-partners-img-1 {*/
-    /*    grid-area: img1;*/
-    /*    grid-row: 1 / span 7;*/
-    /*}*/
-    /*.employer-partners-img-2 {*/
-    /*    grid-area: img2;*/
-    /*    grid-row: 8 / span 4;*/
-    /*}*/
-    /*.employer-partners-img-3 {*/
-    /*    grid-area: img3;*/
-    /*    grid-row: 12 / span 3;*/
-    /*}*/
-    /*.employer-partners-img-4 {*/
-    /*    grid-area: img4;*/
-    /*    grid-row: 14 /  span 5;*/
-    /*}*/
-    /*.employer-partners-img-5 {*/
-    /*    grid-area: img5;*/
-    /*    grid-row: 18 / span 8;*/
-    /*}*/
-
-
-
 
     .employer-partner-info {
     grid-template-columns: 55% 45%;
@@ -330,7 +304,8 @@
         margin-left: 0; /*resets margin to 0 to align nested li's*/
     }
     .employer-partners-best-practices-list ul > li {
-        text-indent: -1.8em; /*pulls nested li's back to match comp*/
+        /*info moves nested lists with carats left/right*/
+        text-indent: -1.6em; /*pulls nested li's back to match comp*/
     }
     .employer-partner-info {
         grid-template-columns: 1fr 1fr;
