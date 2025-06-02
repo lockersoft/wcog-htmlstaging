@@ -15,7 +15,10 @@
     <!--NAV/FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
-    <title></title>
+    <!--JS-->
+    <script src="js/calendar.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <title>WCOG | Trip Diary</title>
 </head>
 <body>
 <div class="base"></div>
@@ -93,19 +96,106 @@
                 <h1 class="page-title">Welcome to your Trip Diary, Julie</h1>
                 <div class="grid trip-diary-grid-two-column trip-diary">
 
-                    <div class="calendar-overlay grid">
-                        <div class="grid calendar-banner">
-                            <span>APRIL 2024</span>
-                        </div>
-                        <img class="calendar" src="img/april-calendar@1x.png" alt="Calendar">
-                        <img class="calendar-details" src="img/trip-field@1x.png" alt="Trip tracking form">
+                    <div class="responsive-calendar">
+                        <div id="calendar-container">
+                            <div id="calendar-header">
+                                <h2 id="month-year"></h2>
+                            </div>
+                            <div id="calendar-days">
+                                <!-- WEEKDAYS -->
+                                <div>Sunday</div>
+                                <div>Monday</div>
+                                <div>Tuesday</div>
+                                <div>Wednesday</div>
+                                <div>Thursday</div>
+                                <div>Friday</div>
+                                <div>Saturday</div>
+                            </div>
+                            <div id="calendar-grid">
+                                <!-- JS DAYS GO HERE -->
+                            </div>
+
+                            <div id="calendar-controls">
+                                <button id="prev-month"><span id="prev-month-arrow">&#10094;</span> Previous Month</button>
+                                <button id="next-month">Next Month <span id="next-month-arrow">&#10095;</span></button>
+                            </div>
+                        </div><!--END CALENDAR-->
+
+                        <!--DIALOG FORM-->
+                        <div id="day-form" class="modal">
+                            <div class="modal-content">
+                                <div class="form-header">
+                                    <h3 id="selected-date-title"></h3>
+                                    <button type="button" class="close-button" id="close-button">&times;</button>
+                                </div>
+                                <hr class="form-divider">
+                                <form id="info-form">
+                                    <input type="hidden" id="selected-date" name="date">
+
+                                    <div class="distance-group">
+                                        <label for="distance">Distance</label>
+                                        <input type="number" id="distance" name="distance" step="1" min="0">
+                                        <span class="distance-note">miles one way</span>
+                                    </div>
+
+                                    <div class="flex-row">
+                                        <div class="half-field">
+                                            <label for="trip-mode">Trip Mode:</label>
+                                            <select id="trip-mode" name="trip-mode">
+                                                <option value="" disabled selected>Select One</option>
+                                                <option>Mode 1</option>
+                                                <option>Mode 2</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="half-field">
+                                            <label for="trip-purpose">Trip Purpose:</label>
+                                            <select id="trip-purpose" name="trip-purpose">
+                                                <option value="" disabled selected>Select one</option>
+                                                <option>Purpose 1</option>
+                                                <option>Purpose 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="autofill-group">
+                                        <label for="autofill">Autofill</label>
+                                        <select id="autofill" name="autofill">
+                                            <option value="" disabled selected>Choose a trip</option>
+                                            <option>Just this one trip, please</option>
+                                            <option>All trips</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-buttons">
+                                        <button id="cancel-button" type="button" >Cancel</button>
+                                        <button id="save-button" type="submit">Save</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div><!--END DIALOG FORM-->
+
                     </div>
 
                     <div class="trip-diary-column-2">
-                        <h2>Your next milestone reward</h2>
+                        <h2 id="milestone-rewards-title">Your next milestone reward</h2>
                         <div class="tripProgressMeter">
-                            <img src="img/image-1@1x.png" alt="Number of Trip miles earned">
+                            <div class="progress-wrapper">
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="progress-labels">
+                                    <span class="label-left">900 trips</span>
+                                    <span class="label-right">1000 trips</span>
+                                </div>
+                            </div>
                         </div>
+
+                        <!--just for example, remove when piping real data-->
+                        <script>
+                            updateProgress(5000, 10000);
+                        </script>
 
                         <p class="tripsLogged">You've logged <span>947</span> trips since you joined SmartTrips on
                             <span>July 03, 2006</span></p>
