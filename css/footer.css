@@ -10,15 +10,37 @@
 }
 /*ensures footer bar is appropriate height for app store icons*/
 /*corresponding section is footer on all pages with app store icons*/
+
 [data-page="home"] .grayBar,
 [data-page="trip-diary"] .grayBar,
 [data-page="group-stats"] .grayBar,
-[data-page="individual-stats"] .grayBar {
+[data-page="individual-stats"] .grayBar
+{
     height: 80.72px;
 }
-/*[data-page="trip-diary"] .grayBar {*/
-/*    height: 75.72px;*/
-/*}*/
+/*Two different heights are necessary due to content differences*/
+[data-page="bike"] .grayBar,
+[data-page="bike-class"] .grayBar,
+[data-page="bus"] .grayBar,
+[data-page="contact"] .grayBar,
+[data-page="employer-partners"] .grayBar,
+[data-page="etc-sign-in"] .grayBar,
+[data-page="events"] .grayBar,
+[data-page="faqs"] .grayBar,
+[data-page="perks"] .grayBar,
+[data-page="perks-discount"] .grayBar,
+[data-page="toolkit"] .grayBar,
+[data-page="youth-education"] .grayBar
+{
+    height: 70.72px;
+}
+
+
+
+
+
+
+
 footer p {
     display: flex;
     color: #fff;
@@ -98,6 +120,10 @@ footer ul {
     color: #fff !important;
 }
 
+/*TESTING: June 2025 - Change color of widget translater text via CSS*/
+li .gKnUQU * {
+    color: #FFFFFF !important;
+}
 
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/

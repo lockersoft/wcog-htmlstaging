@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return new Date(year, month + 1, 0).getDate();
     }
 
+    //RENDER CALENDAR
     function renderCalendar(date) {
         calendarGrid.innerHTML = "";
 
@@ -72,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
             );
             calendarGrid.appendChild(dayDiv);
         }
-    }
+    }//END RENDER CALENDAR
 
 
     //SELECT DAY OF THE CALENDAR

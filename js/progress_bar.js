@@ -5,6 +5,7 @@ function updateProgress(currentValue, goalValue) {
     bar.style.width = percent + "%";
 }
 
+//TEST
 // var currentMiles = 4500;
 // var goalMiles    = 10000;
 // updateProgress(currentMiles, goalMiles);

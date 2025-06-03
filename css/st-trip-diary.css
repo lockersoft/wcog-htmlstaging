@@ -28,7 +28,12 @@ header nav li:has(.remove-through-css) {
 #milestone-rewards-title {
     margin-bottom: 1em;
 }
-/*PROGRESS BAR*/
+
+
+/*##########################################*/
+/*############ PROGRESS BAR ################*/
+/*##########################################*/
+
 #progress-container {
     width: 100%;
     height: 20px;
@@ -37,15 +42,12 @@ header nav li:has(.remove-through-css) {
     background-color: transparent;
     box-sizing: border-box;
 }
-
 #progress-bar {
-    /*starts at 0 here, will update via js based on db value*/
+    /*starts at 0 here (which is why the % symbol), will update via js based on db value*/
     width: 0%;
     height: 100%;
     background-color: var(--citrus);
 }
-
-/*###############$$$$$$$$$$$$$$$$$$$#####################*/
 .progress-wrapper {
     width: 100%;
     max-width: 600px;
@@ -78,6 +80,9 @@ header nav li:has(.remove-through-css) {
     font-size: 12px;
 }
 
+/*###########################################*/
+/*########## END PROGRESS BAR ###############*/
+/*###########################################*/
 
 
 
