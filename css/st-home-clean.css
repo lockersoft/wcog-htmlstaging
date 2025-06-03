@@ -18,7 +18,7 @@ h2 {
     background-position: center;
     min-height: 200px;
     overflow: hidden;
-    max-height: 450px;
+    max-height:450px;
 }
 
 /*HERO VIDEO*/
@@ -490,7 +490,7 @@ h2 {
     .st-home-column-2 {
         background-size: cover;
         background-position: center;
-        min-height: 400px;
+        min-height: 450px;
     }
     .grid-three-column {
         grid-template-columns: .85fr 1fr .5fr;
