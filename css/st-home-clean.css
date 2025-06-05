@@ -19,7 +19,6 @@ h2 {
     overflow: hidden;
     max-height:450px;
 }
-
 /*HERO VIDEO*/
 .video-parent {
     width: 100%;
@@ -200,16 +199,21 @@ h2 {
         grid-template-rows: auto 90px 25px auto;
     }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
 .h1-break:nth-of-type(odd) {
     display: none;
 }
 }
 @media screen and (min-width: 700px) {
-
+    .h1-break:nth-of-type(even) {
+        display: inline;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 31px;
+    }
     .log-smart-trips {
         grid-template-rows: auto 110px 35px auto;
     }
@@ -509,7 +513,7 @@ h2 {
         position: relative;
         padding-bottom: 0;
         margin-bottom: 0;
-        left: -5px;
+        left: -6px;
     }
     .standalone-grid {
         left: 3px;
