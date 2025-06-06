@@ -22,24 +22,24 @@ document.addEventListener("DOMContentLoaded", function () {
         calendarGrid.innerHTML = "";
 
         const month = date.getMonth();
-        const year  = date.getFullYear();
+        const year = date.getFullYear();
 
         // DETERMINE PREVIOUS/NEXT YEAR OR MONTH
         const prevMonth = month === 0 ? 11 : month - 1;
-        const prevYear  = month === 0 ? year - 1 : year;
+        const prevYear = month === 0 ? year - 1 : year;
         const nextMonth = month === 11 ? 0 : month + 1;
-        const nextYear  = month === 11 ? year + 1 : year;
+        const nextYear = month === 11 ? year + 1 : year;
 
         //GET DAYS IN PREV MONTH AND CURRENT MONTH
         const daysInPrevMonth = getDaysInMonth(prevMonth, prevYear);
-        const daysInMonth     = getDaysInMonth(month, year);
+        const daysInMonth = getDaysInMonth(month, year);
 
         //GET NUMBER OF FIRST DAY
         const firstDay = new Date(year, month, 1).getDay();
 
         // UPDATE HEADER ("Month Year")
         monthYearDisplay.textContent =
-            `${date.toLocaleString('default', { month: 'long' })} ${year}`;
+            `${date.toLocaleString('default', {month: 'long'})} ${year}`;
 
         //FILL ANY DAYS FROM PREVIOUS MONTH
         for (let i = firstDay - 1; i >= 0; i--) {
@@ -47,11 +47,24 @@ document.addEventListener("DOMContentLoaded", function () {
             const dayDiv = document.createElement("div");
             dayDiv.textContent = dayNum;
             dayDiv.classList.add("other-month");
-            dayDiv.addEventListener("click", () =>
-                selectDay(dayDiv, prevYear, prevMonth, dayNum)
-            );
+
+            const dayDate = new Date(prevYear, prevMonth, dayNum);
+            const currentMonthBeingViewed = new Date(year, month, 1);
+
+            // ✅ If we're viewing April, block March dates (before April 1)
+            if (currentMonthBeingViewed.getMonth() === minDate.getMonth() &&
+                currentMonthBeingViewed.getFullYear() === minDate.getFullYear() &&
+                dayDate < minDate) {
+                dayDiv.classList.add("disabled-day");
+            } else {
+                dayDiv.addEventListener("click", () =>
+                    selectDay(dayDiv, prevYear, prevMonth, dayNum)
+                );
+            }
+
             calendarGrid.appendChild(dayDiv);
         }
+
 
         //FILL ALL DAYS FOR CURRENT MONTH
         for (let d = 1; d <= daysInMonth; d++) {
@@ -66,19 +79,44 @@ document.addEventListener("DOMContentLoaded", function () {
         const totalCellsSoFar = firstDay + daysInMonth;
         const rowsNeeded = Math.ceil(totalCellsSoFar / 7);
         const cellsRequired = rowsNeeded * 7;
-        const trailingCount  = cellsRequired - totalCellsSoFar;
+        const trailingCount = cellsRequired - totalCellsSoFar;
 
         //FILL REST OF DAYS FROM NEXT MONTH
         for (let d = 1; d <= trailingCount; d++) {
             const dayDiv = document.createElement("div");
             dayDiv.textContent = d;
             dayDiv.classList.add("other-month");
-            dayDiv.addEventListener("click", () =>
-                selectDay(dayDiv, nextYear, nextMonth, d)
-            );
+
+            const dayDate = new Date(nextYear, nextMonth, d);
+            const maxVisibleDate = new Date(maxYear, maxMonth + 1, 0); // last day of current month
+
+            // ✅ Allow trailing days if they are part of current month
+            if (dayDate <= maxVisibleDate) {
+                dayDiv.addEventListener("click", () =>
+                    selectDay(dayDiv, nextYear, nextMonth, d)
+                );
+            } else {
+                dayDiv.classList.add("disabled-day");
+            }
+
             calendarGrid.appendChild(dayDiv);
         }
+
         updateNavButtons(date);
+
+        function applyStriping() {
+            const dayCells = calendarGrid.children;
+            for (let i = 0; i < dayCells.length; i++) {
+                const rowIndex = Math.floor(i / 7); // 7 columns = 1 week
+                if (rowIndex % 2 === 1) {
+                    dayCells[i].classList.add("striped-week");
+                } else {
+                    dayCells[i].classList.remove("striped-week");
+                }
+            }
+        }
+
+        applyStriping();
 
     }//END RENDER CALENDAR
 
@@ -117,7 +155,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
     //PREVIOUS MONTH BUTTON
     document.getElementById("prev-month").onclick = () => {
         const testDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
@@ -139,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
+    //CALENDAR DIALOG
     document.getElementById("day-form").addEventListener("click", function (e) {
         if (e.target === this) {
             this.style.display = "none";
@@ -166,12 +204,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Show/hide previous month button
         if (testPrev < minDate) {
-            prevButton.style.visibility = "hidden";
+            prevButton.style.display = "none";
         } else {
             //Both buttons can be made visible by inspecting,
             //but I limited the navigation anyway, but will need to be
             //enforced probably via backend to reject sneaky people.
-            prevButton.style.visibility = "visible";
+            prevButton.style.display = "inline-block";
         }
 
         // Show/hide next month button
@@ -179,9 +217,9 @@ document.addEventListener("DOMContentLoaded", function () {
             testNext.getFullYear() > maxYear ||
             (testNext.getFullYear() === maxYear && testNext.getMonth() > maxMonth)
         ) {
-            nextButton.style.visibility = "hidden";
+            nextButton.style.display = "none";
         } else {
-            nextButton.style.visibility = "visible";
+            nextButton.style.display = "inline-block";
         }
     }
 

@@ -170,7 +170,7 @@ header nav li:has(.remove-through-css) {
 #calendar-grid {
     gap: 0;
 }
-#calendar-grid {
+#calendar-grid div{
     cursor: pointer;
 }
 #calendar-grid div.other-month {
@@ -181,6 +181,15 @@ header nav li:has(.remove-through-css) {
 }
 #calendar-grid div:hover {
     background-color: #f0f0f0;
+}
+#calendar-grid div.disabled-day {
+    background-color: #eee;
+    pointer-events: none;
+    cursor: default !important;
+    /*cursor: none !important;*/
+}
+.striped-week {
+    background-color: #f9f9f9;
 }
 
 /*######## FORM #########*/
