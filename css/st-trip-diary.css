@@ -160,7 +160,8 @@ header nav li:has(.remove-through-css) {
 
 #calendar-controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 12px;
     padding: 6px 3px 0 3px;
     background-color: #fff;
     border: none !important;

@@ -5,8 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("day-form");
     const selectedDateTitle = document.getElementById("selected-date-title");
     const formElement = document.getElementById("info-form");
-
     let currentDate = new Date();
+
+    //LIMIT CALENDAR TO 3 MONTHS
+    const today = new Date();
+    const maxMonth = today.getMonth();
+    const maxYear = today.getFullYear();
+    const minDate = new Date(maxYear, maxMonth - 2, 1); // two months ago
 
     function getDaysInMonth(month, year) {
         return new Date(year, month + 1, 0).getDate();
@@ -73,6 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
             );
             calendarGrid.appendChild(dayDiv);
         }
+        updateNavButtons(date);
+
     }//END RENDER CALENDAR
 
 
@@ -111,15 +118,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+    //PREVIOUS MONTH BUTTON
     document.getElementById("prev-month").onclick = () => {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        renderCalendar(currentDate);
+        const testDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
+        if (testDate >= minDate) {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar(currentDate);
+        }
     };
 
+    //NEXT MONTH BUTTON
     document.getElementById("next-month").onclick = () => {
-        currentDate.setMonth(currentDate.getMonth() + 1);
-        renderCalendar(currentDate);
+        const testDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
+        if (
+            testDate.getFullYear() < maxYear ||
+            (testDate.getFullYear() === maxYear && testDate.getMonth() <= maxMonth)
+        ) {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar(currentDate);
+        }
     };
 
     document.getElementById("day-form").addEventListener("click", function (e) {
@@ -138,6 +155,36 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         console.log("Form submitted:", formData);
     });
+
+    //HIDE CALENDAR NAV BUTTONS IF AT THE ENDS OF THE RANGE
+    function updateNavButtons(date) {
+        const prevButton = document.getElementById("prev-month");
+        const nextButton = document.getElementById("next-month");
+
+        const testPrev = new Date(date.getFullYear(), date.getMonth() - 1, 1);
+        const testNext = new Date(date.getFullYear(), date.getMonth() + 1, 1);
+
+        // Show/hide previous month button
+        if (testPrev < minDate) {
+            prevButton.style.visibility = "hidden";
+        } else {
+            //Both buttons can be made visible by inspecting,
+            //but I limited the navigation anyway, but will need to be
+            //enforced probably via backend to reject sneaky people.
+            prevButton.style.visibility = "visible";
+        }
+
+        // Show/hide next month button
+        if (
+            testNext.getFullYear() > maxYear ||
+            (testNext.getFullYear() === maxYear && testNext.getMonth() > maxMonth)
+        ) {
+            nextButton.style.visibility = "hidden";
+        } else {
+            nextButton.style.visibility = "visible";
+        }
+    }
+
 
     renderCalendar(currentDate);
 });
