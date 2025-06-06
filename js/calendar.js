@@ -101,9 +101,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             calendarGrid.appendChild(dayDiv);
         }
-
         updateNavButtons(date);
 
+        //ADD STRIPING TO TABLE ROWS TO MATCH COMPS
         function applyStriping() {
             const dayCells = calendarGrid.children;
             for (let i = 0; i < dayCells.length; i++) {
@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         }
-
         applyStriping();
 
     }//END RENDER CALENDAR
