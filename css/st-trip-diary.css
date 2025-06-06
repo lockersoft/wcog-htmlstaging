@@ -183,7 +183,7 @@ header nav li:has(.remove-through-css) {
     background-color: #f0f0f0;
 }
 #calendar-grid div.disabled-day {
-    background-color: #eee;
+    /*background-color: #eee;*/
     pointer-events: none;
     cursor: default !important;
     /*cursor: none !important;*/
