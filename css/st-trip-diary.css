@@ -166,6 +166,11 @@ header nav li:has(.remove-through-css) {
     background-color: #fff;
     border: none !important;
 }
+#prev-month,
+#next-month {
+    cursor: pointer;
+}
+
 #calendar-days,
 #calendar-grid {
     gap: 0;
@@ -186,7 +191,6 @@ header nav li:has(.remove-through-css) {
     /*background-color: #eee;*/
     pointer-events: none;
     cursor: default !important;
-    /*cursor: none !important;*/
 }
 .striped-week {
     background-color: #f9f9f9;
