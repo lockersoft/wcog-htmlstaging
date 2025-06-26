@@ -52,8 +52,10 @@ $(document).ready(function() {
                 $(this).removeClass("ellipse-active").addClass("ellipse");
             }
 
-            //test target only select few images to resize (might just save a new copy of the image at the requested size...)
-
+            //NOTE:
+            // This just applies this to a couple images in the slideshow since they were requested to be smaller.
+            // Should probably just resize them OR add this to all images if
+            // they change them (or order) in the future...
             const src = $icon.attr("src");
             if (src === slides[1].iconImg || src === slides[2].iconImg || src === slides[4].iconImg) {
                 $(".stat-icon-image").addClass("smaller-icon");
@@ -63,7 +65,6 @@ $(document).ready(function() {
         });
     }
 
-    //test
     function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;
         updateSlide();
@@ -87,14 +88,14 @@ $(document).ready(function() {
     updateSlide();
     startAutoSlide();
 
-    //go to previous slide
+    //GO - PREVIOUS SLIDE
     $(".path-207").on("click", function() {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         previousSlide();
         resetSlideTimer();
     });
 
-    //go to next slide
+    //GO - NEXT SLIDE
     $(".path-200").on("click", function() {
         currentIndex = (currentIndex + 1) % slides.length;
         nextSlide();

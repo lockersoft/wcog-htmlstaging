@@ -50,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const dayDate = new Date(prevYear, prevMonth, dayNum);
             const currentMonthBeingViewed = new Date(year, month, 1);
-
-            // ✅ If we're viewing April, block March dates (before April 1)
             if (currentMonthBeingViewed.getMonth() === minDate.getMonth() &&
                 currentMonthBeingViewed.getFullYear() === minDate.getFullYear() &&
                 dayDate < minDate) {
@@ -76,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             calendarGrid.appendChild(dayDiv);
         }
 
+
         const totalCellsSoFar = firstDay + daysInMonth;
         const rowsNeeded = Math.ceil(totalCellsSoFar / 7);
         const cellsRequired = rowsNeeded * 7;
@@ -90,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const dayDate = new Date(nextYear, nextMonth, d);
             const maxVisibleDate = new Date(maxYear, maxMonth + 1, 0); // last day of current month
 
-            // ✅ Allow trailing days if they are part of current month
+
             if (dayDate <= maxVisibleDate) {
                 dayDiv.addEventListener("click", () =>
                     selectDay(dayDiv, nextYear, nextMonth, d)
