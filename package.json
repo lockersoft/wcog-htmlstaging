@@ -2,5 +2,9 @@
   "name": "wcog-htmlstaging",
   "version": "1.0.0",
   "description": "Accessibility, linting, and formatting checks",
-  "type" : "module"
+  "type": "module",
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.11.0",
+    "eslint": "^9.31.0"
+  }
 }
