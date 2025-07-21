@@ -1,1 +1,6 @@
-"type" : "module"
+{
+  "name": "wcog-htmlstaging",
+  "version": "1.0.0",
+  "description": "Accessibility, linting, and formatting checks",
+  "type" : "module"
+}
