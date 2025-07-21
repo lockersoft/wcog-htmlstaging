@@ -83,3 +83,9 @@ jobs:
         name: comprehensive-issues-report
         path: issues_report.md
 
+    - name: Download Report
+      uses: actions/download-artifact@main
+      with: 
+        name: comprehensive-issues-report
+        path: issues_report.md
+
