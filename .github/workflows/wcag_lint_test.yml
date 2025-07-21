@@ -39,8 +39,11 @@ jobs:
 
     - name: Run Lighthouse for performance and accessibility
       run: |
-        npx lighthouse https://whatcomhtml.lockersoft.dev/ --output json --output-path=./lighthouse_report.json || true
-
+        npx lighthouse https://whatcomhtml.lockersoft.dev/ \
+          --output json \
+          --output-path=./lighthouse_report.json \
+          --chrome-flags="--headless --no-sandbox --disable-gpu" || true
+      
     - name: Combine reports
       run: |
         echo "# Accessibility and Formatting Issues" > issues_report.md
