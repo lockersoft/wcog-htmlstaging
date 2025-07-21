@@ -93,7 +93,7 @@ jobs:
         path: issues_report.md
 
     - name: Send report via email
-      uses: dawidd6/action-send-mail@v3
+      uses: dawidd6/action-send-mail@v6
       with:
         server_address: ${{ secrets.SMTP_SERVER }}
         server_port: ${{ secrets.SMTP_PORT }}
@@ -114,4 +114,4 @@ jobs:
         to: ${{ secrets.EMAIL_TO }}
         from: ${{ secrets.EMAIL_FROM }}
         attachments: issues_report.md
-        secure: true
+        secure: false # STARTTLS
