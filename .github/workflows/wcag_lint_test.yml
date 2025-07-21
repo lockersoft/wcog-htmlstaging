@@ -11,22 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@main
+      uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
 
     - name: Install dependencies
       run: |
         npm install eslint stylelint stylelint-config-standard axe-core pa11y lighthouse puppeteer
 
     - name: Run ESLint
-      run: npx eslint '**/*.js' > eslint_report.txt || true
+      run: npx eslint '**/*.js' --format stylish -o eslint_report.txt || true
 
     - name: Run Stylelint
-      run: npx stylelint '**/*.css' > stylelint_report.txt || true
+      run: npx stylelint '**/*.css' --formatter verbose > stylelint_report.txt || true
 
     - name: Run Pa11y for accessibility
       run: |
@@ -45,17 +45,21 @@ jobs:
       run: |
         echo "# Accessibility and Formatting Issues" > issues_report.md
         echo "" >> issues_report.md
+        
         echo "## JavaScript Issues" >> issues_report.md
         cat eslint_report.txt >> issues_report.md
         echo "" >> issues_report.md
+        
         echo "## CSS Issues" >> issues_report.md
         cat stylelint_report.txt >> issues_report.md
         echo "" >> issues_report.md
+        
         echo "## Pa11y Accessibility Issues" >> issues_report.md
         cat pa11y_report.csv >> issues_report.md
         echo "" >> issues_report.md
+        
         echo "## Lighthouse Report" >> issues_report.md
-        cat lighthouse_report.json | jq '.' >> issues_report.md
+        jq '.' lighthouse_report.json >> issues_report.md
 
     - name: Generate fix suggestions
       run: |
@@ -66,11 +70,13 @@ jobs:
         echo "- Avoid unused variables" >> issues_report.md
         echo "- Use semicolons consistently" >> issues_report.md
         echo "" >> issues_report.md
+        
         echo "### For CSS:" >> issues_report.md
         echo "- Use consistent indentation" >> issues_report.md
         echo "- Avoid vendor prefixes, use autoprefixer" >> issues_report.md
         echo "- Group related properties together" >> issues_report.md
         echo "" >> issues_report.md
+        
         echo "### For Accessibility:" >> issues_report.md
         echo "- Ensure all images have alt text" >> issues_report.md
         echo "- Use semantic HTML elements" >> issues_report.md
@@ -78,13 +84,13 @@ jobs:
         echo "- Provide labels for all form inputs" >> issues_report.md
 
     - name: Upload report
-      uses: actions/upload-artifact@main
+      uses: actions/upload-artifact@v4
       with:
         name: comprehensive-issues-report
         path: issues_report.md
 
     - name: Download Report
-      uses: actions/download-artifact@main
+      uses: actions/download-artifact@v4
       with: 
         name: comprehensive-issues-report
         path: issues_report.md
