@@ -23,10 +23,10 @@ jobs:
         npm install eslint stylelint stylelint-config-standard axe-core pa11y lighthouse puppeteer
 
     - name: Run ESLint
-      run: npx eslint '**/*.js' --format unix > eslint_report.txt || true
+      run: npx eslint '**/*.js' > eslint_report.txt || true
 
     - name: Run Stylelint
-      run: npx stylelint '**/*.css' --format unix > stylelint_report.txt || true
+      run: npx stylelint '**/*.css' > stylelint_report.txt || true
 
     - name: Run Pa11y for accessibility
       run: |
