@@ -1,0 +1,302 @@
+* {
+    font-family: var(--font-family-arial-bold), sans-serif;
+    color: var(--ship-gray);
+}
+.green-divider {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1em;
+    background-color: var(--citrus);
+}
+.map-slice {
+    opacity: .5;
+}
+.bike-to-work-and-school-page-wrapper {
+    margin-top: 6em;
+}
+.row-1 {
+    background: #0297B7 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.bike-to-work-and-school-info {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+.row-1 h1 {
+    font-size: var(--font-size-xxxl);
+}
+.row-1 p {
+    color: #fff;
+    line-height: 1.4em;
+    font-size: var(--font-size-s);
+}
+
+.row-1 .title-text {
+    margin-top: 2em;
+    color: #fff;
+}
+
+
+.custom-bullets li::before {
+    font-family: var(--font-family-lato), sans-serif;
+    content: ">";
+    font-weight: bold !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    color: var(--white);
+}
+.row-1 ul li {
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*ROW-2*/
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #7F7F7F2E !important;
+}
+.row-2 .discount-guide {
+    margin: 0 auto;
+    padding: 2em;
+    max-height: 500px;
+    width: auto;
+    display: block;
+}
+.row-2 h2 {
+    color: var(--finn);
+}
+.bike-route-resources {
+    padding: 0 3em ;
+}
+.bike-route-resources p {
+    line-height: 1.3em;
+}
+
+/*Row 3*/
+.event-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.c-1 img:first-of-type {
+    margin-bottom: 1em;
+}
+.c-2 {
+    margin: 0 1em;
+}
+.c-2 h2 {
+    font-size: var(--font-size-xxxxl);
+    color: var(--finn);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.c-2 p {
+    color: #3d3c3e;
+}
+.station-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.station-map {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 568px) {
+    .col-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 0;
+    }
+    .map-slice-container{
+         grid-column: 1 / -1;
+     }
+    .map-slice {
+        width: 100%;
+        display: block;
+        column-span: 2;
+    }
+    .discount-guide {
+         /*background-color: #444;*/
+     }
+    .bike-route-resources {
+        position: relative;
+        left: -40px;
+        max-width: 600px;
+        /*background-color: #999;*/
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    /*#############  ROW 1  ###############*/
+
+
+
+    /*#############  ROW 2  ###############*/
+
+    .row-2 .discount-guide {
+        max-height: 400px;
+    }
+
+
+.grid-two-column {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+}/*END SMALL*/
+
+@media only screen and (min-width: 992px) {
+
+    /*ROW 1*/
+    .bike-to-work-and-school-info {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row-1 {
+        max-height: 600px;
+        display: grid;
+        grid-template-columns: 42% 58%;
+        align-items: center;
+        gap: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .full-height-image {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .full-height-image .image-container {
+        width: 80%;
+        height: 100%;
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+    }
+    .full-height-image .image-container img {
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+
+    /*ROW-2*/
+    .row-2 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 2fr 1fr;
+    }
+    .row-2 .discount-guide {
+        max-height: 300px;
+    }
+    .col-1 {
+        grid-column: span 2;
+        width: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+    .map-slice-container {
+        display: grid;
+        align-items: center;
+        height: 100%;
+    }
+    .map-slice {
+
+    }
+    .discount-guide {
+        position: relative;
+        left: 20px;
+    }
+    .bike-route-resources {
+        position: relative;
+
+        max-width: 600px;
+        /*background-color: #999;*/
+    }
+
+
+
+}/*END MEDIUM*/
+
+@media only screen and (min-width: 1268px) {
+
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .row-2 {
+        grid-template-columns: 42% 58%;
+    }
+    .col-1 {
+        grid-column: 1;
+        justify-content: start;
+        margin-left: 52px;
+        grid-gap: 1em;
+    }
+    .map-slice-container {
+        display: grid;
+        align-items: center;
+        grid-column: 2;
+        overflow: hidden;
+    }
+    .map-slice {
+        height: 100%;
+        width: auto;
+    }
+    h1 {
+        margin-bottom: .9em;
+    }
+    .bike-to-work-and-school-info {
+        width: 100%;
+        margin-left: auto;
+    }
+    .title-text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 10%;
+    }
+    .bike-to-work-and-school-info p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 10%;
+    }
+    .bike-to-work-and-school-info ul {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 10%;
+    }
+}
