@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    // Array of image sources for the cycling image.
+
+    // ARRAY OF IMAGES/STATS FOR SLIDESHOW
     var slides = [
         {
             text: "Number of Smart Trips recorded since 2006:",
@@ -33,74 +34,101 @@ $(document).ready(function() {
         }
         ];
 
+    //##########################################
+    //###  ALL STANDALONE VARIABLES  ###########
+    //##########################################
+
     var currentIndex = 0;
-    //test
     var slideInterval;
     var slideDelay = 4000;
-    var userPauseDuration = 10000;
+    var userPauseDuration = 2000;
+    var resetTimeout;
+
+
+    //##########################################
+    //###########  FUNCTIONS  ##################
+    //##########################################
+
 
     function updateSlide() {
         $(".stat-info-p").html(slides[currentIndex].text);
         $(".statistics-card .stats").html(slides[currentIndex].stats);
         const $icon = $(".stat-icon-image");
         $icon.attr("src", slides[currentIndex].iconImg).attr("alt", slides[currentIndex].altText);
-
+        //NOTE:
+        // This just applies this to a couple images in the slideshow since they were requested to be smaller.
+        // Should probably just resize them OR add this to all images if
+        // they change them (or order) in the future...
+        const src = $icon.attr("src");
+        if (src === slides[1].iconImg || src === slides[2].iconImg || src === slides[4].iconImg) {
+            $(".stat-icon-image").addClass("smaller-icon");
+        } else {
+            $(".stat-icon-image").removeClass("smaller-icon");
+        }
         $(".pagination div").each(function(index) {
             if (index === currentIndex) {
                 $(this).removeClass("ellipse").addClass("ellipse-active");
             } else {
                 $(this).removeClass("ellipse-active").addClass("ellipse");
             }
-
-            //NOTE:
-            // This just applies this to a couple images in the slideshow since they were requested to be smaller.
-            // Should probably just resize them OR add this to all images if
-            // they change them (or order) in the future...
-            const src = $icon.attr("src");
-            if (src === slides[1].iconImg || src === slides[2].iconImg || src === slides[4].iconImg) {
-                $(".stat-icon-image").addClass("smaller-icon");
-            } else {
-                $(".stat-icon-image").removeClass("smaller-icon");
-            }
         });
     }
 
+    //GO TO NEXT SLIDE
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
+        if (currentIndex === slides.length - 1) {
+            currentIndex = 0;
+        } else {
+            currentIndex = currentIndex + 1;
+        }
         updateSlide();
     }
+
+    //GO TO PREVIOUS SLIDE
     function previousSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        if (currentIndex === 0) {
+            currentIndex = (slides.length - 1);
+        } else {
+            currentIndex = currentIndex - 1;
+        }
         updateSlide();
     }
+
+    //START AUTO CYCLING OF SLIDESHOW
     function startAutoSlide() {
         stopAutoSlide();
         slideInterval = setInterval(nextSlide, slideDelay);
     }
+
+    //STOP AUTO CYCLING OF SLIDESHOW (if user is overriding with forward/backward buttons)
     function stopAutoSlide() {
         clearInterval(slideInterval);
     }
+
+    //RESET SLIDESHOW TIMER WHEN A NAVIGATION BUTTON IS CLICKED
     function resetSlideTimer() {
         stopAutoSlide();
-        setTimeout(startAutoSlide, userPauseDuration);
+        clearTimeout(scheduledTask_ID);
+        scheduledTask_ID = setTimeout(startAutoSlide, userPauseDuration);
     }
 
-    updateSlide();
-    startAutoSlide();
-
-    //GO - PREVIOUS SLIDE
+    //NAVIGATION BUTTON - PREVIOUS SLIDE
     $(".path-207").on("click", function() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         previousSlide();
         resetSlideTimer();
     });
 
-    //GO - NEXT SLIDE
+    //NAVIGATION BUTTON - NEXT SLIDE
     $(".path-200").on("click", function() {
-        currentIndex = (currentIndex + 1) % slides.length;
         nextSlide();
         resetSlideTimer();
-    })
+    });
+
+
+    //ON LOAD FUNCTIONS
+    updateSlide();
+    startAutoSlide();
+
 
 
 
