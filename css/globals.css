@@ -215,7 +215,7 @@ img {
     color: #444;
 }
 .notes {
-    color: var(--citrus); /*This class highlights what seem to be notes on the page*/
+    color: var(--citrus);
 }
 .page-title {
     padding-left: .4em;
