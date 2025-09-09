@@ -1,0 +1,139 @@
+* {
+    font-family: var(--font-family-lato), sans-serif;
+    color: var(--ship-gray);
+}
+input[type="password"], input[type="email"], input[type="text"], input[type="tel"] {
+    width: 100%;
+    min-width: 0;
+}
+input[type="password"]:focus, input[type="email"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
+    width: 100%;
+    min-width: 0;
+    outline: none;
+    border: 2px solid var(--citrus);
+}
+form {
+    margin-bottom: 1em;
+}
+fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+fieldset legend {
+    font-family: var(--font-family-arial-regular), sans-serif;
+    font-weight: bold;
+}
+h1 {
+    color: var(--citrus);
+}
+label {
+    display: block;
+    margin-left: 1px;
+}
+input, select {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    line-height: 2em;
+    margin: .5em 0 1em 0;
+}
+input:hover {
+    background-color: #f8f8f8;
+    transition: background-color 100ms linear;
+}
+select {
+    width: 100%;
+    min-height: 31px;
+}
+select:hover {
+    background-color: #f8f8f8;
+    transition: background-color 100ms linear;
+}
+select:focus {
+    outline: none;
+    border: 2px solid var(--citrus);
+}
+option {
+    line-height: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.st-sign-up {
+     padding: 1em;
+ }
+.hint {
+    margin-left: 2px;
+    position: relative;
+    top: -12px;
+}
+.email-reminder {
+    margin:.5em 0 .5em 0;
+}
+.submit-button {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--citrus);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 1em 0 1em 0;
+    margin: 1em 0 1em 0;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out;
+}
+.submit-button:hover {
+    background-color: #90b00d;
+    box-shadow: 1px 1px 1px rgba(0 , 0, 0, 0.2);
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+.hint {
+    color: #888;
+    font-size: .8em;
+}
+.sign-up-form {
+    background: linear-gradient(
+            to bottom right,
+            rgba(105, 22, 94, 0.02) ,
+            rgba(26, 109, 181, 0.02)
+    );
+    padding: 1em;
+    border-radius: 5px;box-shadow: inset 0 1px 3px rgba(1, 1, 1, 0.3);
+}
+.responsive-grid {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+}
+.st-sign-up {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 10px;
+}
+.sign-in-col-2 {
+    padding: 0 1em 0 1em;
+    margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px) {
+    form {
+        margin-bottom: 3em;
+    }
+    .responsive-grid {
+        grid-template-columns: 1.8fr 1fr;
+        grid-gap: 2em;
+    }
+    .submit-button {
+        width: 50%;
+    }
+    .password-group, .name-group, .employer-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .location-group {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1fr;
+        grid-gap: 1em;
+    }
+    .register-info {
+        margin-top: 0;
+    }
+}
