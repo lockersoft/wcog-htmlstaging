@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-page="bike">
+<head>
+    <meta charset="utf-8"/>
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="css/globals.css"/>
+    <!--PAGE SPECIFIC CSS-->
+    <link rel="stylesheet" type="text/css" href="css/st-sign-up.css"/>
+    <!--NAV/FOOTER CSS-->
+    <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <title>Smart Trips | Bike Tips, Classes, and Public Transit</title>
+</head>
+<body>
+<div class="base"></div>
+<!--OUTER WRAPPER-->
+<div class="outer">
+    <!--CONTENT WRAPPER-->
+    <div class="wrapper">
+        <!--HEADER-->
+        <header class="header">
+            <!--LOGO-->
+            <a href="index.html"><img class="smart-trips_logo" src="img/smarttrips-logo-1@1x.png"
+                                      alt="SmartTrips_logo"/></a>
+            <!--MOBILE MENU ICON-->
+            <input id="menu-btn" class="menu-btn" type="checkbox">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--NAVIGATION-->
+            <nav>
+                <ul class="menu">
+                    <!--MAIN TIER NAV-->
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-perks">Perks-label</label>
+                        <a class="tier-1-perks" href="st-perks.html">PERKS</a>
+                        <input type="checkbox" id="nav-sub-menu-perks">
+                        <ul class="tier-2-perks">
+                            <li><a href="st-perks.html#cashPrizes">Cash Prizes</a></li>
+                            <li><a href="st-perks-discount.html">Discounts</a></li>
+                            <li><a href="st-perks.html#milestones">Milestones</a></li>
+                            <li><a href="st-perks.html#leaders">Leaders</a></li>
+                            <li><a href="st-perks.html#emergencyRideHome">Emergency Ride Home</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-bike">Bike-label</label>
+                        <a class="tier-1-bike active" href="st-bike.html">BIKE</a>
+                        <input type="checkbox" id="nav-sub-menu-bike">
+                        <ul class="tier-2-bike">
+                            <li>
+                                <a href="https://s3.us-east-1.amazonaws.com/WhatcomSmartTrips/Confident+City+Cycling.pdf">Biking
+                                    Tips</a></li>
+                            <li><a href="st-bike-classes.html">Bike Classes</a></li>
+                            <li><a href="st-bike-to-work-and-school.html">Bike to Work & School Day</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-bus">Bus-label</label>
+                        <a class="tier-1-bus" href="st-bus.html">BUS</a>
+                        <input type="checkbox" id="nav-sub-menu-bus">
+                        <ul class="tier-2-bus">
+                            <li><a href="st-bus.html#howToRide">How to Ride</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--Tier 2-->
+                        <label class="toggle" for="nav-sub-menu-rideshare">Rideshare-label</label>
+                        <a class="tier-1-rideshare" href="st-rideshare.html">RIDESHARE</a>
+                        <input type="checkbox" id="nav-sub-menu-rideshare">
+                        <ul class="tier-2-rideshare">
+                            <li><a href="st-rideshare.html#vanPool">WTA Rideshare</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="tier-1-events" href="st-events.html">EVENTS</a></li>
+                    <li><a class="button_blue" href="https://railsstage.wcog.dev/etc_users/sign_in">SIGN IN</a></li>
+                    <li><a class="button_blue" href="https://railsstage.wcog.dev/users/sign_up">SIGN UP</a></li>
+                    <li><a href="index.html"><img class="home-icon" src="img/home-icon.png" alt="Home"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="st-sign-up"><!-- ALL CONTENT GOES BELOW THIS-->
+
+            <h1>Create your Smart Trips Account</h1>
+
+            <div class="responsive-grid">
+
+
+                        <form accept-charset="UTF-8" action="/users" class="sign-up-form" id="new_user"
+                              method="post" novalidate="novalidate">
+
+                            <!--SIGN IN-->
+                            <fieldset>
+                                <legend>Your Sign In</legend>
+
+                                <div>
+                                    <label for="user_email">Email</label>
+                                    <input id="user_email" name="user[email]" size="50"
+                                           type="email">
+                                    <span class="hint">Your email address will serve as your sign in name</span>
+                                </div>
+
+                                <div class="password-group">
+                                    <div>
+                                        <label for="user_password">Password</label>
+                                        <input id="user_password" name="user[password]" size="50" type="password">
+                                    </div>
+
+                                    <div>
+                                        <label for="user_password_confirmation">Password
+                                            confirmation</label>
+                                        <input id="user_password_confirmation"
+                                               name="user[password_confirmation]" size="50" type="password">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                            <!--PERSONAL INFO-->
+                            <fieldset>
+                                <legend>Personal Information</legend>
+
+                                <div class="name-group">
+                                    <div>
+                                        <label for="user_first_name">First
+                                            name</label>
+                                        <input id="user_first_name" name="user[first_name]"
+                                               size="50" type="text">
+                                    </div>
+
+                                    <div>
+                                        <label for="user_last_name">Last name</label>
+                                        <input id="user_last_name" name="user[last_name]" size="50"
+                                               type="text">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+
+                            <!--CONTACT INFO-->
+                            <fieldset>
+                                <legend>Contact Information</legend>
+
+                                <div>
+                                    <label for="user_user_contact_attributes_phone">Phone</label>
+                                    <input id="user_user_contact_attributes_phone"
+                                           name="user[user_contact_attributes][phone]" size="50" type="tel">
+                                    <span class="hint">We'll call you if you win a monthly or quarterly prize.</span>
+                                </div>
+
+                                <div>
+                                    <label
+                                           for="user_user_contact_attributes_mailing_address">Street Address</label>
+                                    <input id="user_user_contact_attributes_mailing_address"
+                                           name="user[user_contact_attributes][mailing_address]" size="50" type="text">
+                                    <span class="hint">We'll mail your incentives to this address.</span>
+                                </div>
+
+                                <div class="location-group">
+                                    <div>
+                                        <label
+                                               for="user_user_contact_attributes_city">City</label>
+                                        <input id="user_user_contact_attributes_city"
+                                               name="user[user_contact_attributes][city]" size="50" type="text"
+                                               value="Bellingham">
+                                    </div>
+
+                                    <div>
+                                        <label
+                                               for="user_user_contact_attributes_state">State</label>
+                                        <select id="user_user_contact_attributes_state"
+                                                name="user[user_contact_attributes][state]">
+                                            <option value="" disabled selected>Select State</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="BC">British Columbia</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="user_user_contact_attributes_zip">Zip</label>
+                                        <input id="user_user_contact_attributes_zip"
+                                               name="user[user_contact_attributes][zip]" size="50" type="text">
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <!--EMPLOYER-->
+                            <fieldset>
+                                <legend>Employer</legend>
+
+                                <div class="employer-group">
+                                    <div>
+                                        <label for="user_worksite_id">Employer</label>
+                                        <select id="user_worksite_id" name="user[worksite_id]">
+                                            <option value="1">[Other Employer]</option>
+                                            <option value="2">[Not Applicable]</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="user_other_employer">Other
+                                            employer</label>
+                                        <input id="user_other_employer" name="user[other_employer]"
+                                               size="50" type="text">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                            <!--EMAIL REMINDER-->
+                            <div class="email-reminder">
+                                <input name="user[email_reminder]" type="hidden" value="0">
+                                <label for="user_email_reminder">
+                                    <input type="checkbox" id="user_email_reminder" name="user[email_reminder]"
+                                           value="1"> Send me an email reminder about logging trips once a month.
+                                </label>
+                            </div>
+
+                            <!--SUBMIT-->
+                            <div>
+                                <button class="submit-button" type="submit">Create Account</button>
+                            </div>
+                        </form>
+
+
+                    <div class="sign-in-col-2">
+                        <h2 class="register-info">Register here for Smart Trips rewards.</h2>
+                        <p>When you make Smart Trips, you accomplish a lot more than getting to your destination. You
+                            help create a clean, healthy, and vibrant community in Whatcom County.</p>
+
+                        <p>Join thousands of other community members who record their Smart Trips on this website.
+                            Together we're proving that individual Smart Trips make a big difference to our
+                            community.</p>
+
+                        <p>If you have ever created a SmartTrips account in the past, it still exists. Don't create a
+                            duplicate account. <a href="#">Contact us</a> for assistance or call 360-756-TRIP.</p>
+                        <p><a data-toggle="modal" href="#whats_a_smart_trip">What's a Smart Trip?</a></p>
+                    </div><!--END COL-2-->
+
+            </div><!--END PARENT GRID CONTAINER-->
+
+
+        </section><!-- ALL CONTENT GOES ABOVE THIS-->
+    </div><!--END CONTENT WRAPPER-->
+</div><!--END OUTER-->
+<!--FOOTER-->
+<footer class="grid">
+    <div class="grayBar"></div>
+    <div class="grid"><!--remove if not needed--></div>
+    <div class="grid grid-three-column footer-layout">
+        <div class="grid grid-two-column social-info">
+            <ul class="social-media-icons">
+                <li><a class="footer-instagram-icon" href="https://www.instagram.com/whatcomsmarttrips/"><img
+                        class="path-206 path" src="img/path-206-10@1x.png" alt="Path 206"/></a></li>
+                <li><a class="footer-facebook-icon" href="https://www.facebook.com/WhatcomSmartTrips"><img
+                        class="path-205 path" src="img/path-205-10@1x.png" alt="Path 205"/></a></li>
+            </ul>
+            <ul class="footer-info-links">
+                <li><a href="st-faqs.html">FAQs</a></li>
+                <li><a href="st-contact.html">CONTACT US</a></li>
+                <li><a href="st-employer-partners.html">EMPLOYERS</a></li>
+                <li><a href="st-youth-education.html">YOUTH EDUCATION</a></li>
+                <li>
+                    <!-- Elfsight Website Translator | Untitled Website Translator -->
+                    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                    <div class="elfsight-app-d1065b51-364e-4a7a-bd01-6d9a9670b205" data-elfsight-app-lazy></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="base_bottom"></div>
+</body>
+</html>
