@@ -3,7 +3,8 @@ h1 {
     margin-left: 0.3em;
     margin-bottom: 0;
 }
-h3 {
+.youth-education h2 {
+    font-size: 20px;
     margin-top: 2em;
     margin-bottom: 0;
 }
@@ -13,7 +14,7 @@ p {
 .travel-brochure {
     margin: 1em 0 1em 0;
 }
-.youth-education h3:nth-of-type(1) {
+.youth-education h2:nth-of-type(1) {
     margin-top: 1em;
 }
 .youth-education {
@@ -38,7 +39,7 @@ p {
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 992px) {
-    h3 {
+    .youth-education h2 {
         margin-top: 1em;
     }
     p {

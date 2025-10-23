@@ -276,3 +276,79 @@ li .gKnUQU * {
         margin: 0 auto;
     }
 }
+/*!*DELETE THIS WHEN DONE - UNCOMMENT EVERYTHING ABOVE*!*/
+/*#############################################################*/
+/*#############################################################*/
+/*#############################################################*/
+.footer-grid {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: #222;            /* your footer color */
+    color: #fff;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+    .footer-inner {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;  /* single column for all content */
+        row-gap: 2rem;
+        text-align: center;
+        background-color: #999;
+    }
+        .footer-social-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: #282;
+        }
+            .footer-social-media-icons {
+                background-color: #f29;
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem; /* or any size you want */
+            }
+                .footer-social-media-icons li {
+                    line-height: 2em;
+                }
+            .footer-information-links {
+                background-color: #939;
+            }
+                .footer-information-links li {
+                    line-height: 2.5em;
+                }
+        .footer-app-store-card {
+            display: grid;
+            grid-auto-rows: auto;
+            grid-template-columns: 1fr;
+        }
+            .footer-app-store-card p {
+                display: inline-block;
+                margin: 0;
+                justify-items: center;
+                text-align: center;
+                background-color: #0ff; /* test color */
+            }
+            .footer-app-store-icons-mobile {
+                display: grid;
+                justify-items: center;
+                grid-auto-rows: auto;
+                gap: 0;
+                margin-top: 2rem;
+            }
+                .footer-app-store-icons {
+                    display: inline-block;
+                    max-width: 150px;
+                }
+                    .footer-app-store-icons img {
+                        width: 150px;
+                        height: auto;
+                        display: block;
+                    }
+
+/*#############################################################*/
+/*#############################################################*/
+/*#############################################################*/
+/*############ DELETE THIS AND THE BLANK LINE IT LEAVES BEHIND*/

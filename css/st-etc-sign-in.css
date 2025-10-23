@@ -10,11 +10,15 @@ h1 {
     margin-left: .5em;
     margin-bottom: 0;
 }
-h3 {
+h2 {
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1em;
+}
+h3 {
+    font-size: 14px;
 }
 img {
     display: block;
@@ -123,7 +127,7 @@ button {
     width: 100vw;
     max-width: 1400px;
 }
-button, h3, h4, ul, p, a {
+button, .coordinator-info h2, .coordinator-info h3, ul, p, a {
     grid-column: 1;
 }
 
@@ -166,8 +170,8 @@ button, h3, h4, ul, p, a {
     h1 {
         margin-left: 9%;
     }
-    h3:not(:first-of-type) {
-        /*moves all h3's with the green arrow over to the left to match the design*/
+    .coordinator-info h2:not(:first-of-type) {
+        /*moves all h2's with the green arrow over to the left to match the design*/
         position: relative;
         left: -3em;
         margin-left: 0;
