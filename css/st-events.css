@@ -133,10 +133,7 @@
     font-size: 15px;
 }
 .events-register-button {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: .5em 1em .5em 1em;
     text-decoration: none;
     border-radius: 5px;
     background-color: var(--green-blue);
@@ -146,6 +143,8 @@
     grid-row: 2 / span 2;
     position: relative;
 }
+
+/*SLIDESHOW SLIDES*/
 .slides {
     position: relative;
     grid-row: 1 / span 2;
@@ -153,6 +152,29 @@
 .events-slideshow-container {
      grid-template-rows: 90% 10%;
  }
+/* slideshow images */
+.slide-image-wrapper {
+    width: 100%;
+    aspect-ratio: 359 / 202;   /* keeps 359:202 ratio no matter screen width */
+    overflow: hidden;
+    display: none;
+}
+
+.slide-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* active slide */
+.slide-image-wrapper.active {
+    display: block;
+}
+/*END SLIDESHOW SLIDES*/
+
+
 @media screen and (min-width: 200px) {
     .events-slideshow-container {
         grid-template-rows: 80% 20%;
