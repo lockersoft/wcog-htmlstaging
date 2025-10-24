@@ -1,3 +1,8 @@
+footer {
+    font-family: arial, sans-serif;
+    min-height: 1px;
+    background-color: var(--ship-gray);
+}
 footer p {
     display: flex;
     color: #fff;
@@ -5,11 +10,7 @@ footer p {
     align-items: center;
     z-index: 100;
 }
-footer {
-    font-family: arial, sans-serif;
-    min-height: 1px;
-    background-color: var(--ship-gray);
-}
+
 footer, footer a {
     color: #ffffff;
 }
@@ -20,12 +21,12 @@ footer ul {
     max-height: 15px;
     width: auto;
 }
-
-/*TESTING: June 2025 - Change color of widget translater text via CSS*/
+/*TESTING: June 2025 - Change text color of widget translator via CSS*/
 li .gKnUQU * {
     color: #FFFFFF !important;
 }
 
+/*Ensures Google Play Store image is treated as rectangle rather than a 1:1 square*/
 .footer-app-store-icons:nth-of-type(2) img {
     width: 140px;
     height: 40px;
@@ -42,7 +43,7 @@ li .gKnUQU * {
     transform: translateX(-50%);
     background: var(--ship-gray);
     color: #fff;
-    padding: 1rem 0; /*Thickness/height of footer gray bar*/
+    padding: 1rem 0; /*Changes the thickness/height of footer gray background*/
     box-sizing: border-box;
 }
     .footer-inner {
@@ -104,6 +105,8 @@ li .gKnUQU * {
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
 /*######################  MEDIA QUERIES  ###########################*/
+
+/*##################################  TABLET: 768px  #######################################*/
 @media (min-width: 768px) {
     .footer-app-store-icons-mobile {
         display: grid;
@@ -112,8 +115,6 @@ li .gKnUQU * {
         align-items: center;
         gap: 1.5rem;
     }
-
-
     .footer-information-links {
         display: grid;
         grid-auto-flow: column;
@@ -122,124 +123,115 @@ li .gKnUQU * {
         gap: 2rem;
         text-align: center;
     }
-
     .footer-information-links li {
         line-height: normal;
         list-style: none;
     }
-}/*###################  END 768px  #####################*/
+}/*################################  END TABLET 768px  #######################################*/
+
+/*##################################  DESKTOP: 1200px  #######################################*/
 @media (min-width: 1200px) {
 
     .footer-grid {
         display: grid;
         justify-content: center;
     }
-    .footer-inner {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-auto-rows: min-content;
-        align-items: center;
-        column-gap: 3rem;
-        row-gap: 0;
-        height: fit-content;
-        width: 100vw !important;
-        justify-content: space-between;
-        justify-self: stretch;
-        margin: 0 auto;
-        padding: 0;
-        text-align: left;
-    }
-
-
-    .footer-social-info {
-        display: grid;
-        /*grid-template-columns: auto 1fr;*/
-        grid-template-columns: auto 1fr;
-        grid-auto-rows: min-content;
-        align-items: center;
-        column-gap: 1.5rem;
-        row-gap: 0;
-        margin: 0 0 0 5em; /*will need to adjust this or change to parent to appropriately line up with page content on left side*/
-        padding: 0;
-        justify-content: start;
-    }
-        .footer-social-info ul {
-            display: flex;
-            gap: .75rem;
+        .footer-inner {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-auto-rows: min-content;
+            align-items: center;
+            column-gap: 3rem;
+            row-gap: 0;
+            height: fit-content;
+            width: 100vw !important;
+            justify-content: space-between;
+            justify-self: stretch;
+            margin: 0 auto;
+            padding: 0;
+            text-align: left;
         }
-
-            .footer-social-info > ul:first-of-type {
-                grid-column: 1;
-                grid-row: 1;
+            .footer-social-info {
+                display: grid;
+                /*grid-template-columns: auto 1fr;*/
+                grid-template-columns: auto 1fr;
+                grid-auto-rows: min-content;
+                align-items: center;
+                column-gap: 1.5rem;
+                row-gap: 0;
+                margin: 0 0 0 5em; /*will need to adjust this or change to parent to appropriately line up with page content on left side*/
+                padding: 0;
+                justify-content: start;
             }
-            .footer-social-info > ul:last-of-type {
-                grid-column: 2;
-                grid-row: 1;
+                .footer-social-info ul {
+                    display: flex;
+                    gap: .75rem;
+                }
+                .footer-social-info > ul:first-of-type {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+                .footer-social-info > ul:last-of-type {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                    .footer-social-media-icons,
+                    .footer-information-links {
+                        display: grid;
+                        grid-auto-flow: column;
+                        align-items: center;
+                        justify-content: start;
+                        column-gap: 2rem;
+                        row-gap: 0;
+                        margin: 0;
+                        padding: 0;
+                    }
+                        .footer-social-media-icons li,
+                        .footer-information-links li {
+                            margin: 0;
+                            padding: 0;
+                            line-height: 1;
+                        }
+            .footer-app-store-card {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-auto-rows: min-content;
+                align-items: center;
+                justify-content: end;
+                column-gap: 2rem;
+                row-gap: 0;
+                margin: 0;
+                padding: 0;
+                text-align: left;
             }
+                .footer-app-store-card p {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.1;
+                }
+                .footer-app-store-icons-mobile {
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    grid-auto-rows: min-content;
+                    align-items: center;
+                    justify-content: end;
+                    column-gap: 1rem;
+                    row-gap: 0;
+                    margin: 0;
+                    padding: 0;
+                }
+                    .footer-app-store-icons img {
+                        width: 140px;
+                        height: 40px;
+                        object-fit: cover;
+                        object-position: center;
+                        display: block;
+                        overflow: hidden;
+                        /*margin: 0;*/
+                    }
+                    .footer-app-store-icons:nth-of-type(2) img {
+                        margin: 0;
+                    }
 
 
-    .footer-social-media-icons,
-    .footer-information-links {
-        display: grid;
-        grid-auto-flow: column;
-        align-items: center;
-        justify-content: start;
-        column-gap: 2rem;
-        row-gap: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    .footer-social-media-icons li,
-    .footer-information-links li {
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-    }
-
-    .footer-app-store-card {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-auto-rows: min-content;
-        align-items: center;
-        justify-content: end;
-        column-gap: 2rem;
-        row-gap: 0;
-        margin: 0;
-        padding: 0;
-        text-align: left;
-    }
-
-    .footer-app-store-card p {
-        margin: 0;
-        padding: 0;
-        line-height: 1.1;
-    }
-
-    .footer-app-store-icons-mobile {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-auto-rows: min-content;
-        align-items: center;
-        justify-content: end;
-        column-gap: 1rem;
-        row-gap: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    .footer-app-store-icons img {
-        width: 140px;
-        height: 40px;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-        overflow: hidden;
-        /*margin: 0;*/
-    }
-    .footer-app-store-icons:nth-of-type(2) img {
-        margin: 0;
-    }
-
-
-}/*####################  END 1200px  ###########################*/
+}/*##########################  END DESKTOP 1200px  ################################*/
