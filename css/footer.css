@@ -1,3 +1,6 @@
+[data-page="home"] .footer-social-info {
+    margin: 0 0 0 4.5rem;
+}
 footer {
     font-family: arial, sans-serif;
     min-height: 1px;
@@ -159,7 +162,7 @@ li .gKnUQU * {
                 align-items: center;
                 column-gap: 1.5rem;
                 row-gap: 0;
-                margin: 0 0 0 5em; /*will need to adjust this or change to parent to appropriately line up with page content on left side*/
+                margin: 0 0 0 5.7rem; /*will need to adjust this or change to parent to appropriately line up with page content on left side*/
                 padding: 0;
                 justify-content: start;
             }
