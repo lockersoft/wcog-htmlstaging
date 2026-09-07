@@ -54,6 +54,13 @@ jobs:
         port: 22
         script: |
           whoami
+          # node_modules is dev-only tooling and must never be web-readable.
+          # It is gitignored as of this commit, but rsync below runs without
+          # --delete, so clear any copy left on the host by earlier deploys.
+          rm -rf /home/dh_qp73ft/whatcomhtml.lockersoft.dev/node_modules
+          ls -d /home/dh_qp73ft/whatcomhtml.lockersoft.dev/node_modules 2>/dev/null \
+            && echo "WARNING: node_modules still present" \
+            || echo "node_modules absent - good"
           ls -al
           echo "The repository ${{ github.repository }} contains the following:"
           tree
